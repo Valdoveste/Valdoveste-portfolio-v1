@@ -1,4 +1,6 @@
 import React from "react";
+import GitHub from '../../assets/GitHub.png';
+import LinkedIn from '../../assets/LinkedIn.png';
 
 export default function Footer() {
     return(
@@ -9,8 +11,8 @@ export default function Footer() {
                 </ul>
 
                 <ul>
-                    <li><a href="linkedin.com/in/valdoveste"><img src="../assets/LinkedIn.png" alt="LinkedIn Logo"/></a></li>
-                    <li><a href="github.com/Valdoveste"><img src="../assets/GitHub.png" alt="GitHub Logo" /></a></li>
+                    <li><a href="https://linkedin.com/in/valdoveste"><img src={LinkedIn} alt="LinkedIn Logo"/></a></li>
+                    <li><a href="https://github.com/Valdoveste"><img src={GitHub} alt="GitHub Logo" /> a </a></li>
                     {/* <li><a href="mailto:caio.valdoveste@outlook.com.br"><img src="" alt="Microsoft Mail Logo"/></a></li> */}
                 </ul>
             </footer>
