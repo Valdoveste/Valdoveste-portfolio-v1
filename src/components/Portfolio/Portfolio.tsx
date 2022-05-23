@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Portfolio() {
+const Portfolio: React.FC = () => {
     return (
         <section id="section-portfolio">
             <div>
@@ -24,3 +24,5 @@ export default function Portfolio() {
         </section>
     );
 }
+
+export default Portfolio;

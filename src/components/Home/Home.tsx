@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About() {
+const Home: React.FC = () => {
     return (
         <section id="section-home">
             <div>
@@ -18,3 +18,5 @@ export default function About() {
         </section>
     );
 }
+
+export default Home;

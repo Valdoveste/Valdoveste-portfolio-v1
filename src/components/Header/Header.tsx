@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+const Header: React.FC = ()=> {
     return (
         <header id="header">
             <nav className="header__navbar">
@@ -40,3 +40,5 @@ export default function Header() {
         </header>
     );
 }
+
+export default Header;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Modal() {
+const Modal: React.FC = () => {
     return(
         <div className="modal">
             <div className="modal__header">
@@ -13,3 +13,5 @@ export default function Modal() {
         </div>
     );
 }
+
+export default Modal;
