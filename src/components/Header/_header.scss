@@ -1,0 +1,30 @@
+#header {
+    padding: 0.8rem 0;
+    box-shadow: 3px 2px 5px rgba(39, 38, 38, 0.163);
+    border-bottom: 1px solid rgba(39, 38, 38, 0.163);
+
+    .header__navbar {
+        @include flexCenter(center, space-between, center);
+
+        .header__navbar__list {
+
+            &:nth-child(even) {
+                display: flex;
+
+                .header__navbar__item .header__navbar__link {
+                    color: #3c4043c4;
+                    transition: color ease-out 250ms;
+
+                    &:hover {
+                        color: #3c4043;
+                    }
+                }
+
+                .header__navbar__item:nth-child(even) {
+                    margin: 0 1.2rem;
+                }
+
+            }
+        }
+    }
+}

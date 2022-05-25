@@ -6,6 +6,8 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    font-size: 1.3vw;
+    line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,3 +19,43 @@
     justify-content: $justify_content;
     flex-direction: $flex_direction;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+$margin-page: 2.5rem;
+
+main,
+section,
+header nav,
+footer {
+    margin: 0 $margin-page;
+}
+
+main {
+    margin: $margin-page 0;
+
+    section {
+        overflow: hidden;
+
+        border-bottom: 1px solid black;
+
+        div h1 {
+            font-size: 3vw !important;
+        }
+
+        height: 100vh;
+    }
+
+    section:last-child {
+        height: 50vh;
+    }
+}
+
+@import '../components/Home/home';
+@import '../components/About/about';
+@import '../components/Footer/footer';
+@import '../components/Header/header';
+@import '../components/Contact/contact';
+@import '../components/Portfolio/portfolio';

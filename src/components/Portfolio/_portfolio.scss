@@ -1,0 +1,10 @@
+#section-portfolio {
+    overflow-y: scroll;
+    
+    .section-portfolio__text{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    @import './_cards';
+}

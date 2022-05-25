@@ -1,9 +1,18 @@
 import React from "react";
 
-export default function About(){
-    return(
-        <>
-            
-        </>
+const About: React.FC = () => {
+    return (
+        <section id="section-about">
+            <div>
+                <h1>
+                    My, my skills
+                </h1>
+                <p>
+                    my skills
+                </p>
+            </div>
+        </section>
     );
 }
+
+export default About;

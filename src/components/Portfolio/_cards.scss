@@ -1,0 +1,55 @@
+#card-container {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+
+    .card {
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 2px;
+        border: 1px solid #3c40431d;
+        box-shadow: 3px 2px 3px rgba(39, 38, 38, 0.088);
+
+        .card__overlay {
+            z-index: 10;
+            opacity: 15%;
+            position: absolute;
+            background-color: black;
+            transition: opacity ease-in-out 500ms;
+
+            &,
+            a {
+                width: 100%;
+                height: 100%;
+            }
+
+            a {
+                display: block;
+            }
+
+            &:hover {
+                opacity: 0;
+
+                &~.card__content .card__content__image {
+                    transform: scale(90%);
+                }
+            }
+
+        }
+
+        .card__content {
+            height: 100%;
+            @include flexCenter(center, center, center);
+
+            .card__content__image {
+                width: 100%;
+                height: auto;
+                transform: scale(80%);
+                object-fit: cover;
+                transition: all ease-in-out 325ms;
+
+            }
+        }
+    }
+}
