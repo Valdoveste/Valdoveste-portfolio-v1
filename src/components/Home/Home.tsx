@@ -3,7 +3,7 @@ import React from "react";
 const Home: React.FC = () => {
     return (
         <section id="section-home">
-            <div>
+            <article>
                 <h1>
                     Hi,
                 </h1>
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
                 <p>
                     FullStack Developer
                 </p>
-            </div>
+            </article>
         </section>
     );
 }
