@@ -1,9 +1,25 @@
 import React from "react";
+import PortfolioCards from '../../cards'
 
 const Portfolio: React.FC = () => {
+    const renderCards = (): JSX.Element[] => {
+        return PortfolioCards.map((card) => {
+            return (
+                <article className="card" key={card.id}>
+                    <span className="card__overlay">
+                        <a href={card.url} target={"_blank"}></a>
+                    </span>
+                    <div className="card__content">
+                        <img src={card.logo} alt={card.logo_alt} className="card__content__image" />
+                    </div>
+                </article>
+            );
+        });
+    }
+
     return (
         <section id="section-portfolio">
-            <div>
+            <article>
                 <h1 className="section-portfolio__title">
                     My Portfolio
                 </h1>
@@ -13,16 +29,9 @@ const Portfolio: React.FC = () => {
                 </p>
 
                 <div id="card-container">
-                    <article className="card">
-                        <span className="card__overlay">
-                            <a href="https://github.com/Valdoveste/nebulum" target={"_blank"}></a>
-                        </span>
-                        <div className="card__content">
-                            <img src="https://user-images.githubusercontent.com/62577482/145720044-3426d797-c4fd-4f23-84ce-1627ce668420.png" alt="" className="card__content__image" />
-                        </div>
-                    </article>
+                    {renderCards()}
                 </div>
-            </div>
+            </article>
         </section>
     );
 }
