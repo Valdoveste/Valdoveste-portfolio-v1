@@ -1,3 +1,22 @@
 #section-about {
 
+    .section-about__text{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    @include flexCenter(center, space-between, row);
+
 }
+
+#card-container {
+    width: 200px;
+    gap: 0px !important;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)) !important;
+
+    .card{
+        height: 50px !important;
+    }
+}
+
+@import '../../styles/cards';
