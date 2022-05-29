@@ -1,3 +1,52 @@
-#section-contact{
+#section-contact {
+    height: auto !important;
+    @include flexCenter(center, default, column);
 
+    .section-contact__header .section-contact__header__text {
+        text-align: center;
+    }
+
+    .section-contact__form {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 15px;
+        @include flexCenter(center, default, column);
+
+        .section-contact__inputs {
+            width: 100%;
+            display: flex;
+
+            & input:nth-child(even) {
+                margin-left: 5px;
+            }
+        }
+
+        .section-form__text,
+        .section-form__message,
+        #section-from__submit {
+            width: 100%;
+            height: 50px;
+            padding: 15px;
+            color: #cccccc;
+            margin-bottom: 5px;
+            border: 1px solid #3436386c;
+            background-color: #171717;
+        }
+
+        #section-from__submit {
+            cursor: pointer;
+            font-weight: bold;
+            transition: all ease-in-out 500ms;
+
+            &:hover {
+                color: #fff;
+                background-color: #121212;
+            }
+        }
+
+        .section-form__message {
+            height: 200px;
+        }
+
+    }
 }

@@ -3,39 +3,55 @@ import React from "react";
 const Contact: React.FC = () => {
     return (
         <section id="section-contact">
-            <div className="section-contact__header">
+            <article className="section-contact__header">
                 <h1 className="section-contact__header__title">
                     Contact
                 </h1>
                 <p className="section-contact__header__text">
                     contact me
                 </p>
-            </div>
+            </article>
 
             <form action="" className="section-contact__form">
                 <div className="section-contact__inputs">
                     <input
                         type="text"
+                        className="section-form__text"
                         name="Name"
-                        id="" />
+                        placeholder="Name"
+                        required
+                    />
 
                     <input
                         type="text"
+                        className="section-form__text"
                         name="Email"
-                        id="" />
+                        placeholder="Email"
+                        required
+                    />
                 </div>
-                    <input
-                        type="text"
-                        name="Subject"
-                        id="" />
-
-                <textarea
-                    name="Message"
-                    id=""
-
+                <input
+                    type="text"
+                    className="section-form__text"
+                    name="Subject"
+                    placeholder="Subject"
+                    required
                 />
 
-                <input type="button" value="Send" />
+                <textarea
+                    className="section-form__message"
+                    name="Message"
+                    placeholder="Description"
+                    required
+                />
+
+                <input
+                    type="submit"
+                    value="Send"
+                    id="section-from__submit"
+                    className="section-form-btn"
+                    required
+                />
             </form>
         </section>
     );
