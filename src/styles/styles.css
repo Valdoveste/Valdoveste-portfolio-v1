@@ -74,7 +74,7 @@ main section p[class*="__text"] {
   font-size: 3rem;
 }
 
-#section-home .section-home__content section-home__content__text {
+#section-home .section-home__content .section-home__content__text {
   cursor: default;
   text-align: center;
 }
