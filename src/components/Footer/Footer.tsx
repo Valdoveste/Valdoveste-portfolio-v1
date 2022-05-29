@@ -1,41 +1,17 @@
 import React from "react";
-import GitHub from '../../assets/GitHub.png';
-import LinkedIn from '../../assets/LinkedIn.png';
 
 const Footer: React.FC = () => {
     return (
         <footer id="footer">
             <ul className="footer__list">
                 <li className="footer__item">
-                    <span className="footer__brand">
-                        @nValdoveste
+                    <span className="footer__copyrights">
+                        <a href="mailto:caio.valdoveste@outlook.com.br" className="footer__copyrights__link">hi@valdoveste.com&nbsp;</a>© Valdoveste. All Rights Reserved.
                     </span>
-                </li>
-            </ul>
-
-            <ul className="footer__list">
-                <li className="footer__list__item">
-                    <a href="https://linkedin.com/in/valdoveste" className="footer__link">
-                        <img
-                            src={LinkedIn}
-                            alt="LinkedIn Logo"
-                            className="footer__link__image"
-                        />
-                    </a>
-                </li>
-
-                <li className="footer__list__item">
-                    <a href="https://github.com/Valdoveste" className="footer__link">
-                        <img
-                            src={GitHub}
-                            alt="GitHub Logo"
-                            className="footer__link__image"
-                        />
-                    </a>
                 </li>
             </ul>
         </footer>
     );
-} 
+}
 
 export default Footer;

@@ -1,28 +1,16 @@
 #footer {
-    padding: 0.5rem 0;
-    border-top: 1px solid black;
-
-    @include flexCenter(center, space-between, center);
-
     .footer__list {
+        .footer__item {
+            .footer__copyrights {
+                @include flexCenter(center, center, row);
 
-        &:first-child {
-            .footer__item .footer__brand {
-                cursor: default;
-            }
-        }
-
-        &:nth-child(even) {
-            display: flex;
-
-            .footer__list__item {
-                &:nth-child(odd) {
-                    margin: 0 1rem;
+                &,
+                a {
+                    color: #afafaf;
                 }
 
-                .footer__link__image {
-                    width: 25px;
-                    height: 25px;
+                .footer__copyrights__link:hover {
+                    color: #e4e4e4;
                 }
             }
         }
