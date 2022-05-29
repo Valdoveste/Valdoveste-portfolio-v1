@@ -1,0 +1,30 @@
+#social-midias {
+    left: 1px;
+    bottom: 2px;
+    width: 3.3rem;
+    position: sticky;
+    @include flexCenter(center, center, column);
+
+    .social-midias__list {
+        .social-midias__list__item {
+            &:nth-child(even) {
+                padding: 5px 0;
+            }
+
+            .social-midias__link__image {
+                width: 40px;
+                height: 40px;
+                // fill: #171516;
+                fill: #fff;
+                box-shadow: 4px 4px 0px #3c4043;
+                transition: all ease-in-out 500ms;
+
+                &:hover {
+                    // fill: #5c174e;
+                    fill: #3c4043;
+                    box-shadow: 5px 5px 0px #fff;
+                }
+            }
+        }
+    }
+}
