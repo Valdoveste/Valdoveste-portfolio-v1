@@ -1,24 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Modal from './components/Modal/Modal';
+// import Modal from './components/Modal/Modal';
+import Social from './components/Social/Social';
 import './styles/styles.css'
 
 function App() {
 
   return (
     <>
+      {/* <Modal></Modal> */}
       <Header></Header>
-      <Modal></Modal>
       <main>
         <Home></Home>
-        <Portfolio></Portfolio>
         <About></About>
+        <Portfolio></Portfolio>
         <Contact></Contact>
+        <Social></Social>
       </main>
       <Footer></Footer>
     </>
