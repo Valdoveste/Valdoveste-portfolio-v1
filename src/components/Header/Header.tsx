@@ -1,6 +1,7 @@
 import React from "react";
+import zap from "../../assets/zap.gif";
 
-const Header: React.FC = ()=> {
+const Header: React.FC = () => {
     return (
         <header id="header">
             <nav className="header__navbar">
@@ -9,7 +10,7 @@ const Header: React.FC = ()=> {
                     <li className="header__navbar__item">
                         <a href="#section-home"
                             className="header__navbar__brand">
-                            nValdoveste
+                            <img src={zap} alt="" className="header__navbar__brand__image"/>
                         </a>
                     </li>
                 </ul>
