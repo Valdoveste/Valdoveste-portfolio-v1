@@ -1,3 +1,44 @@
 #section-about {
 
+    .section-about__content {
+        height: 100%;
+    }
+
+    .section-about__text {
+        // width: 50%;
+        padding-right: 2rem;
+    }
+
+    @include flexCenter(center, space-between, row);
+
+    @import '../../styles/cards';
+
+    #card-container {
+        width: 600px;
+        gap: 0px;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+
+        .card {
+            border: none;
+            height: 125px;
+            box-shadow: none;
+            border-radius: 0;
+            background-color: #171717;
+
+            .card__overlay {
+                &:hover~.card__content .card__content__text {
+                    color: #4527A0;
+                }
+            }
+
+            .card__content {
+                & .card__content__text {
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+    }
+
 }
