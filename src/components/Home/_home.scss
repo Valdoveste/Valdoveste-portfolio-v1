@@ -1,3 +1,27 @@
-#section-home{
+#section-home {
+    position: relative;
+    padding: 0 !important;
 
+    .section-home__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section-home__content {
+        top: 30%;
+        left: 50%;
+        z-index: 8;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        .section-home__content__title {
+            font-size: 3rem;
+        }
+
+        section-home__content__text {
+            cursor: default;
+            text-align: center;
+        }
+    }
 }
