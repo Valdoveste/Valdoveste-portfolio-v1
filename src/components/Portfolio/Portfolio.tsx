@@ -7,15 +7,33 @@ const Portfolio: React.FC = () => {
             return (
                 <article className="card" key={card.id}>
                     <span className="card__overlay">
-                        <a href={card.url} target={"_blank"}></a>
+                        <a href={card.url} target={"_blank"} rel="noreferrer">
+                            <span></span>
+                        </a>
                     </span>
                     <div className="card__content">
                         <img src={card.logo} alt={card.logo_alt} className="card__content__image" />
+                        <div className="card__content__info">
+                            <h1 className="card__content__title">Nebulum</h1>
+                            <p className="card__content__text">{card.projec_desc}</p>
+                            <div className="card__content__technologies">
+                                <ul className="card__content__technologies__list">
+                                    <li>JavaScript</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>SASS</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </article>
             );
         });
     }
+
+    // const handleClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+    //     console.log(e.target);
+    // }
 
     return (
         <section id="section-portfolio">

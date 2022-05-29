@@ -1,10 +1,13 @@
 #section-portfolio {
-    overflow-y: scroll;
-    
-    .section-portfolio__text{
+    // overflow-y: scroll;
+    height: auto;
+    padding-bottom: 65px;
+
+    .section-portfolio__text {
         width: 50%;
         margin-bottom: 2rem;
     }
 
-    @import './_cards';
+    @import '../../styles/cards';
+
 }
