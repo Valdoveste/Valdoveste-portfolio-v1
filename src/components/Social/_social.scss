@@ -2,7 +2,7 @@
     left: 1px;
     bottom: 2px;
     width: 3.3rem;
-    position: sticky;
+    position: fixed;
     @include flexCenter(center, center, column);
 
     .social-midias__list {
