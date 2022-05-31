@@ -1,4 +1,7 @@
 #section-about {
+    height: auto;
+    min-height: 100vh;
+    overflow: scroll;
 
     .section-about__content {
         height: 100%;
@@ -9,7 +12,7 @@
         padding-right: 2rem;
     }
 
-    @include flexCenter(center, space-between, row);
+    // @include flexCenter(default, default, column);
 
     @import '../../styles/cards';
 
@@ -41,4 +44,17 @@
 
     }
 
+}
+
+
+@media only screen and (max-width: 500px) {
+    #section-about {
+        .section-about__title {
+            width: min-content;
+        }
+
+        .section-about__text {
+            width: 100%;
+        }
+    }
 }
