@@ -1,19 +1,19 @@
 import React from "react";
-import { AboutCards } from "../../cards";
+// import { AboutCards } from "../../cards";
 
 const About: React.FC = () => {
-    const renderCards = (): JSX.Element[] => {
-        return AboutCards.map((card) => {
-            return (
-                <article className="card" key={card.id}>
-                    <span className="card__overlay"></span>
-                    <div className="card__content">
-                        <p className="card__content__text">{card.text}</p>
-                    </div>
-                </article>
-            );
-        });
-    }
+    // const renderCards = (): JSX.Element[] => {
+    //     return AboutCards.map((card) => {
+    //         return (
+    //             <article className="card" key={card.id}>
+    //                 <span className="card__overlay"></span>
+    //                 <div className="card__content">
+    //                     <p className="card__content__text">{card.text}</p>
+    //                 </div>
+    //             </article>
+    //         );
+    //     });
+    // }
 
     return (
         <section id="section-about">
@@ -27,9 +27,34 @@ const About: React.FC = () => {
                 </p>
 
             </article>
-                <div id="card-container">
-                    {renderCards()}
+
+            <div id="panda">
+                <div className="scene2">
+                    <div className="box show-bottom">
+                        <div className="box__face box__face--front"></div>
+                        <div className="box__face box__face--back"></div>
+                        <div className="box__face box__face--right">right</div>
+                        <div className="box__face box__face--left"></div>
+                        <div className="box__face box__face--top">top</div>
+                        <div className="box__face box__face--bottom"></div>
+                    </div>
                 </div>
+                <div className="scene">
+                    <div className="box show-bottom">
+                        <div className="box__face box__face--front"></div>
+                        <div className="box__face box__face--back">
+                        </div>
+                        <div className="box__face box__face--right">right</div>
+                        <div className="box__face box__face--left"></div>
+                        <div className="box__face box__face--top">top</div>
+                        <div className="box__face box__face--bottom"></div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <div id="card-container">
+                    {renderCards()}
+                </div> */}
         </section>
     );
 }
