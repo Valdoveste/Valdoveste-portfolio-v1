@@ -1,5 +1,4 @@
 #section-portfolio {
-    // overflow-y: scroll;
     height: auto;
     padding-bottom: 65px;
 
@@ -9,4 +8,12 @@
     }
 
     @import '../../styles/cards';
+}
+
+@media only screen and (max-width: 500px) {
+    #section-portfolio {
+        .section-portfolio__text {
+            width: 100%;
+        }
+    }    
 }
