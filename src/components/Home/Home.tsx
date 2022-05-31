@@ -11,7 +11,11 @@ const Home: React.FC = () => {
             </video>
             <article className="section-home__content">
                 <h1 className="section-home__content__title">
-                    Hi, I'm Valdoveste
+                    Hi,
+                </h1>
+                
+                <h1 className="section-home__content__title">
+                    I'm Valdoveste
                 </h1>
                 <p className="section-home__content__text">
                     FullStack Developer
