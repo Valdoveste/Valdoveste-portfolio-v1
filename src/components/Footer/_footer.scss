@@ -1,5 +1,6 @@
 #footer {
     margin-top: 2.5rem;
+
     .footer__list {
         .footer__item {
             .footer__copyrights {
@@ -18,14 +19,14 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
     #footer {
         .footer__list {
             .footer__item {
                 .footer__copyrights {
                     @include flexCenter(center, center, column);
-                    }
                 }
             }
         }
+    }
 }
