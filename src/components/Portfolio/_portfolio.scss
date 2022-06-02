@@ -8,6 +8,9 @@
     }
 
     @import '../../styles/cards';
+
+    @import '../../Effects/fadedBirectional';
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -15,5 +18,13 @@
         .section-portfolio__text {
             width: 100%;
         }
-    }    
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #section-portfolio {
+        .section-portfolio__text {
+            width: 100%;
+        }
+    }
 }
