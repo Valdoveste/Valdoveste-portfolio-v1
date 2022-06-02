@@ -14,13 +14,11 @@
             .social-midias__link__image {
                 width: 40px;
                 height: 40px;
-                // fill: #171516;
                 fill: #fff;
                 box-shadow: 4px 4px 0px #3c4043;
                 transition: all ease-in-out 500ms;
 
                 &:hover {
-                    // fill: #5c174e;
                     fill: #3c4043;
                     box-shadow: 5px 5px 0px #fff;
                 }
