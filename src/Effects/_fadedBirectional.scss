@@ -1,11 +1,9 @@
-#card-container {
-    overflow: hidden;
-    .card--fadetoleft{
-        animation: fadeToLeft 2s;
-    }
-    .card--fadetoright{
-        animation: fadetoright 2s;
-    }
+.--fadetoleft {
+    animation: fadeToLeft 2s;
+}
+
+.--fadetoright {
+    animation: fadetoright 2s;
 }
 
 @keyframes fadeToLeft {
