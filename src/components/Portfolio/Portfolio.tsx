@@ -1,11 +1,15 @@
 import React from "react";
 import PortfolioCards from '../../cards'
+import fadeBidirectional from "../../Effects/FadeBirectional";
+
 
 const Portfolio: React.FC = () => {
+    window.addEventListener("load", fadeBidirectional);
+    
     const renderCards = (): JSX.Element[] => {
         return PortfolioCards.map((card) => {
             return (
-                <article className="card" key={card.id}>
+                <div className="card" id={card.id.toString()} key={card.id}>
                     <span className="card__overlay">
                         <a href={card.url} target={"_blank"} rel="noreferrer">
                             <span></span>
@@ -26,14 +30,10 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                </article>
+                </div>
             );
         });
     }
-
-    // const handleClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-    //     console.log(e.target);
-    // }
 
     return (
         <section id="section-portfolio">
@@ -52,6 +52,7 @@ const Portfolio: React.FC = () => {
             </article>
         </section>
     );
+
 }
 
 export default Portfolio;
