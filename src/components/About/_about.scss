@@ -1,18 +1,12 @@
 #section-about {
     height: auto;
-    min-height: 100vh;
     overflow: scroll;
+    min-height: 100vh;
+    padding-bottom: 65px;
 
     .section-about__content {
         height: 100%;
     }
-
-    .section-about__text {
-        // width: 50%;
-        padding-right: 2rem;
-    }
-
-    // @include flexCenter(default, default, column);
 
     @import '../../styles/cards';
 
