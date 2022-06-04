@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
                     Contact
                 </h1>
                 <p className="section-contact__header__text">
-                    
+                    Text
                 </p>
             </article>
 
