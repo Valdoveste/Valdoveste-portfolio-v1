@@ -1,5 +1,6 @@
 export default function fadeBidirectional() {
     const cards = document.querySelectorAll('.card')!;
+    const cardsOverlay = document.querySelectorAll('.card__overlay')!;
 
     const observer = new IntersectionObserver((entries) => {
 
@@ -22,5 +23,15 @@ export default function fadeBidirectional() {
 
     cards.forEach(card => {
         observer.observe(card)
+
+        card.addEventListener("animationend", (e) => {
+            card.classList.add("card_hover");
+
+            cardsOverlay.forEach(cardO => {
+                cardO.classList.add("card_hover");
+            })
+
+        })
     })
+
 }
