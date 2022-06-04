@@ -1,48 +1,56 @@
 #section-about {
     height: auto;
-    overflow: scroll;
-    min-height: 100vh;
-    padding-bottom: 65px;
+    overflow: hidden;
+    @include flexCenter(center, space-between, row);
 
     .section-about__content {
+        z-index: 1;
         height: 100%;
-    }
+        align-self: baseline;
 
-    @import '../../styles/cards';
+        .section-about__technologies {
+            margin: 2.5rem 0;
+            @include flexCenter(center, default, row);
 
-    #card-container {
-        width: 600px;
-        gap: 0px;
-        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-
-        .card {
-            border: none;
-            height: 125px;
-            box-shadow: none;
-            border-radius: 0;
-            background-color: #171717;
-
-            .card__overlay {
-                &:hover~.card__content .card__content__text {
-                    color: #4527A0;
+            .section-about__technologies__list {
+                &:first-child {
+                    margin-right: 10rem;
                 }
-            }
 
-            .card__content {
-                & .card__content__text {
+                .technologies__item {
+                    cursor: pointer;
                     font-weight: bold;
+                    transition: all ease-in-out 500ms;
+                    text-shadow: 4px 4px 0px #3c4043;
+
+                    &:hover {
+                        color: #3c4043c4;
+                        text-shadow: 5px 5px 0px #fff;
+                    }
                 }
             }
 
         }
-
     }
+
+    @import './fakeTesserect';
 
 }
 
 
 @media only screen and (max-width: 500px) {
     #section-about {
+        flex-direction: column;
+
+        .section-about__content {
+            .section-about__technologies {
+                @include flexCenter(center, space-between, row);
+                .section-about__technologies__list:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
         .section-about__title {
             width: min-content;
         }
@@ -52,3 +60,5 @@
         }
     }
 }
+
+@media only screen and (max-width: 850px) {}
