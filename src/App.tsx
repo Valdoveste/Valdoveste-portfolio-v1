@@ -10,15 +10,14 @@ import Social from './components/Social/Social';
 import './styles/styles.css'
 
 function App() {
-
   return (
     <>
       {/* <Modal></Modal> */}
       <Header></Header>
       <main>
         <Home></Home>
-        <About></About>
         <Portfolio></Portfolio>
+        <About></About>
         <Contact></Contact>
         <Social></Social>
       </main>
