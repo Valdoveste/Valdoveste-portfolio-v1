@@ -1,5 +1,8 @@
 import React from "react";
 import zap from "../../assets/zap.gif";
+import hideAndShowHeader from "../../Effects/HideShowHeader";
+
+window.addEventListener("load", hideAndShowHeader);
 
 const Header: React.FC = () => {
     return (
