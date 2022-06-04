@@ -1,4 +1,4 @@
-$margin-page: 3.5rem;
+$margin-page: 5rem;
 
 * {
     margin: 0;
@@ -34,16 +34,20 @@ footer {
 
 main {
 
+    #section-about,
+    #section-portfolio {
+        padding-bottom: 65px;
+    }
+
     #section-home,
     #section-portfolio,
     #section-about {
-        // border-radius: 5px;
         box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.200);
     }
 
     section {
         height: 100vh;
-        padding-top: 15px;
+        padding-top: 65px;
 
         h1[class*="__title"] {
             cursor: default;
