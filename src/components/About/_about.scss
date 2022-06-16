@@ -1,18 +1,18 @@
-#section-about {
+#about {
     height: auto;
     overflow: hidden;
     @include flexCenter(center, space-between, row);
 
-    .section-about__content {
+    .about__content {
         z-index: 1;
         height: 100%;
         align-self: baseline;
 
-        .section-about__technologies {
-            margin: 2.5rem 0;
+        .about__technologies {
+            margin-top: 3.5rem;
             @include flexCenter(center, default, row);
 
-            .section-about__technologies__list {
+            .about__technologies__list {
                 &:first-child {
                     margin-right: 10rem;
                 }
@@ -39,23 +39,23 @@
 
 
 @media only screen and (max-width: 500px) {
-    #section-about {
+    #about {
         flex-direction: column;
 
-        .section-about__content {
-            .section-about__technologies {
+        .about__content {
+            .about__technologies {
                 @include flexCenter(center, space-between, row);
-                .section-about__technologies__list:first-child {
+                .about__technologies__list:first-child {
                     margin-right: 0;
                 }
             }
         }
 
-        .section-about__title {
+        .about__title {
             width: min-content;
         }
 
-        .section-about__text {
+        .about__text {
             width: 100%;
         }
     }

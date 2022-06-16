@@ -1,24 +1,27 @@
-#section-home {
+#home {
     position: relative;
     padding: 0 !important;
     box-shadow: none !important;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
 
-    .section-home__image {
+    .home__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .section-home__content {
+    .home__content {
         top: 30%;
         left: 50%;
         z-index: 8;
         position: absolute;
         transform: translate(-50%, -50%);
 
-        .section-home__content__title {
+        .home__content__title {
             margin-top: 0 !important;
-            font-size: 3rem;
+            font-size: 3.5rem;
             float: left;
 
             &:first-child {
@@ -26,7 +29,7 @@
             }
         }
 
-        .section-home__content__text {
+        .home__content__text {
             cursor: default;
             text-align: center;
         }
@@ -34,11 +37,11 @@
 }
 
 @media only screen and (max-width: 850px) {
-    #section-home {
-        .section-home__content {
+    #home {
+        .home__content {
             @include flexCenter(center, center, column);
 
-            .section-home__content__title {
+            .home__content__title {
                 &:nth-child(even) {
                     width: max-content !important;
                 }
@@ -49,11 +52,11 @@
 }
 
 @media only screen and (max-width: 500px) {
-    #section-home {
-        .section-home__content {
+    #home {
+        .home__content {
             @include flexCenter(center, center, column);
 
-            .section-home__content__title {
+            .home__content__title {
                 &:nth-child(even) {
                     width: max-content !important;
                 }

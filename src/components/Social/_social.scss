@@ -1,6 +1,6 @@
 #social-midias {
-    left: 12px;
-    bottom: 2px;
+    left: 1px;
+    bottom: 5px;
     width: 3.3rem;
     position: fixed;
     @include flexCenter(center, center, column);
@@ -21,6 +21,19 @@
                 &:hover {
                     fill: #3c4043;
                     box-shadow: 5px 5px 0px #fff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #social-midias {
+        .social-midias__list {
+            .social-midias__list__item {
+                .social-midias__link__image {
+                    width: 32px;
+                    height: 32px;
                 }
             }
         }
