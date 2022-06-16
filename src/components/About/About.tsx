@@ -2,18 +2,18 @@ import React from "react";
 
 const About: React.FC = () => {
     return (
-        <section id="section-about">
-            <article className="section-about__content">
-                <h1 className="section-about__title">
+        <section id="about">
+            <article className="about__content">
+                <h1 className="about__title">
                     My About
                 </h1>
-                <p className="section-about__text">
+                <p className="about__text">
                     A small collection of my recent projects there were all selected by me.
                     Most of them I've done with the help of incredible people.
                 </p>
 
-                <div className="section-about__technologies">
-                    <ul className="section-about__technologies__list">
+                <div className="about__technologies">
+                    <ul className="about__technologies__list">
                         <li className="technologies__item">JavaScript</li>
                         <li className="technologies__item">HTML</li>
                         <li className="technologies__item">CSS</li>
@@ -21,7 +21,7 @@ const About: React.FC = () => {
                         <li className="technologies__item">React</li>
                         <li className="technologies__item">TypeScript</li>
                     </ul>
-                    <ul className="section-about__technologies__list">
+                    <ul className="about__technologies__list">
                         <li className="technologies__item">NodeJS</li>
                         <li className="technologies__item">PHP</li>
                         <li className="technologies__item">SQL</li>
