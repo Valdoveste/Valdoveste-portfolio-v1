@@ -1,9 +1,8 @@
-#section-portfolio {
+#portfolio {
     height: auto;
 
-    .section-portfolio__text {
-        width: 50%;
-        margin-bottom: 2rem;
+    .portfolio__text {
+        margin-bottom: 3.5rem;
     }
 
     @import '../../styles/cards';
@@ -13,16 +12,21 @@
 }
 
 @media only screen and (max-width: 500px) {
-    #section-portfolio {
-        .section-portfolio__text {
+    #portfolio {
+
+        .portfolio__title {
+            width: min-content;
+        }
+
+        .portfolio__text {
             width: 100%;
         }
     }
 }
 
 @media only screen and (max-width: 850px) {
-    #section-portfolio {
-        .section-portfolio__text {
+    #portfolio {
+        .portfolio__text {
             width: 100%;
         }
     }

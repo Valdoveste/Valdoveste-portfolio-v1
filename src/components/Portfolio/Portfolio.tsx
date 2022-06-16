@@ -5,7 +5,7 @@ import fadeBidirectional from "../../Effects/FadeBirectional";
 
 const Portfolio: React.FC = () => {
     window.addEventListener("load", fadeBidirectional);
-    
+
     const renderCards = (): JSX.Element[] => {
         return PortfolioCards.map((card) => {
             return (
@@ -36,14 +36,16 @@ const Portfolio: React.FC = () => {
     }
 
     return (
-        <section id="section-portfolio">
+        <section id="portfolio">
             <article>
-                <h1 className="section-portfolio__title">
+                <h1 className="portfolio__title">
                     My Portfolio
                 </h1>
-                <p className="section-portfolio__text">
-                    A small collection of my recent projects there were all selected by me.
-                    Most of them I've done with the help of incredible people.
+                <p className="portfolio__text">
+                    Here is a small collection of projects that I've worked on recently.
+                    Always that's possible I like to come back and rework some of the
+                    aspects of these projects refactoring codes, making better layouts,
+                    and improving the design.
                 </p>
 
                 <div id="card-container">
