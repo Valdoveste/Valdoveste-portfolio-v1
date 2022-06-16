@@ -128,27 +128,90 @@
 
   @keyframes outter {
     0% {
-      transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+      transform: translateZ(-50px) rotateY(21.18deg) rotateX(21.18deg) rotateZ(21.18deg);
+    }
+
+    5% {
+      transform: translateZ(-50px) rotateY(42.36deg) rotateX(42.36deg) rotateZ(42.36deg);
+    }
+
+    10% {
+      transform: translateZ(-50px) rotateY(63.54deg) rotateX(63.54deg) rotateZ(63.54deg);
+
+    }
+
+    15% {
+      transform: translateZ(-50px) rotateY(84.72deg) rotateX(84.72deg) rotateZ(84.72deg);
+
     }
 
     20% {
-      transform: translateZ(-50px) rotateY(72deg) rotateX(72deg) rotateZ(72deg)
+      transform: translateZ(-50px) rotateY(105.9deg) rotateX(105.9deg) rotateZ(105.9deg);
+
+    }
+
+    25% {
+      transform: translateZ(-50px) rotateY(127.8deg) rotateX(127.8deg) rotateZ(127.8deg);
+
+    }
+
+    30% {
+      transform: translateZ(-50px) rotateY(148.26deg) rotateX(148.26deg) rotateZ(148.26deg);
+
+    }
+
+    35% {
+      transform: translateZ(-50px) rotateY(169.44deg) rotateX(169.44deg) rotateZ(169.44deg);
+
     }
 
     40% {
-      transform: translateZ(-50px) rotateY(144deg) rotateX(144deg) rotateZ(144deg)
+      transform: translateZ(-50px) rotateY(190.62deg) rotateX(190.62deg) rotateZ(190.62deg);
+
+    }
+
+    45% {
+      transform: translateZ(-50px) rotateY(211.8deg) rotateX(211.8deg) rotateZ(211.8deg);
+
+    }
+
+    50% {
+      transform: translateZ(-50px) rotateY(232.98deg) rotateX(232.98deg) rotateZ(232.98deg);
+
+    }
+
+    55% {
+      transform: translateZ(-50px) rotateY(254.16deg) rotateX(254.16deg) rotateZ(254.16deg);
+
     }
 
     60% {
-      transform: translateZ(-50px) rotateY(216deg) rotateX(216deg) rotateZ(216deg)
+      transform: translateZ(-50px) rotateY(275.34deg) rotateX(275.34deg) rotateZ(275.34deg);
+
+    }
+
+    65% {
+      transform: translateZ(-50px) rotateY(296.52deg) rotateX(296.52deg) rotateZ(296.52deg);
+    }
+
+    70% {
+      transform: translateZ(-50px) rotateY(317.7deg) rotateX(317.7deg) rotateZ(317.7deg);
+
+    }
+
+    75% {
+      transform: translateZ(-50px) rotateY(338.88deg) rotateX(338.88deg) rotateZ(338.88deg);
+
     }
 
     80% {
-      transform: translateZ(-50px) rotateY(288deg) rotateX(288deg) rotateZ(288deg)
+      transform: translateZ(-50px) rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+
     }
 
     100% {
-      transform: translateZ(-50px) rotateY(360deg) rotateX(360deg) rotateZ(0deg);
+      transform: translateZ(-50px) rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+
     }
 
   }
