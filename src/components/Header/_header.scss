@@ -2,10 +2,10 @@
     top: 0;
     z-index: 9;
     width: 100%;
+    height: auto;
     position: fixed;
     overflow: hidden;
     background-color: #1c1c1c;
-    transition: height ease-in-out 200ms;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
 
     #menuCheck {
@@ -16,15 +16,21 @@
         height: 55px;
         overflow: hidden;
         padding: 0.5rem 1rem;
-        transition: all 500ms;
+        transition: all ease-in-out 200ms;
         @include flexCenter(center, space-between, row);
 
         &.scroll-down {
-            height: 0px;
-            padding: 0rem 1rem;
+            height: 0px !important;
+            padding: 0rem 1rem !important;
         }
 
         .header__navbar__list {
+
+            .header__navbar__brand {
+                font-size: 3rem;
+                font-weight: bold;
+                text-shadow: 2px 5px 2px #4527a0;
+            }
 
             .header__navbar__brand__image {
                 width: 45px;
@@ -40,14 +46,14 @@
                         @include flexCenter(center, center, row);
 
                         .header__navbar__svg {
-                            width: 45px;
-                            height: 45px;
+                            width: 40px;
+                            height: 40px;
                         }
                     }
                 }
             }
 
-            &:last-child {
+            &:nth-child(2) {
                 @include flexCenter(center, center, row);
 
                 .header__navbar__item {
@@ -74,14 +80,27 @@
 
             }
 
+            &:nth-child(3) {
+                display: none;
+            }
+
         }
     }
 }
 
 @media only screen and (max-width: 500px) {
     #header {
-
         #menuCheck {
+
+            &~.header__navbar {
+                .header__navbar__svg--front {
+                    fill: #fff;
+                }
+
+                .header__navbar__svg--back {
+                    fill: #3c4043;
+                }
+            }
 
             &:checked {
 
@@ -96,23 +115,23 @@
                 }
 
                 &~.header__navbar {
-                    height: 170px !important;
+                    padding: 1.5rem;
+                    height: 300px;
                 }
             }
 
         }
 
         .header__navbar {
-            padding: 0.5rem 0rem 0rem 0rem;
+            height: 65px;
+            padding: 1rem;
             flex-direction: column;
 
             .header__navbar__list {
 
                 &:first-child {
                     width: 100%;
-                    padding: 0 1rem;
                     position: relative;
-                    // border-bottom: 1px solid #343638;
                     @include flexCenter(center, space-between, row);
 
                     .header__navbar__item:last-child {
@@ -146,21 +165,19 @@
                     }
                 }
 
-                &:last-child {
+                &:nth-child(2) {
                     width: 100%;
-                    // display: none;
                     flex-direction: column;
-
-                    .header__navbar__item:nth-child(even) {
-                        border-top: 1px solid #343638;
-                        border-bottom: 1px solid #343638;
-                    }
 
                     .header__navbar__item,
                     .header__navbar__link {
                         width: 100%;
                         display: block;
-                        text-align: center;
+                    }
+
+                    .header__navbar__item {
+                        padding: 1rem 1rem 1rem 0rem;
+                        border-bottom: 1px solid #343638;
                     }
 
                     .header__navbar__link {

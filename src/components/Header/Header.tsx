@@ -14,7 +14,8 @@ const Header: React.FC = () => {
                     <li className="header__navbar__item">
                         <a href="#section-home"
                             className="header__navbar__brand">
-                            <img src={zap} alt="" className="header__navbar__brand__image" />
+                            {/* <img src={zap} alt="" className="header__navbar__brand__image" /> */}
+                            {/* V */}
                         </a>
                     </li>
                     <li className="header__navbar__item">
@@ -31,21 +32,21 @@ const Header: React.FC = () => {
 
                 <ul className="header__navbar__list">
                     <li className="header__navbar__item">
-                        <a href="#section-about"
+                        <a href="/#about"
                             className="header__navbar__link">
                             About
                         </a>
                     </li>
 
                     <li className="header__navbar__item">
-                        <a href="#section-portfolio"
+                        <a href="/#portfolio"
                             className="header__navbar__link">
                             Portfolio
                         </a>
                     </li>
 
                     <li className="header__navbar__item">
-                        <a href="#section-contact"
+                        <a href="/#contact"
                             className="header__navbar__link">
                             Contact
                         </a>
