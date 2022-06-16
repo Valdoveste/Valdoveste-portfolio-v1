@@ -2,21 +2,23 @@ import React from "react";
 
 const Contact: React.FC = () => {
     return (
-        <section id="section-contact">
-            <article className="section-contact__header">
-                <h1 className="section-contact__header__title">
+        <section id="contact">
+            <article className="contact__header">
+                <h1 className="contact__header__title">
                     Contact
                 </h1>
-                <p className="section-contact__header__text">
-                    Text
+                <p className="contact__header__text">
+                    Thanks for making it all the way here.
+                    I'm open to job opportunities, so feel free to contact me.
+                    Whether you have any questions or just want to say hello, I'll do my best to reach out.
                 </p>
             </article>
 
-            <form action="" className="section-contact__form">
-                <div className="section-contact__inputs">
+            <form action="" className="contact__form">
+                <div className="contact__inputs">
                     <input
                         type="text"
-                        className="section-form__text"
+                        className="form__text"
                         name="Name"
                         placeholder="Name"
                         required
@@ -24,7 +26,7 @@ const Contact: React.FC = () => {
 
                     <input
                         type="text"
-                        className="section-form__text"
+                        className="form__text"
                         name="Email"
                         placeholder="Email"
                         required
@@ -32,14 +34,14 @@ const Contact: React.FC = () => {
                 </div>
                 <input
                     type="text"
-                    className="section-form__text"
+                    className="form__text"
                     name="Subject"
                     placeholder="Subject"
                     required
                 />
 
                 <textarea
-                    className="section-form__message"
+                    className="form__message"
                     name="Message"
                     placeholder="Description"
                     required
@@ -48,8 +50,8 @@ const Contact: React.FC = () => {
                 <input
                     type="submit"
                     value="Send"
-                    id="section-from__submit"
-                    className="section-form-btn"
+                    id="from__submit"
+                    className="form-btn"
                     required
                 />
             </form>

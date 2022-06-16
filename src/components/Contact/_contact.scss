@@ -1,18 +1,25 @@
-#section-contact {
+#contact {
     height: auto !important;
     @include flexCenter(center, space-evenly, column);
 
-    .section-contact__header .section-contact__header__text {
-        text-align: center;
+    .contact__header {
+        & .contact__header__title {
+            text-align: center;
+        }
+
+        & .contact__header__text{
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
     }
 
-    .section-contact__form {
+    .contact__form {
         width: 100%;
         max-width: 800px;
         margin-top: 15px;
         @include flexCenter(center, default, column);
 
-        .section-contact__inputs {
+        .contact__inputs {
             width: 100%;
             display: flex;
 
@@ -21,9 +28,9 @@
             }
         }
 
-        .section-form__text,
-        .section-form__message,
-        #section-from__submit {
+        .form__text,
+        .form__message,
+        #from__submit {
             width: 100%;
             height: 60px;
             padding: 15px;
@@ -33,7 +40,7 @@
             background-color: #171717;
         }
 
-        #section-from__submit {
+        #from__submit {
             cursor: pointer;
             font-size: 1rem;
             transition: all ease-in-out 500ms;
@@ -44,7 +51,7 @@
             }
         }
 
-        .section-form__message {
+        .form__message {
             height: 200px;
         }
 
@@ -52,14 +59,18 @@
 }
 
 @media only screen and (max-width: 500px) {
-    #section-contact {
-        .section-contact__form {
+    #contact {
+        .contact__form {
 
-            .section-form__text{
+            .form__text {
                 font-size: 1rem
             }
 
-            .section-contact__inputs {
+            .contact__inputs {
+                & input:nth-child(even) {
+                    margin-left: 0;
+                }
+
                 @include flexCenter(center, center, column);
             }
         }
