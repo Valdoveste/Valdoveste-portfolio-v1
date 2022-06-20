@@ -13,6 +13,7 @@
             @include flexCenter(center, default, row);
 
             .about__technologies__list {
+                height: 100%;
                 &:first-child {
                     margin-right: 10rem;
                 }

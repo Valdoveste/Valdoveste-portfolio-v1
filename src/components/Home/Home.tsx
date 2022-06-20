@@ -3,10 +3,10 @@ import IntroG from "../../assets/IntroG.gif";
 // import Intro from "../../assets/IntroV.mp4";
 
 const Home: React.FC = () => {
-    
-    
+
+
     return (
-        <section id="home" style={{backgroundImage: `url(${IntroG})`}}>
+        <section id="home" style={{ backgroundImage: `url(${IntroG})` }}>
             {/* <img src={IntroG} loading="lazy" alt="a" className="home__image"/> */}
             {/* <video key={1} className="home__image" controls>
                 <source src={Intro} type="video/mp4"></source>
@@ -19,7 +19,11 @@ const Home: React.FC = () => {
                 </h1>
 
                 <h1 className="home__content__title">
-                    I'm Valdoveste
+                    I'm
+                    &nbsp;
+                    <span>
+                        Valdoveste
+                    </span>
                 </h1>
                 <p className="home__content__text">
                     FullStack Developer

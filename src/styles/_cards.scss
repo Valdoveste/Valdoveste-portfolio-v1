@@ -1,12 +1,12 @@
 #card-container {
-    gap: 5px;
+    gap: 15px;
     display: grid;
     padding: 0.5rem;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-columns: repeat(3, minmax(10%, 1fr));
 
     .card {
-        height: 450px;
+        // height: 400px;
         margin: 0 auto;
         max-width: 800px;
         overflow: hidden;
@@ -21,9 +21,9 @@
             transform: scale(1.1);
         }
 
-        &:nth-child(even) {
-            margin: 2rem auto;
-        }
+        // &:nth-child(even) {
+        //     margin: 2rem auto;
+        // }
 
         .card__overlay {
             z-index: 7;

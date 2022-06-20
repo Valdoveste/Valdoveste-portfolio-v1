@@ -3,10 +3,26 @@
     bottom: 5px;
     width: 3.3rem;
     position: fixed;
+    transition: bottom ease-in-out 500ms;
     @include flexCenter(center, center, column);
 
     .social-midias__list {
+
+        .fall {
+            top: none;
+            bottom: 10px;
+        }
+
         .social-midias__list__item {
+            transform: scale(0.1);
+            opacity: 0;
+            transition: transform ease-in-out 250ms;
+
+            &.pop {
+                opacity: 1;
+                transform: scale(1);
+            }
+
             &:nth-child(even) {
                 padding: 5px 0;
             }

@@ -8,26 +8,34 @@ const About: React.FC = () => {
                     My About
                 </h1>
                 <p className="about__text">
-                    A small collection of my recent projects there were all selected by me.
-                    Most of them I've done with the help of incredible people.
+                    Olá, me chamo Caio Valdoveste e eu gosto de desafios desde que
+                    tive meu primeiro contato com programação em 2019 fiquei fascinado
+                    com o quanto essa área é váriada, então após algum tempo realizando pequenos
+                    projetos em outras linguagens. Tive meu primeiro contato com WEB onde percebi que 
+                    tinha um apreço pela construção não apenas das funcionalidade mas também pelo como 
+                    o conteudo era apresentado para o usuário.
+                </p>
+                
+                <p className="about__text">
+
                 </p>
 
                 <div className="about__technologies">
                     <ul className="about__technologies__list">
+                        <li className="technologies__item">Familiar</li>
                         <li className="technologies__item">JavaScript</li>
                         <li className="technologies__item">HTML</li>
                         <li className="technologies__item">CSS</li>
                         <li className="technologies__item">SASS</li>
                         <li className="technologies__item">React</li>
-                        <li className="technologies__item">TypeScript</li>
                     </ul>
                     <ul className="about__technologies__list">
+                        <li className="technologies__item">Não tão familiar</li>
+                        <li className="technologies__item">TypeScript</li>
                         <li className="technologies__item">NodeJS</li>
-                        <li className="technologies__item">PHP</li>
-                        <li className="technologies__item">SQL</li>
-                        <li className="technologies__item">C</li>
-                        <li className="technologies__item">Git</li>
-                        <li className="technologies__item">GitFlow</li>
+                    </ul>
+                    <ul className="about__technologies__list">
+                        <li className="technologies__item">Pretendo aprender</li>
                     </ul>
                 </div>
 

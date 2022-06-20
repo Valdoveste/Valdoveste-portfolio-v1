@@ -20,9 +20,24 @@
         transform: translate(-50%, -50%);
 
         .home__content__title {
-            margin-top: 0 !important;
-            font-size: 3.5rem;
             float: left;
+            font-size: 3.5rem;
+            margin-top: 0 !important;
+
+            & span {
+                background: linear-gradient(to right, white, purple, white);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 1.5s linear;
+                display: inline-block;
+                text-shadow: none;
+            }
 
             &:first-child {
                 margin-right: 1rem;
@@ -35,6 +50,12 @@
         }
     }
 }
+
+@keyframes textclip {
+	to {
+		background-position: -200% center;
+	}
+}   
 
 @media only screen and (max-width: 850px) {
     #home {
