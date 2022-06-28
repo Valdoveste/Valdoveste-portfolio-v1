@@ -5,21 +5,34 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-// import Modal from './components/Modal/Modal';
-import Social from './components/Social/Social';
 import './styles/styles.css'
+
+window.addEventListener("load", (e) => {
+  const cards = document.querySelectorAll('section')!;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        let target = entry.target;
+        if (!target.classList.contains('--fadeinup') && target.id !== "home")
+          target.classList.add('--fadeinup');
+      }
+    });
+  });
+
+  cards.forEach(card => {
+    observer.observe(card)
+  })
+})
 
 function App() {
   return (
     <>
-      {/* <Modal></Modal> */}
       <Header></Header>
       <main>
         <Home></Home>
         <Portfolio></Portfolio>
         <About></About>
         <Contact></Contact>
-        <Social></Social>
       </main>
       <Footer></Footer>
     </>
