@@ -1,26 +1,26 @@
 #about {
-    height: auto;
     overflow: hidden;
     @include flexCenter(center, space-between, row);
 
     .about__content {
         z-index: 1;
-        height: 100%;
-        align-self: baseline;
+        align-self: flex-start;
+
+        .about__text {
+            margin-bottom: 1.25rem;
+        }
 
         .about__technologies {
             margin-top: 3.5rem;
-            @include flexCenter(center, default, row);
+            @include flexCenter(default, space-between, row);
 
             .about__technologies__list {
                 height: 100%;
-                &:first-child {
-                    margin-right: 10rem;
-                }
 
                 .technologies__item {
                     cursor: pointer;
                     font-weight: bold;
+                    position: relative;
                     transition: all ease-in-out 500ms;
                     text-shadow: 4px 4px 0px #3c4043;
 
@@ -34,26 +34,39 @@
         }
     }
 
-    @import './fakeTesserect';
+    @import '../Cube/_cube';
 
 }
 
+@media only screen and (max-width: 1280px){
+    #about{
+        height: auto;
+    }
+}
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 100px) and (max-width: 850px) {
     #about {
-        flex-direction: column;
+        height: auto;
+        padding-bottom: 2rem;
+        @include flexCenter(center, space-between, column);
 
         .about__content {
             .about__technologies {
-                @include flexCenter(center, space-between, row);
-                .about__technologies__list:first-child {
-                    margin-right: 0;
+                @include flexCenter(default, space-between, row);
+
+                .about__technologies__list {
+                    width: min-content;
+
+                    &:first-child {
+                        margin-right: 0;
+                    }
+
+                    & .technologies__item:first-child {
+                        margin-bottom: 5px;
+                    }
                 }
             }
-        }
-
-        .about__title {
-            width: min-content;
         }
 
         .about__text {
@@ -61,5 +74,3 @@
         }
     }
 }
-
-@media only screen and (max-width: 850px) {}
