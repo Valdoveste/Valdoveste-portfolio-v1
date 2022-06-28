@@ -1,15 +1,14 @@
 #contact {
-    height: auto !important;
-    @include flexCenter(center, space-evenly, column);
+    height: auto;
+    @include flexCenter(center, flex-end, column);
 
     .contact__header {
         & .contact__header__title {
             text-align: center;
         }
 
-        & .contact__header__text{
+        & .contact__header__text {
             text-align: center;
-            margin-bottom: 3.5rem;
         }
     }
 
@@ -60,6 +59,8 @@
 
 @media only screen and (max-width: 500px) {
     #contact {
+        padding-bottom: 0;
+
         .contact__form {
 
             .form__text {
@@ -74,5 +75,11 @@
                 @include flexCenter(center, center, column);
             }
         }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #contact {
+        padding-bottom: 0;
     }
 }
