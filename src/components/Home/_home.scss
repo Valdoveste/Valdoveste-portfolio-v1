@@ -1,88 +1,33 @@
 #home {
-    position: relative;
-    padding: 0 !important;
-    box-shadow: none !important;
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
 
-    .home__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    @include flexCenter(center, flex-start, default);
 
     .home__content {
-        top: 30%;
-        left: 50%;
-        z-index: 8;
-        position: absolute;
-        transform: translate(-50%, -50%);
+        // margin-bottom: 15vh;
+        @include flexCenter(flex-start, default, column);
+
+        .home__content__title,
+        .home__content__text {
+            margin: 0 0 1rem 0;
+        }
 
         .home__content__title {
-            float: left;
-            font-size: 3.5rem;
-            margin-top: 0 !important;
-
-            & span {
-                background: linear-gradient(to right, white, purple, white);
-                background-size: auto auto;
-                background-clip: border-box;
-                background-size: 200% auto;
-                color: #fff;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: textclip 1.5s linear;
-                display: inline-block;
-                text-shadow: none;
-            }
-
-            &:first-child {
-                margin-right: 1rem;
-            }
+            font-size: 6rem;
+            height: min-content;
         }
-
-        .home__content__text {
-            cursor: default;
-            text-align: center;
-        }
-    }
-}
-
-@keyframes textclip {
-	to {
-		background-position: -200% center;
-	}
-}   
-
-@media only screen and (max-width: 850px) {
-    #home {
-        .home__content {
-            @include flexCenter(center, center, column);
-
-            .home__content__title {
-                &:nth-child(even) {
-                    width: max-content !important;
-                }
-            }
-        }
-
     }
 }
 
 @media only screen and (max-width: 500px) {
     #home {
+    
         .home__content {
-            @include flexCenter(center, center, column);
-
+            margin-bottom: 0;
+            @include flexCenter(flex-start, center, column);
+    
             .home__content__title {
-                &:nth-child(even) {
-                    width: max-content !important;
-                }
+                font-size: 4.2rem;
             }
         }
-
     }
 }
