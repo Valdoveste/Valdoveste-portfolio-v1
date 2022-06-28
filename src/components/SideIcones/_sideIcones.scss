@@ -1,0 +1,100 @@
+#side__icones {
+
+    .right__side__icones {
+        right: 0px;
+    }
+
+    .left__side__icones {
+        left: 0px;
+    }
+
+    .left__side__icones,
+    .right__side__icones {
+        bottom: 25px;
+        width: 100px;
+        // height: 150px;
+        position: fixed;
+        transition: bottom ease-in-out 500ms;
+
+        .side__icone__list {
+            width: 100%;
+            padding-right: 5px;
+            @include flexCenter(center, center, column);
+
+            .side__icone__item {
+                &:nth-child(even) {
+                    padding: 5px 0;
+                }
+
+                .side__link__image {
+                    width: 40px;
+                    opacity: 0;
+                    height: 40px;
+                    fill: #1c1c1c;
+                    animation-delay: 1.5s;
+                    image-rendering: pixelated;
+                    transition: all ease-in-out 800ms;
+                    box-shadow: 2.5px 2.5px 0px 0px #3c404300;
+
+                    &.--fadeinup {
+                        background-color: #fff;
+                    }
+
+                    &:hover {
+                        fill: #FFF;
+                        background-color: #3c4043;
+                        box-shadow: 4px 4px 0px 0px #3c4043;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #side__icones {
+
+        .right__side__icones,
+        .left__side__icones {
+            bottom: 15px;
+        }
+
+        .right__side__icones {
+            right: 50px;
+        }
+
+        .left__side__icones {
+            left: 15px;
+            width: 50px;
+            // background-color: red;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 850px) {
+    footer #left__side__icone {
+        width: 100%;
+        padding: 15px 0;
+        position: relative;
+
+        .left__side__icone__list {
+            width: 100%;
+            padding-right: 5px;
+            @include flexCenter(center, center, row);
+
+            .left__side__icone__list__item {
+                &:nth-child(even) {
+                    padding: 0 15px;
+                }
+            }
+
+            .left__side__link__image {
+                opacity: 1;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}
