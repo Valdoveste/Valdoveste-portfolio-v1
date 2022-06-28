@@ -1,8 +1,10 @@
 import React from "react";
+import SideIcones from "../SideIcones/SideIcones";
 
 const Footer: React.FC = () => {
     return (
         <footer id="footer">
+            <SideIcones></SideIcones>
             <ul className="footer__list">
                 <li className="footer__item">
                     <span className="footer__copyrights">
