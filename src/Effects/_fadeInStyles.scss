@@ -1,0 +1,75 @@
+.--fadetoleft {
+    animation: fadeToLeft 1.5s;
+}
+
+.--fadetoright {
+    animation: fadetoright 1.5s;
+}
+
+.--opacity {
+    opacity: 1 !important;
+}
+
+.--fadeinup {
+    opacity: 0%;
+    animation: fadeinup 1.5s 150ms both;
+}
+
+@keyframes fadeinup {
+    from {
+        transform: translate3d(0, 80px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeToLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(500px, 0, 0);
+    }
+
+    25% {
+        opacity: 15%;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    75% {
+        opacity: 65%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadetoright {
+    0% {
+        opacity: 0;
+        transform: translate3d(-500px, 0, 0);
+    }
+
+    25% {
+        opacity: 10%;
+    }
+
+    50% {
+        opacity: 20%;
+    }
+
+    75% {
+        opacity: 65%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate3d(0, 0, 0);
+    }
+}
