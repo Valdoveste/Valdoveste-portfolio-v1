@@ -1,6 +1,6 @@
 import React from "react";
-// import zap from "../../assets/zap.gif";
 import hideAndShowHeader from "../../Effects/HideShowHeader";
+import scrollTo from '../../Effects/ScrollTo'
 
 window.addEventListener("load", hideAndShowHeader);
 
@@ -14,8 +14,6 @@ const Header: React.FC = () => {
                     <li className="header__navbar__item">
                         <a href="#section-home"
                             className="header__navbar__brand">
-                            {/* <img src={zap} alt="" className="header__navbar__brand__image" /> */}
-                            {/* V */}
                         </a>
                     </li>
                     <li className="header__navbar__item">
@@ -32,21 +30,24 @@ const Header: React.FC = () => {
 
                 <ul className="header__navbar__list">
                     <li className="header__navbar__item">
-                        <a href="/#about"
+                        <a href="/about" 
+                            onClick={scrollTo}
                             className="header__navbar__link">
                             About
                         </a>
                     </li>
 
                     <li className="header__navbar__item">
-                        <a href="/#portfolio"
+                        <a href="/portfolio"
+                        onClick={scrollTo}
                             className="header__navbar__link">
                             Portfolio
                         </a>
                     </li>
 
                     <li className="header__navbar__item">
-                        <a href="/#contact"
+                        <a href="/contact"
+                        onClick={scrollTo}
                             className="header__navbar__link">
                             Contact
                         </a>
