@@ -1,6 +1,6 @@
 #card-container {
     display: grid;
-    padding: 1.5rem;
+    // padding: 1.5rem;
     overflow: hidden;
     gap: 5rem;
     grid-template-columns: repeat(1, 100%);
@@ -27,7 +27,6 @@
                 background-color: #fff;
             }
         }
-
 
         &:nth-child(even) {
             direction: rtl;
@@ -82,7 +81,7 @@
                 height: 100%;
                 padding: 0 2.25rem;
                 background-color: #171717;
-                transition: all ease-in-out 700ms;
+                // transition: all ease-in-out 700ms;
 
                 .card__content__title {
                     margin-bottom: 1.25rem;
@@ -112,17 +111,38 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {
+// Tablet Screnn
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     #card-container {
         padding: 0;
-        .card{
-            height: 550px;
+
+        .card {
+            height: auto;
+
+            &:nth-child(even) {
+                .card__github__link {
+                    direction: ltr;
+                }
+            }
+
+            .card__content {
+                @include flexCenter(center, center, column);
+
+                .card__logo,
+                .card__content__info {
+                    width: 100%;
+                }
+
+                .card__content__info {
+                    padding: 2.25rem;
+                }
+            }
         }
     }
 }
 
-
-@media only screen and (max-width: 500px) {
+// Smartphone Screen
+@media only screen and (min-width: 100px) and (max-width: 600px) {
     #card-container {
         padding: 0;
 
@@ -131,12 +151,91 @@
             overflow: hidden;
 
             .card__content {
+                flex-direction: column;
+
+                .card__github__link {
+                    right: unset;
+                    bottom: unset;
+                    position: unset;
+
+                    svg {
+                        width: 45px;
+                        height: 45px;
+                        fill: #171717;
+                        background-color: #fff;
+                    }
+                }
+
+                &:nth-child(even) {
+                    direction: rtl;
+
+                    .card__github__link {
+                        left: 15px;
+                        direction: rtl;
+                        transform: scaleX(-1);
+                    }
+
+                    .card__content__info {
+                        direction: ltr;
+                    }
+                }
+
                 .card__logo {
                     display: none;
                 }
 
                 .card__content__info {
                     width: 100%;
+                    padding: 2.25rem;
+                    align-items: center;
+
+                    .icons {
+                        width: 100%;
+                        height: 50px;
+
+                        @include flexCenter(center, center, row);
+
+                        a{
+                            height: 100%;
+                        }
+
+                        .card__github__link{
+                            width: 100%;
+                            width: 45px;
+                            height: 45px;
+                            @include flexCenter(center, center, row);
+                            svg{
+                                fill: #fff;
+                                width: 45px;
+                                height: 45px;
+                                background-color: #171717;
+                            }
+                        }
+
+                        .card__page__link{
+                            width: 45px;
+                            height: 45px;
+                            margin-left: 25px;
+                            background-color: #171717;
+                            @include flexCenter(center, center, row);
+                            svg{
+                                margin: 0 auto;
+                                width: 28px;
+                                height: 28px;
+                                fill: #fff;
+                                background-color: #171717;
+                            }
+                        }
+                    }
+
+                    .card__content__title {
+                        margin-top: 0;
+                        width: 100%;
+                    }
+
+                    .card__content__text {
+                        margin: 0;
+                    }
                 }
             }
         }
