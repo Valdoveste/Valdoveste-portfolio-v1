@@ -83,21 +83,40 @@ main {
         p[class*="__text"] {
             max-width: 800px;
             font-size: 1.2rem;
-            // margin-left: 1.5rem;
         }
     }
 }
 
 @import '../components/Home/_home';
+@import '../Effects/_fadeInStyles';
 @import '../components/About/_about';
 @import '../components/Header/_header';
 @import '../components/Footer/_footer';
-@import '../components/SideIcones/_sideIcones';
 @import '../components/Contact/_contact';
 @import '../components/Portfolio/_portfolio';
-@import '../Effects/_fadeInStyles';
+@import '../components/SideIcones/_sideIcones';
 
-@media only screen and (max-width: 500px) {
+// Smartphone Screen
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+    $margin-page: 1.5rem;
+
+    main {
+        section {
+            h1[class*="__title"] {
+                font-size: 4rem;
+            }
+
+            padding: 30px $margin-page 65px $margin-page;
+
+            p[class*="__text"] {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+// Tablet Screnn
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     $margin-page: 1.5rem;
 
     main {
@@ -115,26 +134,9 @@ main {
     }
 }
 
-@media only screen and (max-width: 850px) {
-    $margin-page: 2rem;
-
-    main {
-        section {
-            h1[class*="__title"] {
-                font-size: 4rem;
-            }
-
-            padding: 30px $margin-page 65px $margin-page;
-
-            p[class*="__text"] {
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
+// Tablet LandingScape
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    $margin-page: 80px;
+    $margin-page: 50px;
     
     main {
         section {
