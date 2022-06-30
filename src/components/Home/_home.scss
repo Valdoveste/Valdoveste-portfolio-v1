@@ -1,9 +1,18 @@
 #home {
-
+    padding-top: 0;
+    margin-top: 55px;
+    position: relative;
     @include flexCenter(center, flex-start, default);
 
+    #side__icones{
+        .right__side__icones{
+            top: 25px;
+            display: block;
+            position: absolute;
+        }
+    }
+
     .home__content {
-        // margin-bottom: 15vh;
         @include flexCenter(flex-start, default, column);
 
         .home__content__title,
