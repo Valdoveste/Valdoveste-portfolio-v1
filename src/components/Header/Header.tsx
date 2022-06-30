@@ -30,7 +30,7 @@ const Header: React.FC = () => {
 
                 <ul className="header__navbar__list">
                     <li className="header__navbar__item">
-                        <a href="/about" 
+                        <a href="/about"
                             onClick={scrollTo}
                             className="header__navbar__link">
                             About
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
 
                     <li className="header__navbar__item">
                         <a href="/portfolio"
-                        onClick={scrollTo}
+                            onClick={scrollTo}
                             className="header__navbar__link">
                             Portfolio
                         </a>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
 
                     <li className="header__navbar__item">
                         <a href="/contact"
-                        onClick={scrollTo}
+                            onClick={scrollTo}
                             className="header__navbar__link">
                             Contact
                         </a>
