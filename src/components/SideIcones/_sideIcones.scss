@@ -2,6 +2,7 @@
 
     .right__side__icones {
         right: 0px;
+        display: none;
     }
 
     .left__side__icones {
@@ -12,7 +13,6 @@
     .right__side__icones {
         bottom: 25px;
         width: 100px;
-        // height: 150px;
         position: fixed;
         transition: bottom ease-in-out 500ms;
 
@@ -24,6 +24,10 @@
             .side__icone__item {
                 &:nth-child(even) {
                     padding: 5px 0;
+                }
+
+                a{
+                    height: 100%;
                 }
 
                 .side__link__image {
@@ -51,49 +55,65 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {
-
+// Tablet LandingScape
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
     #side__icones {
 
         .right__side__icones,
         .left__side__icones {
-            bottom: 15px;
-        }
+            bottom: 0;
 
-        .right__side__icones {
-            right: 50px;
-        }
+            .side__icone__list {
 
-        .left__side__icones {
-            left: 15px;
-            width: 50px;
-            // background-color: red;
-        }
-    }
+                .side__icone__item {
 
-}
-
-@media only screen and (min-width: 100px) and (max-width: 850px) {
-    footer #left__side__icone {
-        width: 100%;
-        padding: 15px 0;
-        position: relative;
-
-        .left__side__icone__list {
-            width: 100%;
-            padding-right: 5px;
-            @include flexCenter(center, center, row);
-
-            .left__side__icone__list__item {
-                &:nth-child(even) {
-                    padding: 0 15px;
+                    .side__link__image {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
 
-            .left__side__link__image {
-                opacity: 1;
-                width: 45px;
-                height: 45px;
+        }
+
+        .left__side__icones {
+            left: 0;
+            width: 50px;
+        }
+
+    }
+}
+
+// 
+@media only screen and (min-width: 100px) and (max-width: 1024px) {
+    #footer #side__icones {
+        width: 100%;
+        padding: 15px 0;
+        position: relative;
+        @include flexCenter(center, center, row);
+
+        .right__side__icones{
+            display: none;
+        }
+
+        .left__side__icones {
+            bottom: 0;
+            position: relative;
+
+            .side__icone__list {
+                width: 100%;
+                padding-right: 5px;
+                @include flexCenter(center, center, row);
+
+                .side__icone__item {
+                    &:nth-child(even) {
+                        padding: 0 15px;
+                    }
+                }
+
+                .side__link__image {
+                    opacity: 1;
+                }
             }
         }
     }
