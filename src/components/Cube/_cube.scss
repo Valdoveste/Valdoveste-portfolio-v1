@@ -19,20 +19,60 @@
     transform: translate(50%, 50%);
   }
 
-  // Inner
-  .scene1 {
-    transform: scale(1.6);
-  }
-
   // Outter
   .scene2 {
-    transform: scale(2.3);
+    transform: scale(0);
+    transition: all ease-in 1.7s;
+    opacity: 0;
+
+    &.--txt {
+      transform: scale(2.3);
+      opacity: 1;
+    }
+  }
+  
+  // Inner
+  .scene1 {
+    transform: scale(0);
+    animation: fadeCubeInner 4s linear;
+    transition: transform ease-in 2.1s;
+
+    &.--txt {
+      transform: scale(1.45);
+    }
   }
 
   // InnerInner
   .scene3 {
-    transform: scale(0.7);
+    transform: scale(0);
+    animation: fadeCubeInnerInner 9s linear;
+    transition: transform ease-in 2.3s;
+    
+    &.--txt {
+      transform: scale(0.6);
+    }
   }
+
+
+  @keyframes fadeCubeInner {
+    from{
+      opacity: 0%;
+    }
+
+    to{
+      opacity: 100%;
+    }
+  }
+
+  @keyframes fadeCubeInnerInner {
+    from{
+      opacity: 0%;
+    }
+    to{
+      opacity: 100%;
+    }
+  }
+
 
   .cube__outter,
   .cube__inner,
