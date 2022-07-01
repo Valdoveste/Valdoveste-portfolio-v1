@@ -385,19 +385,86 @@ main section p[class*="__text"] {
           transform: translate(50%, 50%);
 }
 
-#about .technologies__cubes .scene1 {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+#about .technologies__cubes .scene2 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all ease-in 1.7s;
+  transition: all ease-in 1.7s;
+  opacity: 0;
 }
 
-#about .technologies__cubes .scene2 {
+#about .technologies__cubes .scene2.--txt {
   -webkit-transform: scale(2.3);
           transform: scale(2.3);
+  opacity: 1;
+}
+
+#about .technologies__cubes .scene1 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: fadeCubeInner 4s linear;
+          animation: fadeCubeInner 4s linear;
+  -webkit-transition: -webkit-transform ease-in 2.1s;
+  transition: -webkit-transform ease-in 2.1s;
+  transition: transform ease-in 2.1s;
+  transition: transform ease-in 2.1s, -webkit-transform ease-in 2.1s;
+}
+
+#about .technologies__cubes .scene1.--txt {
+  -webkit-transform: scale(1.45);
+          transform: scale(1.45);
 }
 
 #about .technologies__cubes .scene3 {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: fadeCubeInnerInner 9s linear;
+          animation: fadeCubeInnerInner 9s linear;
+  -webkit-transition: -webkit-transform ease-in 2.3s;
+  transition: -webkit-transform ease-in 2.3s;
+  transition: transform ease-in 2.3s;
+  transition: transform ease-in 2.3s, -webkit-transform ease-in 2.3s;
+}
+
+#about .technologies__cubes .scene3.--txt {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+@-webkit-keyframes fadeCubeInner {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeCubeInner {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes fadeCubeInnerInner {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeCubeInnerInner {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 #about .technologies__cubes .cube__outter,
@@ -1216,10 +1283,11 @@ main section p[class*="__text"] {
 }
 
 #portfolio #card-container {
+  gap: 5rem;
+  padding: 1rem;
   display: -ms-grid;
   display: grid;
   overflow: hidden;
-  gap: 5rem;
   -ms-grid-columns: (100%)[1];
       grid-template-columns: repeat(1, 100%);
 }
@@ -1248,8 +1316,8 @@ main section p[class*="__text"] {
 #portfolio #card-container .card .card__github__link svg {
   width: 45px;
   height: 45px;
-  fill: #171717;
-  background-color: #fff;
+  fill: #fff;
+  background-color: #171717;
 }
 
 #portfolio #card-container .card:nth-child(even) {
@@ -1371,11 +1439,12 @@ main section p[class*="__text"] {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   #portfolio #card-container {
     padding: 0;
   }
   #portfolio #card-container .card {
+    opacity: 1;
     height: auto;
   }
   #portfolio #card-container .card:nth-child(even) .card__github__link {
@@ -1454,7 +1523,7 @@ main section p[class*="__text"] {
   }
   #portfolio #card-container .card .card__content .card__content__info .icons {
     width: 100%;
-    height: 50px;
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1470,7 +1539,8 @@ main section p[class*="__text"] {
             flex-direction: row;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons a {
-    height: 100%;
+    height: 70px;
+    width: 70px;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link {
     width: 100%;
@@ -1491,16 +1561,17 @@ main section p[class*="__text"] {
             flex-direction: row;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link svg {
-    fill: #fff;
     width: 45px;
     height: 45px;
+    fill: #fff;
     background-color: #171717;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link {
     width: 45px;
     height: 45px;
     margin-left: 25px;
-    background-color: #171717;
+    border-radius: 50%;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1516,11 +1587,10 @@ main section p[class*="__text"] {
             flex-direction: row;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link svg {
-    margin: 0 auto;
-    width: 28px;
-    height: 28px;
-    fill: #fff;
-    background-color: #171717;
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+    background-color: #fff;
   }
   #portfolio #card-container .card .card__content .card__content__info .card__content__title {
     margin-top: 0;
