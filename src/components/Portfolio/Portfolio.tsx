@@ -1,30 +1,6 @@
 import React from "react";
 import PortfolioCards from '../../cards'
 
-window.addEventListener("load", (e) => {
-    const cards = document.querySelectorAll('.card')!;
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-            let target = entry.target;
-            if (entry.intersectionRatio > 0) {
-                if (parseInt(target.id) % 2 === 0) {
-                    target.classList.add("--fadetoright");
-                } else {
-                    target.classList.add("--fadetoleft");
-                }
-            }
-        });
-    });
-
-    cards.forEach(card => {
-        observer.observe(card)
-        card.addEventListener("animationend", (e) => {
-            card.classList.add("--opacity")
-        })
-    })
-})
-
 const Portfolio: React.FC = () => {
 
     const renderCardsLogo = (): JSX.Element[] => {
