@@ -1,8 +1,8 @@
 #card-container {
-    display: grid;
-    // padding: 1.5rem;
-    overflow: hidden;
     gap: 5rem;
+    padding: 1rem;
+    display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(1, 100%);
 
     .card {
@@ -23,8 +23,8 @@
             svg {
                 width: 45px;
                 height: 45px;
-                fill: #171717;
-                background-color: #fff;
+                fill: #fff;
+                background-color: #171717;
             }
         }
 
@@ -112,11 +112,12 @@
 }
 
 // Tablet Screnn
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     #card-container {
         padding: 0;
 
         .card {
+            opacity: 1;
             height: auto;
 
             &:nth-child(even) {
@@ -191,39 +192,42 @@
 
                     .icons {
                         width: 100%;
-                        height: 50px;
+                        margin-top: 10px;
 
                         @include flexCenter(center, center, row);
 
-                        a{
-                            height: 100%;
+                        a {
+                            height: 70px;
+                            width: 70px;
                         }
 
-                        .card__github__link{
+                        .card__github__link {
                             width: 100%;
                             width: 45px;
                             height: 45px;
                             @include flexCenter(center, center, row);
-                            svg{
-                                fill: #fff;
+
+                            svg {
                                 width: 45px;
                                 height: 45px;
+                                fill: #fff;
                                 background-color: #171717;
                             }
                         }
 
-                        .card__page__link{
+                        .card__page__link {
                             width: 45px;
                             height: 45px;
                             margin-left: 25px;
-                            background-color: #171717;
+                            border-radius: 50%;
+                            overflow: hidden;
                             @include flexCenter(center, center, row);
-                            svg{
-                                margin: 0 auto;
-                                width: 28px;
-                                height: 28px;
-                                fill: #fff;
-                                background-color: #171717;
+                            
+                            svg {
+                                width: 45px;
+                                height: 45px;
+                                padding: 6px;
+                                background-color: #fff;
                             }
                         }
                     }
