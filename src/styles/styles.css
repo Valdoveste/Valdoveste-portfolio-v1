@@ -20,6 +20,21 @@ html {
   background-color: #1C1C1C;
 }
 
+svg {
+  fill: #9c9c9c;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  -webkit-transition: all ease-in-out 800ms;
+  transition: all ease-in-out 800ms;
+}
+
+svg:hover {
+  fill: #ffffff;
+}
+
 .btn-section {
   color: #fff;
   line-height: 1;
@@ -798,7 +813,7 @@ main section p[class*="__text"] {
           transform: rotateX(-90deg) translateZ(100px);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 100px) and (max-width: 500px) {
   #about .technologies__cubes {
     width: 100%;
     height: 300px;
@@ -1288,6 +1303,7 @@ main section p[class*="__text"] {
   display: -ms-grid;
   display: grid;
   overflow: hidden;
+  position: relative;
   -ms-grid-columns: (100%)[1];
       grid-template-columns: repeat(1, 100%);
 }
@@ -1307,8 +1323,8 @@ main section p[class*="__text"] {
   transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
 }
 
-#portfolio #card-container .card .card__github__link {
-  right: 15px;
+#portfolio #card-container .card .icons {
+  right: 10px;
   bottom: 10px;
   position: absolute;
 }
@@ -1316,17 +1332,19 @@ main section p[class*="__text"] {
 #portfolio #card-container .card .card__github__link svg {
   width: 45px;
   height: 45px;
-  fill: #fff;
-  background-color: #171717;
+}
+
+#portfolio #card-container .card .card__page__link {
+  display: none;
 }
 
 #portfolio #card-container .card:nth-child(even) {
   direction: rtl;
 }
 
-#portfolio #card-container .card:nth-child(even) .card__github__link {
-  left: 15px;
-  direction: rtl;
+#portfolio #card-container .card:nth-child(even) .icons {
+  left: 10px;
+  right: unset;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
@@ -1404,6 +1422,7 @@ main section p[class*="__text"] {
 }
 
 #portfolio #card-container .card .card__content .card__content__info .card__content__title {
+  margin-top: 0;
   margin-bottom: 1.25rem;
 }
 
@@ -1447,9 +1466,6 @@ main section p[class*="__text"] {
     opacity: 1;
     height: auto;
   }
-  #portfolio #card-container .card:nth-child(even) .card__github__link {
-    direction: ltr;
-  }
   #portfolio #card-container .card .card__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1481,71 +1497,46 @@ main section p[class*="__text"] {
   #portfolio #card-container .card {
     height: auto;
     overflow: hidden;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  #portfolio #card-container .card:nth-child(even) {
+    direction: unset;
+  }
+  #portfolio #card-container .card:nth-child(even) .icons {
+    left: unset;
+    direction: unset;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  #portfolio #card-container .card:nth-child(even) .card__content__info {
+    direction: unset;
   }
   #portfolio #card-container .card .card__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  #portfolio #card-container .card .card__content .card__github__link {
-    right: unset;
-    bottom: unset;
-    position: unset;
-  }
-  #portfolio #card-container .card .card__content .card__github__link svg {
-    width: 45px;
-    height: 45px;
-    fill: #171717;
-    background-color: #fff;
-  }
-  #portfolio #card-container .card .card__content:nth-child(even) {
-    direction: rtl;
-  }
-  #portfolio #card-container .card .card__content:nth-child(even) .card__github__link {
-    left: 15px;
-    direction: rtl;
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
-  #portfolio #card-container .card .card__content:nth-child(even) .card__content__info {
-    direction: ltr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #portfolio #card-container .card .card__content .card__logo {
     display: none;
   }
   #portfolio #card-container .card .card__content .card__content__info {
     width: 100%;
-    padding: 2.25rem;
+    padding: 1.75rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons {
     width: 100%;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #portfolio #card-container .card .card__content .card__content__info .icons a {
-    height: 70px;
-    width: 70px;
-  }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link {
-    width: 100%;
-    width: 45px;
-    height: 45px;
+    right: unset;
+    bottom: unset;
+    padding: 15px;
+    position: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1561,36 +1552,19 @@ main section p[class*="__text"] {
             flex-direction: row;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link svg {
-    width: 45px;
-    height: 45px;
-    fill: #fff;
-    background-color: #171717;
+    width: 50px;
+    height: 50px;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link {
     width: 45px;
     height: 45px;
-    margin-left: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: block;
+    margin-left: 1.25rem;
   }
   #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link svg {
     width: 45px;
     height: 45px;
     padding: 6px;
-    background-color: #fff;
   }
   #portfolio #card-container .card .card__content .card__content__info .card__content__title {
     margin-top: 0;
@@ -1663,41 +1637,35 @@ main section p[class*="__text"] {
   padding: 5px 0;
 }
 
+#side__icones .left__side__icones .side__icone__list .side__icone__item:nth-child(1) svg, #side__icones .left__side__icones .side__icone__list .side__icone__item:nth-child(3) svg,
+#side__icones .right__side__icones .side__icone__list .side__icone__item:nth-child(1) svg,
+#side__icones .right__side__icones .side__icone__list .side__icone__item:nth-child(3) svg {
+  width: 25px;
+  height: 25px;
+}
+
 #side__icones .left__side__icones .side__icone__list .side__icone__item a,
 #side__icones .right__side__icones .side__icone__list .side__icone__item a {
-  height: 100%;
+  display: block;
+}
+
+#side__icones .left__side__icones .side__icone__list .side__icone__item a:hover svg,
+#side__icones .right__side__icones .side__icone__list .side__icone__item a:hover svg {
+  fill: #FFF;
 }
 
 #side__icones .left__side__icones .side__icone__list .side__icone__item .side__link__image,
 #side__icones .right__side__icones .side__icone__list .side__icone__item .side__link__image {
-  width: 40px;
   opacity: 0;
-  height: 40px;
-  fill: #1c1c1c;
+  width: 35px;
+  height: 35px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-pixelated;
-      image-rendering: pixelated;
-  -webkit-transition: all ease-in-out 800ms;
-  transition: all ease-in-out 800ms;
-  -webkit-box-shadow: 2.5px 2.5px 0px 0px #3c404300;
-          box-shadow: 2.5px 2.5px 0px 0px #3c404300;
-}
-
-#side__icones .left__side__icones .side__icone__list .side__icone__item .side__link__image.--fadeinup,
-#side__icones .right__side__icones .side__icone__list .side__icone__item .side__link__image.--fadeinup {
-  background-color: #fff;
 }
 
 #side__icones .left__side__icones .side__icone__list .side__icone__item .side__link__image:hover,
 #side__icones .right__side__icones .side__icone__list .side__icone__item .side__link__image:hover {
   fill: #FFF;
-  background-color: #3c4043;
-  -webkit-box-shadow: 4px 4px 0px 0px #3c4043;
-          box-shadow: 4px 4px 0px 0px #3c4043;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
