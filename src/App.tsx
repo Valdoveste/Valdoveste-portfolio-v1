@@ -25,16 +25,20 @@ window.addEventListener("load", () => {
   })
 
   const cards = document.querySelectorAll('.card')!;
+  const mediaQuery = window.matchMedia("(max-width: 500px)");
   const observerCards = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
       let target = entry.target;
       if (entry.intersectionRatio > 0) {
-        // target.classList.add("--fadeinup");
-        if (parseInt(target.id) % 2 === 0) {
-          target.classList.add("--fadetoright");
+        if (mediaQuery) {
+          target.classList.add("--fadeinup");
         } else {
-          target.classList.add("--fadetoleft");
+          if (parseInt(target.id) % 2 === 0) {
+            target.classList.add("--fadetoright");
+          } else {
+            target.classList.add("--fadetoleft");
+          }
         }
       }
     });
