@@ -3,6 +3,7 @@
     padding: 1rem;
     display: grid;
     overflow: hidden;
+    position: relative;
     grid-template-columns: repeat(1, 100%);
 
     .card {
@@ -15,25 +16,28 @@
         box-shadow: 5px 5px 10px 5px #171717;
         transition: transform ease-in-out 500ms;
 
-        .card__github__link {
-            right: 15px;
+        .icons {
+            right: 10px;
             bottom: 10px;
             position: absolute;
+        }
 
-            svg {
-                width: 45px;
-                height: 45px;
-                fill: #fff;
-                background-color: #171717;
-            }
+        .card__github__link svg {
+            width: 45px;
+            height: 45px;
+
+        }
+
+        .card__page__link {
+            display: none;
         }
 
         &:nth-child(even) {
             direction: rtl;
 
-            .card__github__link {
-                left: 15px;
-                direction: rtl;
+            .icons {
+                left: 10px;
+                right: unset;
                 transform: scaleX(-1);
             }
 
@@ -84,6 +88,7 @@
                 // transition: all ease-in-out 700ms;
 
                 .card__content__title {
+                    margin-top: 0;
                     margin-bottom: 1.25rem;
                 }
 
@@ -120,12 +125,6 @@
             opacity: 1;
             height: auto;
 
-            &:nth-child(even) {
-                .card__github__link {
-                    direction: ltr;
-                }
-            }
-
             .card__content {
                 @include flexCenter(center, center, column);
 
@@ -150,36 +149,25 @@
         .card {
             height: auto;
             overflow: hidden;
+            box-shadow: unset;
+
+            &:nth-child(even) {
+                direction: unset;
+
+                .icons {
+                    left: unset;
+                    direction: unset;
+                    transform: scaleX(1);
+                }
+
+                .card__content__info {
+                    direction: unset;
+                }
+            }
 
             .card__content {
                 flex-direction: column;
-
-                .card__github__link {
-                    right: unset;
-                    bottom: unset;
-                    position: unset;
-
-                    svg {
-                        width: 45px;
-                        height: 45px;
-                        fill: #171717;
-                        background-color: #fff;
-                    }
-                }
-
-                &:nth-child(even) {
-                    direction: rtl;
-
-                    .card__github__link {
-                        left: 15px;
-                        direction: rtl;
-                        transform: scaleX(-1);
-                    }
-
-                    .card__content__info {
-                        direction: ltr;
-                    }
-                }
+                justify-content: space-between;
 
                 .card__logo {
                     display: none;
@@ -187,47 +175,33 @@
 
                 .card__content__info {
                     width: 100%;
-                    padding: 2.25rem;
+                    padding: 1.75rem;
                     align-items: center;
 
                     .icons {
                         width: 100%;
-                        margin-top: 10px;
+                        right: unset;
+                        bottom: unset;
+                        padding: 15px;
+                        position: unset;
 
                         @include flexCenter(center, center, row);
 
-                        a {
-                            height: 70px;
-                            width: 70px;
-                        }
-
-                        .card__github__link {
-                            width: 100%;
-                            width: 45px;
-                            height: 45px;
-                            @include flexCenter(center, center, row);
-
-                            svg {
-                                width: 45px;
-                                height: 45px;
-                                fill: #fff;
-                                background-color: #171717;
-                            }
+                        .card__github__link svg {
+                                width: 50px;
+                                height: 50px;
                         }
 
                         .card__page__link {
                             width: 45px;
                             height: 45px;
-                            margin-left: 25px;
-                            border-radius: 50%;
-                            overflow: hidden;
-                            @include flexCenter(center, center, row);
-                            
+                            display: block;
+                            margin-left: 1.25rem;
+
                             svg {
                                 width: 45px;
                                 height: 45px;
                                 padding: 6px;
-                                background-color: #fff;
                             }
                         }
                     }
