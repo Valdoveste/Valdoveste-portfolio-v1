@@ -56,20 +56,18 @@ const About: React.FC = () => {
                         <li className="technologies__item">HTML</li>
                         <li className="technologies__item">CSS</li>
                         <li className="technologies__item">SASS</li>
-                        <li className="technologies__item">React</li>
                         <li className="technologies__item">Git</li>
                         <li className="technologies__item">GitFlow</li>
                         <li className="technologies__item">MySQL</li>
                     </ul>
                     <ul className="about__technologies__list">
                         <li className="technologies__item">Aprendendo:</li>
-                        <li className="technologies__item">TypeScript</li>
+                        <li className="technologies__item">React(TypeScript)</li>
                         <li className="technologies__item">NodeJS</li>
                     </ul>
                     <ul className="about__technologies__list">
                         <li className="technologies__item">Pretendo aprender:</li>
                         <li className="technologies__item">Python</li>
-                        <li className="technologies__item">NextJS</li>
                     </ul>
                 </div>
 
