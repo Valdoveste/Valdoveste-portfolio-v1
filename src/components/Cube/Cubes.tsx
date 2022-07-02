@@ -9,14 +9,10 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__A"></div>
-                    <div className="cube__face corner__B"></div>
                     <div className="cube__face cube__face--back">
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__C"></div>
-                    <div className="cube__face corner__D"></div>
                     <div className="cube__face cube__face--right">
                         <div className="cube__face"></div>
 
@@ -25,8 +21,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__E"></div>
-                    <div className="cube__face corner__F"></div>
                     <div className="cube__face cube__face--top">
                         <div className="cube__face"></div>
 
@@ -35,8 +29,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__G"></div>
-                    <div className="cube__face corner__H"></div>
                 </div>
             </div>
 
@@ -46,15 +38,10 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__A"></div>
-                    <div className="cube__face corner__A"></div>
-                    <div className="cube__face corner__B"></div>
                     <div className="cube__face cube__face--back">
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__C"></div>
-                    <div className="cube__face corner__D"></div>
                     <div className="cube__face cube__face--right">
                         <div className="cube__face"></div>
 
@@ -63,8 +50,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__E"></div>
-                    <div className="cube__face corner__F"></div>
                     <div className="cube__face cube__face--top">
                         <div className="cube__face"></div>
 
@@ -73,8 +58,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__G"></div>
-                    <div className="cube__face corner__H"></div>
                 </div>
             </div>
 
@@ -84,14 +67,10 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__A"></div>
-                    <div className="cube__face corner__B"></div>
                     <div className="cube__face cube__face--back">
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__C"></div>
-                    <div className="cube__face corner__D"></div>
                     <div className="cube__face cube__face--right">
                         <div className="cube__face"></div>
 
@@ -100,8 +79,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__E"></div>
-                    <div className="cube__face corner__F"></div>
                     <div className="cube__face cube__face--top">
                         <div className="cube__face"></div>
 
@@ -110,8 +87,6 @@ const Cube: React.FC = () => {
                         <div className="cube__face"></div>
 
                     </div>
-                    <div className="cube__face corner__G"></div>
-                    <div className="cube__face corner__H"></div>
                 </div>
             </div>
         </>
