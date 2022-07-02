@@ -26,6 +26,16 @@ html {
     background-color: #1C1C1C;
 }
 
+svg {
+    fill: #9c9c9c;
+    image-rendering: pixelated;
+    transition: all ease-in-out 800ms;
+
+    &:hover {
+        fill: #ffffff;
+    }
+}
+
 .btn-section {
     color: #fff;
     line-height: 1;
@@ -137,7 +147,7 @@ main {
 // Tablet LandingScape
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     $margin-page: 50px;
-    
+
     main {
         section {
             padding: 30px $margin-page 65px $margin-page;
