@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                     I'm Valdoveste
                 </h1>
                 <p className="home__content__text --fadeinup" style={styles.thirdTransiton}>
-                    FullStack Developer
+                    FrontEND Developer
                 </p>
                 <p className="home__content__text --fadeinup" style={styles.fourthTransiton}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
