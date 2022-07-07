@@ -1,0 +1,123 @@
+// Cube border
+.cube__outter .cube__face {
+    border: 1px solid #3c404331;
+    animation: outterStroke 15s linear infinite alternate;
+}
+
+.cube__inner .cube__face {
+    border: 1px solid #3c40439a;
+    animation: innerStroke 20s linear infinite alternate;
+}
+
+.cube__inner__inner .cube__face {
+    border: 1px solid #3c4043;
+    animation: innerInnerStroke 25s linear infinite alternate;
+}
+
+@keyframes outterStroke {
+    0% {
+        border-radius: 5%;
+        border-color: #3c40433b;
+    }
+
+    100% {
+        border-radius: 60%;
+        border-color: #3c404320;
+    }
+}
+
+@keyframes innerStroke {
+    0% {
+        border-radius: 5%;
+        border-color: #3c4043ab;
+    }
+
+    100% {
+        border-radius: 60%;
+        border-color: #3c40436d;
+    }
+}
+
+@keyframes innerInnerStroke {
+    0% {
+        border-radius: 5%;
+        border-color: #3c4043;
+        box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        border-radius: 60%;
+        border-color: rgba(255, 255, 255, 0.508);
+        box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.508);
+    }
+}
+
+// Cube rotation
+.cube__outter {
+    animation: outter 45s linear infinite alternate;
+    transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube__inner {
+    animation: inner 45s linear infinite alternate;
+    transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(45deg);
+}
+
+.cube__inner__inner {
+    animation: innerInner 45s linear infinite alternate;
+    transform: translateZ(-50px) rotateY(-360deg) rotateX(-90deg) rotateZ(360deg);
+}
+
+@keyframes outter {
+    0% {
+        transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translateZ(-50px) rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+
+    }
+}
+
+@keyframes inner {
+    0% {
+        transform: translateZ(-50px) rotateY(180deg) rotateX(180deg) rotateZ(-360deg)
+    }
+
+    100% {
+        transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(45deg)
+    }
+
+}
+
+@keyframes innerInner {
+    0% {
+        transform: translateZ(-50px) rotateY(-360deg) rotateX(-90deg) rotateZ(360deg)
+    }
+
+    100% {
+        transform: translateZ(-50px) rotateY(0deg) rotateX(90deg) rotateZ(-135deg)
+    }
+
+}
+
+// Cube fadein
+@keyframes fadeCubeInner {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeCubeInnerInner {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}

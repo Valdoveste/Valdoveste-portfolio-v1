@@ -1,0 +1,118 @@
+.technologies__cubes {
+  z-index: 0;
+  width: 50%;
+  height: 500px;
+  position: relative;
+  @include flexCenter(center, center, row);
+
+  .scene1,
+  .scene2,
+  .scene3 {
+    width: 200px;
+    height: 200px;
+    perspective: 400px;
+  }
+
+  .scene1,
+  .scene3 {
+    position: absolute;
+    transform: translate(50%, 50%);
+  }
+
+  // Outter
+  .scene2 {
+    transform: scale(0);
+    transition: all ease-out 1.7s;
+    opacity: 0;
+
+    &.--txt {
+      transform: scale(2.3);
+      opacity: 1;
+    }
+  }
+
+  // Inner
+  .scene1 {
+    transform: scale(0);
+    animation: fadeCubeInner 4s linear;
+    transition: transform ease-out 2.1s;
+
+    &.--txt {
+      transform: scale(1.45);
+    }
+  }
+
+  // InnerInner
+  .scene3 {
+    transform: scale(0);
+    animation: fadeCubeInnerInner 9s linear;
+    transition: transform ease-out 2.3s;
+
+    &.--txt {
+      transform: scale(0.6);
+    }
+  }
+
+
+}
+
+@import './_cubeFaces';
+
+@import './_cubeAnimation';
+
+// SmartPhone Screen
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+  .technologies__cubes {
+    width: 100%;
+    height: 300px;
+    margin-top: 2.5rem;
+
+    // Outter
+    .scene2 {
+      &.--txt {
+        transform: scale(1.2);
+
+      }
+    }
+
+    // Inner
+    .scene1 {
+      &.--txt {
+        transform: scale(0.7);
+      }
+    }
+
+    // InnerInner
+    .scene3 {
+      &.--txt {
+        transform: scale(0.4);
+      }
+    }
+  }
+
+}
+
+// Tablet Screen
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .technologies__cubes {
+
+    // Outter
+    .scene2 {
+      &.--txt {
+        opacity: 1;
+        transform: scale(1.9);
+      }
+    }
+
+    // Inner
+    .scene1 {
+      &.--txt {
+        transform: scale(1.35);
+        opacity: 1;
+      }
+    }
+  }
+
+}

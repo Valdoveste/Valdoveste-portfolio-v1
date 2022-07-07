@@ -1,0 +1,40 @@
+.cube__outter,
+.cube__inner,
+.cube__inner__inner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+
+    .cube__face {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        line-height: 200px;
+    }
+
+    .cube__face--front {
+        transform: rotateY(0deg) translateZ(100px);
+    }
+
+    .cube__face--right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .cube__face--back {
+        transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .cube__face--left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .cube__face--top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .cube__face--bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+
+}
