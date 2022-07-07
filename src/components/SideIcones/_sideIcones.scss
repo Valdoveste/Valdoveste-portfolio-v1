@@ -49,7 +49,7 @@
                     opacity: 0;
                     width: 35px;
                     height: 35px;
-                    animation-delay: 1.5s;
+                    animation-delay: 150ms;
 
                     &:hover {
                         fill: #FFF;
@@ -89,17 +89,13 @@
     }
 }
 
-// 
+// SmartPhone and Tablet Screen
 @media only screen and (min-width: 100px) and (max-width: 1024px) {
     #footer #side__icones {
         width: 100%;
         padding: 15px 0;
         position: relative;
         @include flexCenter(center, center, row);
-
-        .right__side__icones {
-            display: none;
-        }
 
         .left__side__icones {
             bottom: 0;
@@ -118,6 +114,8 @@
 
                 .side__link__image {
                     opacity: 1;
+                    animation: unset;
+                    transform: translate3d(0, 0, 0);
                 }
             }
         }
