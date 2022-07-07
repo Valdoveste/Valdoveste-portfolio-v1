@@ -34,19 +34,15 @@ const About: React.FC = () => {
                     tive meu primeiro contato com programação em 2019 fiquei fascinado
                     com o quanto essa área é váriada, então após algum tempo realizando pequenos
                     projetos em outras linguagens. Tive meu primeiro contato com WEB onde percebi que
-                    tinha um apreço pela construção não apenas das funcionalidade mas também pelo como
-                    o conteudo era apresentado para o usuário.
+                    tinha um apreço não apenas pelo funcionamento das páginas, mas também na construação
+                    da apresentação do conteudo para os usuários.
                 </p>
 
                 <p className="about__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque lobortis eleifend tellus, ut fermentum mauris luctus ac.
-                    Pellentesque lobortis eleifend tellus, ut fermentum mauris luctus ac.
-                    Cras finibus quis ante id interdum.
                 </p>
 
                 <p className="about__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
                 </p>
 
                 <div className="about__technologies">
