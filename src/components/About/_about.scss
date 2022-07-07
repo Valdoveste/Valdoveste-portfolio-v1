@@ -33,10 +33,9 @@
 
         }
     }
-
-    @import '../Cube/_cube';
-
 }
+
+@import '../Cube/_cubeScenes';
 
 @media only screen and (max-width: 1280px){
     #about{
