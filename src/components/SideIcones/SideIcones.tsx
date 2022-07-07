@@ -2,7 +2,7 @@ import React from "react";
 import ByTimeElementAnimation from "../../Effects/ByTimeElementAnimation";
 
 window.addEventListener("load", (e) => {
-    ByTimeElementAnimation(".side__link__image", "--fadeinup", "asc", 500);
+    ByTimeElementAnimation(".side__link__image", "--fadeinup", "desc", 250);
 
     // const Elements = document.querySelectorAll(".side__link__image");
     // Elements.forEach(Element => {
