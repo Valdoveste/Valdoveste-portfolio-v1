@@ -1,27 +1,6 @@
 import React from "react";
 import Cube from '../Cube/Cubes'
 
-window.addEventListener("load", (e) => {
-    let flag = true;
-    const about = document.getElementById('about')!;
-
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0 && flag) {
-                const txt = document.querySelectorAll('.scene1')[0];
-                const txt1 = document.querySelectorAll('.scene2')[0];
-                const txt2 = document.querySelectorAll('.scene3')[0];
-                txt.classList.add("--txt");
-                txt1.classList.add("--txt");
-                txt2.classList.add("--txt");
-            }
-        });
-    });
-
-    observer.observe(about)
-})
-
 const About: React.FC = () => {
     return (
         <section id="about">
