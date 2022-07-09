@@ -14,7 +14,6 @@
         border-radius: 5px;
         border: 1px solid #17171778;
         box-shadow: 5px 5px 10px 5px #171717;
-        transition: transform ease-in-out 500ms;
 
         .icons {
             right: 10px;
@@ -117,7 +116,7 @@
 }
 
 // Tablet Screnn
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     #card-container {
         padding: 0;
 
@@ -147,6 +146,87 @@
         padding: 0;
 
         .card {
+            opacity: 0;
+            height: auto;
+            overflow: hidden;
+            box-shadow: unset;
+
+            &:nth-child(even) {
+                direction: unset;
+
+                .icons {
+                    left: unset;
+                    direction: unset;
+                    transform: scaleX(1);
+                }
+
+                .card__content__info {
+                    direction: unset;
+                }
+            }
+
+            .card__content {
+                flex-direction: column;
+                justify-content: space-between;
+
+                .card__logo {
+                    display: none;
+                }
+
+                .card__content__info {
+                    width: 100%;
+                    padding: 1.75rem;
+                    align-items: center;
+
+                    .icons {
+                        width: 100%;
+                        right: unset;
+                        bottom: unset;
+                        padding: 15px;
+                        position: unset;
+
+                        @include flexCenter(center, center, row);
+
+                        .card__github__link svg {
+                                width: 50px;
+                                height: 50px;
+                        }
+
+                        .card__page__link {
+                            width: 45px;
+                            height: 45px;
+                            display: block;
+                            margin-left: 1.25rem;
+
+                            svg {
+                                width: 45px;
+                                height: 45px;
+                                padding: 6px;
+                            }
+                        }
+                    }
+
+                    .card__content__title {
+                        margin-top: 0;
+                        width: 100%;
+                    }
+
+                    .card__content__text {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Smartphone Screen
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+    #card-container {
+        padding: 0;
+
+        .card {
+            opacity: 1;
             height: auto;
             overflow: hidden;
             box-shadow: unset;
