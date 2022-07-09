@@ -1,38 +1,9 @@
-import React from "react";
+import React from 'react';
 import PortfolioCards from '../../cards'
-
-window.addEventListener("load", (e) => {
-    const cards = document.querySelectorAll('.card')!;
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    const observerCards = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-            var target = entry.target;
-            if (entry.isIntersecting) {
-                if (mediaQuery.matches) {
-                    target.classList.add("--fadeinup");
-                } else {
-                    if (parseInt(target.id) % 2 === 0) {
-                        target.classList.add("--fadetoright");
-                    } else {
-                        target.classList.add("--fadetoleft");
-                    }
-                }
-            }
-        });
-    });
-
-    cards.forEach(card => {
-        observerCards.observe(card)
-        card.addEventListener("animationend", (e) => {
-            card.classList.add("--opacity")
-        })
-    })
-})
 
 const Portfolio: React.FC = () => {
 
-    const renderCardsLogo = (): JSX.Element[] => {
+    const renderCards = (): JSX.Element[] => {
         return PortfolioCards.map((card) => {
             return (
                 <div className="card" id={card.id.toString()} key={card.id}>
@@ -89,6 +60,7 @@ const Portfolio: React.FC = () => {
     }
 
     return (
+
         <section id="portfolio">
             <article>
                 <h1 className="portfolio__title">
@@ -102,7 +74,7 @@ const Portfolio: React.FC = () => {
                 </p>
 
                 <div id="card-container">
-                    {renderCardsLogo()}
+                    {renderCards()}
                 </div>
 
             </article>
