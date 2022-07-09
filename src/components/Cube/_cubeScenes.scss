@@ -25,7 +25,7 @@
     transition: all ease-out 1.7s;
     opacity: 0;
 
-    &.--txt {
+    &.--fadeincube {
       transform: scale(2.3);
       opacity: 1;
     }
@@ -37,7 +37,7 @@
     animation: fadeCubeInner 4s linear;
     transition: transform ease-out 2.1s;
 
-    &.--txt {
+    &.--fadeincube {
       transform: scale(1.45);
     }
   }
@@ -48,7 +48,7 @@
     animation: fadeCubeInnerInner 9s linear;
     transition: transform ease-out 2.3s;
 
-    &.--txt {
+    &.--fadeincube {
       transform: scale(0.6);
     }
   }
@@ -60,6 +60,30 @@
 
 @import './_cubeAnimation';
 
+// Tablet Screen
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .technologies__cubes {
+
+    // Outter
+    .scene2 {
+      &.--fadeincube {
+        opacity: 1;
+        transform: scale(1.9);
+      }
+    }
+
+    // Inner
+    .scene1 {
+      &.--fadeincube {
+        transform: scale(1.35);
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
 // SmartPhone Screen
 @media only screen and (min-width: 100px) and (max-width: 600px) {
 
@@ -70,7 +94,7 @@
 
     // Outter
     .scene2 {
-      &.--txt {
+      &.--fadeincube {
         transform: scale(1.2);
 
       }
@@ -78,14 +102,14 @@
 
     // Inner
     .scene1 {
-      &.--txt {
+      &.--fadeincube {
         transform: scale(0.7);
       }
     }
 
     // InnerInner
     .scene3 {
-      &.--txt {
+      &.--fadeincube {
         transform: scale(0.4);
       }
     }
@@ -93,25 +117,27 @@
 
 }
 
-// Tablet Screen
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+// SmartPhone Screen
+@media only screen and (min-width: 100px) and (max-width: 360px) {
 
   .technologies__cubes {
+    width: 100%;
+    height: 300px;
+    margin-top: 2.5rem;
 
     // Outter
     .scene2 {
-      &.--txt {
-        opacity: 1;
-        transform: scale(1.9);
-      }
+      transform: scale(1.2);
     }
 
     // Inner
     .scene1 {
-      &.--txt {
-        transform: scale(1.35);
-        opacity: 1;
-      }
+      transform: scale(0.7);
+    }
+
+    // InnerInner
+    .scene3 {
+      transform: scale(0.4);
     }
   }
 
