@@ -227,15 +227,15 @@ main section p[class*="__text"] {
 }
 
 .--fadetoleft {
-  opacity: 0%;
-  -webkit-animation: fadeToLeft 1.5s;
-          animation: fadeToLeft 1.5s;
+  opacity: 0;
+  -webkit-animation: fadeToLeft 2.2s;
+          animation: fadeToLeft 2.2s;
 }
 
 .--fadetoright {
-  opacity: 0%;
-  -webkit-animation: fadetoright 1.5s;
-          animation: fadetoright 1.5s;
+  opacity: 0;
+  -webkit-animation: fadetoright 2.2s;
+          animation: fadetoright 2.2s;
 }
 
 .--opacity {
@@ -243,7 +243,7 @@ main section p[class*="__text"] {
 }
 
 .--fadeinup {
-  opacity: 0%;
+  opacity: 0;
   -webkit-animation: fadeinup 1.5s 150ms both;
           animation: fadeinup 1.5s 150ms both;
 }
@@ -275,8 +275,8 @@ main section p[class*="__text"] {
 @-webkit-keyframes fadeToLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(50%, 0, 0);
-            transform: translate3d(50%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   25% {
     opacity: 10%;
@@ -291,8 +291,8 @@ main section p[class*="__text"] {
 @keyframes fadeToLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(50%, 0, 0);
-            transform: translate3d(50%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   25% {
     opacity: 10%;
@@ -307,8 +307,8 @@ main section p[class*="__text"] {
 @-webkit-keyframes fadetoright {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
   }
   25% {
     opacity: 10%;
@@ -323,8 +323,8 @@ main section p[class*="__text"] {
 @keyframes fadetoright {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
   }
   25% {
     opacity: 10%;
@@ -442,7 +442,7 @@ main section p[class*="__text"] {
   opacity: 0;
 }
 
-.technologies__cubes .scene2.--txt {
+.technologies__cubes .scene2.--fadeincube {
   -webkit-transform: scale(2.3);
           transform: scale(2.3);
   opacity: 1;
@@ -459,7 +459,7 @@ main section p[class*="__text"] {
   transition: transform ease-out 2.1s, -webkit-transform ease-out 2.1s;
 }
 
-.technologies__cubes .scene1.--txt {
+.technologies__cubes .scene1.--fadeincube {
   -webkit-transform: scale(1.45);
           transform: scale(1.45);
 }
@@ -475,7 +475,7 @@ main section p[class*="__text"] {
   transition: transform ease-out 2.3s, -webkit-transform ease-out 2.3s;
 }
 
-.technologies__cubes .scene3.--txt {
+.technologies__cubes .scene3.--fadeincube {
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
@@ -756,36 +756,56 @@ main section p[class*="__text"] {
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .technologies__cubes .scene2.--fadeincube {
+    opacity: 1;
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+  .technologies__cubes .scene1.--fadeincube {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 100px) and (max-width: 600px) {
   .technologies__cubes {
     width: 100%;
     height: 300px;
     margin-top: 2.5rem;
   }
-  .technologies__cubes .scene2.--txt {
+  .technologies__cubes .scene2.--fadeincube {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  .technologies__cubes .scene1.--txt {
+  .technologies__cubes .scene1.--fadeincube {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .technologies__cubes .scene3.--txt {
+  .technologies__cubes .scene3.--fadeincube {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .technologies__cubes .scene2.--txt {
-    opacity: 1;
-    -webkit-transform: scale(1.9);
-            transform: scale(1.9);
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .technologies__cubes {
+    width: 100%;
+    height: 300px;
+    margin-top: 2.5rem;
   }
-  .technologies__cubes .scene1.--txt {
-    -webkit-transform: scale(1.35);
-            transform: scale(1.35);
-    opacity: 1;
+  .technologies__cubes .scene2 {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .technologies__cubes .scene1 {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .technologies__cubes .scene3 {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
   }
 }
 
@@ -1258,10 +1278,6 @@ main section p[class*="__text"] {
   border: 1px solid #17171778;
   -webkit-box-shadow: 5px 5px 10px 5px #171717;
           box-shadow: 5px 5px 10px 5px #171717;
-  -webkit-transition: -webkit-transform ease-in-out 500ms;
-  transition: -webkit-transform ease-in-out 500ms;
-  transition: transform ease-in-out 500ms;
-  transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
 }
 
 #portfolio #card-container .card .icons {
@@ -1399,7 +1415,7 @@ main section p[class*="__text"] {
   padding: 1rem;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   #portfolio #card-container {
     padding: 0;
   }
@@ -1436,6 +1452,93 @@ main section p[class*="__text"] {
     padding: 0;
   }
   #portfolio #card-container .card {
+    opacity: 0;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  #portfolio #card-container .card:nth-child(even) {
+    direction: unset;
+  }
+  #portfolio #card-container .card:nth-child(even) .icons {
+    left: unset;
+    direction: unset;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  #portfolio #card-container .card:nth-child(even) .card__content__info {
+    direction: unset;
+  }
+  #portfolio #card-container .card .card__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #portfolio #card-container .card .card__content .card__logo {
+    display: none;
+  }
+  #portfolio #card-container .card .card__content .card__content__info {
+    width: 100%;
+    padding: 1.75rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .icons {
+    width: 100%;
+    right: unset;
+    bottom: unset;
+    padding: 15px;
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link svg {
+    width: 50px;
+    height: 50px;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-left: 1.25rem;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link svg {
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .card__content__title {
+    margin-top: 0;
+    width: 100%;
+  }
+  #portfolio #card-container .card .card__content .card__content__info .card__content__text {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  #portfolio #card-container {
+    padding: 0;
+  }
+  #portfolio #card-container .card {
+    opacity: 1;
     height: auto;
     overflow: hidden;
     -webkit-box-shadow: unset;
