@@ -121,33 +121,68 @@ main section p[class*="__text"] {
 #home #homeCheckbox:checked ~ #side__icones .right__side__icones .side__icone__list .lang:not(.lang:first-child) {
   -webkit-animation: dropDown 500ms;
           animation: dropDown 500ms;
-  -webkit-transform: translate3d(0, 45px, 0);
-          transform: translate3d(0, 45px, 0);
+  -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
+  width: 20px;
+  height: 25px;
   opacity: 1;
 }
 
 #home #side__icones .right__side__icones {
-  top: 35px;
+  top: 0;
   display: block;
   position: absolute;
 }
 
-#home #side__icones .right__side__icones .side__link__image {
+#home #side__icones .right__side__icones .side__icone__list {
+  padding: 0;
+  height: auto;
+  overflow: unset;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#home #side__icones .right__side__icones .side__icone__list .side__icone__item,
+#home #side__icones .right__side__icones .side__icone__list .side__icone__item label,
+#home #side__icones .right__side__icones .side__icone__list .side__icone__item .side__link {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#home #side__icones .right__side__icones .side__icone__list .side__link__image {
   top: 0;
   z-index: 9;
-  left: 25px;
   width: 40px;
   height: 40px;
   cursor: pointer;
   position: absolute;
 }
 
-#home #side__icones .right__side__icones .lang:not(.lang:first-child) {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -5px, 0);
-          transform: translate3d(0, -5px, 0);
-  -webkit-transition: all ease-in-out 500ms;
-  transition: all ease-in-out 500ms;
+#home #side__icones .right__side__icones .side__icone__list .lang:not(.lang:first-child) {
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, -25px, 0);
+          transform: translate3d(0, -25px, 0);
+  -webkit-transition: opacity ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s;
+  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
 }
 
 #home .home__content {
@@ -181,26 +216,34 @@ main section p[class*="__text"] {
 @-webkit-keyframes dropDown {
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 45px, 0);
-            transform: translate3d(0, 45px, 0);
+    width: 20px;
+    height: 25px;
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
   }
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
   }
 }
 
 @keyframes dropDown {
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 45px, 0);
-            transform: translate3d(0, 45px, 0);
+    width: 20px;
+    height: 25px;
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
   }
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate3d(0, -25px, 0);
+            transform: translate3d(0, -25px, 0);
   }
 }
 
@@ -388,14 +431,6 @@ main section p[class*="__text"] {
   cursor: pointer;
   font-weight: bold;
   position: relative;
-  -webkit-transition: all ease-in-out 500ms;
-  transition: all ease-in-out 500ms;
-  text-shadow: 4px 4px 0px #3c4043;
-}
-
-#about .about__content .about__technologies .about__technologies__list .technologies__item:hover {
-  color: #3c4043c4;
-  text-shadow: 5px 5px 0px #fff;
 }
 
 .technologies__cubes {
@@ -757,15 +792,13 @@ main section p[class*="__text"] {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .technologies__cubes .scene2.--fadeincube {
-    opacity: 1;
+  .technologies__cubes .scene2 {
     -webkit-transform: scale(1.9);
             transform: scale(1.9);
   }
-  .technologies__cubes .scene1.--fadeincube {
+  .technologies__cubes .scene1 {
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
-    opacity: 1;
   }
 }
 
