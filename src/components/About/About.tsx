@@ -31,9 +31,9 @@ const About: React.FC = () => {
                         <li className="technologies__item">HTML</li>
                         <li className="technologies__item">CSS</li>
                         <li className="technologies__item">SASS</li>
-                        <li className="technologies__item">Git</li>
+                        <li className="technologies__item">Git & GitHub</li>
                         <li className="technologies__item">GitFlow</li>
-                        <li className="technologies__item">MySQL</li>
+                        <li className="technologies__item">MySQL(SSMS)</li>
                     </ul>
                     <ul className="about__technologies__list">
                         <li className="technologies__item">Aprendendo:</li>
