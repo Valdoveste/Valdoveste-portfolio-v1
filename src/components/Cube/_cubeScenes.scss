@@ -67,18 +67,18 @@
 
     // Outter
     .scene2 {
-      &.--fadeincube {
-        opacity: 1;
-        transform: scale(1.9);
-      }
+      transform: scale(1.9);
+      // &.--fadeincube {
+      //   opacity: 1;
+      // }
     }
 
     // Inner
     .scene1 {
-      &.--fadeincube {
-        transform: scale(1.35);
-        opacity: 1;
-      }
+      transform: scale(1.35);
+      // &.--fadeincube {
+      //   opacity: 1;
+      // }
     }
   }
 
