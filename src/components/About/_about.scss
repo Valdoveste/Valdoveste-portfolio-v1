@@ -21,13 +21,6 @@
                     cursor: pointer;
                     font-weight: bold;
                     position: relative;
-                    transition: all ease-in-out 500ms;
-                    text-shadow: 4px 4px 0px #3c4043;
-
-                    &:hover {
-                        color: #3c4043c4;
-                        text-shadow: 5px 5px 0px #fff;
-                    }
                 }
             }
 
@@ -37,8 +30,8 @@
 
 @import '../Cube/_cubeScenes';
 
-@media only screen and (max-width: 1280px){
-    #about{
+@media only screen and (max-width: 1280px) {
+    #about {
         height: auto;
     }
 }
