@@ -10,31 +10,55 @@
 
     #homeCheckbox:checked~#side__icones .right__side__icones .side__icone__list .lang:not(.lang:first-child) {
         animation: dropDown 500ms;
-        transform: translate3d(0, 45px, 0);
+        transform: translate3d(0, 0px, 0);
+        width: 20px;
+        height: 25px;
         opacity: 1;
     }
 
     #side__icones {
         .right__side__icones {
-            top: 35px;
+            top: 0;
             display: block;
             position: absolute;
 
-            .side__link__image {
-                top: 0;
-                z-index: 9;
-                left: 25px;
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-                position: absolute;
+            .side__icone__list {
+                padding: 0;
+                height: auto;
+                overflow: unset;
+                justify-content: flex-start;
+
+                .side__icone__item,
+                .side__icone__item label,
+                .side__icone__item .side__link {
+                    width: 100px;
+                    height: 50px;
+                    @include flexCenter(center, center, row);
+                }
+
+                .side__link__image {
+                    top: 0;
+                    z-index: 9;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    position: absolute;
+                }
+
+                .lang:not(.lang:first-child) {
+                    opacity: 1;
+                    width: 0px;
+                    height: 0px;
+                    overflow: hidden;
+                    transform: translate3d(0, -25px, 0);
+                    transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s;
+                    // margin-right: 0.3rem;
+                    // &:last-child {
+                    //     margin-top: 0.5rem
+                    // }
+                }
             }
 
-            .lang:not(.lang:first-child) {
-                opacity: 0;
-                transform: translate3d(0, -5px, 0);
-                transition: all ease-in-out 500ms;
-            }
         }
     }
 
@@ -56,12 +80,16 @@
 @keyframes dropDown {
     to {
         opacity: 1;
-        transform: translate3d(0, 45px, 0);
+        width: 20px;
+        height: 25px;
+        transform: translate3d(0, 0px, 0);
     }
 
     from {
         opacity: 0;
-        transform: translate3d(0, -5px, 0);
+        width: 0px;
+        height: 0px;
+        transform: translate3d(0, -25px, 0);
     }
 }
 
