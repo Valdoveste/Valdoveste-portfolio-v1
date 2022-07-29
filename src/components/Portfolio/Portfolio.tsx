@@ -64,15 +64,14 @@ const Portfolio: React.FC = () => {
         <section id="portfolio">
             <article>
                 <h1 className="portfolio__title">
-                    My Portfolio
+                    {/* My Portfolio */}
+                    Meu Portfolio
                 </h1>
                 <p className="portfolio__text">
-                    Here is a small collection of projects that I've worked on recently.
-                    Always that's possible I like to come back and rework some of the
-                    aspects of these projects refactoring codes, making better layouts,
-                    and improving the design.
+                    Aqui é uma pequena coleção de projetos que trabalhei recentemente.
+                    Sempre que possível eu sinto vontade de retornar a estes projetos e retabalhar
+                    algumas partes tanto funcional quanto visual.
                 </p>
-
                 <div id="card-container">
                     {renderCards()}
                 </div>

@@ -19,14 +19,14 @@ const Social: React.FC = () => {
                 <ul className="side__icone__list">
 
                     <li className="side__icone__item">
-                        <a href="mailto:caio.valdoveste@outlook.com.br">
+                        <a href="mailto:caio.valdoveste@outlook.com.br" title="Email">
                             <svg className="side__link__image" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z" /></svg>
 
                         </a>
                     </li>
 
                     <li className="side__icone__item">
-                        <a href="https://github.com/Valdoveste" className="side__link">
+                        <a href="https://github.com/Valdoveste" className="side__link" title="Github">
                             <svg className="side__link__image" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M17,7.625C17,7.15,16.968,6.567,16.75,6c0,0-1.426,0.01-2.771,1.284C13.358,7.103,12.694,7,12,7	
                                 c-0.694,0-1.358,0.103-1.979,0.284C8.676,6.01,7.25,6,7.25,6C7.033,6.567,7,7.15,7,7.625c0,0.719,0.128,1.16,0.205,1.378
@@ -40,7 +40,7 @@ const Social: React.FC = () => {
                     </li>
 
                     <li className="side__icone__item">
-                        <a href="https://linkedin.com/in/valdoveste" className="side__link">
+                        <a href="https://linkedin.com/in/valdoveste" className="side__link" title="LinkedIn">
                             <svg className="side__link__image" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48
                                  2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 

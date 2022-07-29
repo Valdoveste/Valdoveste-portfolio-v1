@@ -33,7 +33,7 @@ const Header: React.FC = () => {
                         <a href="/about"
                             onClick={scrollTo}
                             className="header__navbar__link">
-                            About
+                            Sobre
                         </a>
                     </li>
 
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                         <a href="/contact"
                             onClick={scrollTo}
                             className="header__navbar__link">
-                            Contact
+                            Contato
                         </a>
                     </li>
                 </ul>

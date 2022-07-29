@@ -5,12 +5,11 @@ const Contact: React.FC = () => {
         <section id="contact">
             <article className="contact__header">
                 <h1 className="contact__header__title">
-                    Contact
+                    Contato
                 </h1>
                 <p className="contact__header__text">
-                    Thanks for making it all the way here.
-                    I'm open to job opportunities, so feel free to contact me.
-                    Whether you have any questions or just want to say hello, I'll do my best to reach out.
+                    Obrigado por chegar até aqui. Estou aberto para oportunidades, 
+                    então caso tenha alguma dúvida ou queria mandar um "Oi", sinta-se livre para me contatar.
                 </p>
             </article>
 
@@ -20,7 +19,7 @@ const Contact: React.FC = () => {
                         type="text"
                         className="form__text"
                         name="Name"
-                        placeholder="Name"
+                        placeholder="Nome"
                         required
                     />
 
@@ -36,20 +35,20 @@ const Contact: React.FC = () => {
                     type="text"
                     className="form__text"
                     name="Subject"
-                    placeholder="Subject"
+                    placeholder="Assunto"
                     required
                 />
 
                 <textarea
                     className="form__message"
                     name="Message"
-                    placeholder="Description"
+                    placeholder="Descrição"
                     required
                 />
 
                 <input
                     type="submit"
-                    value="Send"
+                    value="Enviar"
                     id="from__submit"
                     className="form-btn"
                     required

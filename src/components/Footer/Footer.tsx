@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
             <ul className="footer__list">
                 <li className="footer__item">
                     <span className="footer__copyrights">
-                        <a href="mailto:hi@valdoveste.com" className="footer__copyrights__link">hi@valdoveste.com&nbsp;|&nbsp;</a>© Valdoveste. All Rights Reserved.
+                        <a href="mailto:hi@valdoveste.com" className="footer__copyrights__link">hi@valdoveste.com&nbsp;|&nbsp;</a>© Valdoveste - Todos os direitos reservados.
                     </span>
                 </li>
             </ul>

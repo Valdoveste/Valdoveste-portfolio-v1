@@ -48,23 +48,25 @@ const Home: React.FC = () => {
 
             <article className="home__content">
                 <h1 className="home__content__title --fadeinup" style={styles.firstTransiton}>
-                    Hi,
+                    Olá,
                 </h1>
 
                 <h1 className="home__content__title --fadeinup" style={styles.secondTransiton}>
-                    I'm Valdoveste
+                    {/* I'm Valdoveste */}
+                    Sou Valdoveste
                 </h1>
                 <p className="home__content__text --fadeinup" style={styles.thirdTransiton}>
-                    FrontEND Developer
+                    {/* FrontEND Developer Jr*/}
+                    Desenvolvedor FrontEND Jr
                 </p>
                 <p className="home__content__text --fadeinup" style={styles.fourthTransiton}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque lobortis eleifend tellus, ut fermentum mauris luctus ac.
-                    Cras finibus quis ante id interdum. Nam eget leo metus. Donec tincidunt magnaneque, vitae accumsan augue consequat eget.
+                    Sempre buscando desenvolver minhas habilidades na construção de projetos para a web.
+                    Atualmente, focado na reconstrução do <a href="">LinggoAPP - Task Manager</a>.
                 </p>
 
                 <a href="/contact" onClick={scrollTo} className="btn-section --fadeinup" style={styles.fifthTransiton}>
-                    Get In Touch
+                    {/* Get In Touch */}
+                    Entre em contato
                     <span>
                     </span>
                 </a>
