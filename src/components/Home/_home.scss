@@ -18,7 +18,7 @@
 
     #side__icones {
         .right__side__icones {
-            top: 0;
+            top: 30px;
             display: block;
             position: absolute;
 
@@ -50,12 +50,9 @@
                     width: 0px;
                     height: 0px;
                     overflow: hidden;
-                    transform: translate3d(0, -25px, 0);
-                    transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s;
-                    // margin-right: 0.3rem;
-                    // &:last-child {
-                    //     margin-top: 0.5rem
-                    // }
+                    text-align: center;
+                    transform: translate3d(0, -55px, 0);
+                    transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 100ms, height 500ms 100ms;
                 }
             }
 
@@ -89,7 +86,7 @@
         opacity: 0;
         width: 0px;
         height: 0px;
-        transform: translate3d(0, -25px, 0);
+        transform: translate3d(0, -55px, 0);
     }
 }
 
