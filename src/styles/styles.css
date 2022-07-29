@@ -129,7 +129,7 @@ main section p[class*="__text"] {
 }
 
 #home #side__icones .right__side__icones {
-  top: 0;
+  top: 30px;
   display: block;
   position: absolute;
 }
@@ -177,12 +177,13 @@ main section p[class*="__text"] {
   width: 0px;
   height: 0px;
   overflow: hidden;
-  -webkit-transform: translate3d(0, -25px, 0);
-          transform: translate3d(0, -25px, 0);
-  -webkit-transition: opacity ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
-  transition: opacity ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
-  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s;
-  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 1s, height 500ms 1s, -webkit-transform ease-in-out 500ms;
+  text-align: center;
+  -webkit-transform: translate3d(0, -55px, 0);
+          transform: translate3d(0, -55px, 0);
+  -webkit-transition: opacity ease-in-out 500ms, width 500ms 100ms, height 500ms 100ms, -webkit-transform ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms, width 500ms 100ms, height 500ms 100ms, -webkit-transform ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 100ms, height 500ms 100ms;
+  transition: opacity ease-in-out 500ms, transform ease-in-out 500ms, width 500ms 100ms, height 500ms 100ms, -webkit-transform ease-in-out 500ms;
 }
 
 #home .home__content {
@@ -225,8 +226,8 @@ main section p[class*="__text"] {
     opacity: 0;
     width: 0px;
     height: 0px;
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
+    -webkit-transform: translate3d(0, -55px, 0);
+            transform: translate3d(0, -55px, 0);
   }
 }
 
@@ -242,8 +243,8 @@ main section p[class*="__text"] {
     opacity: 0;
     width: 0px;
     height: 0px;
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
+    -webkit-transform: translate3d(0, -55px, 0);
+            transform: translate3d(0, -55px, 0);
   }
 }
 
@@ -407,7 +408,7 @@ main section p[class*="__text"] {
 }
 
 #about .about__content .about__technologies {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,9 +429,13 @@ main section p[class*="__text"] {
 }
 
 #about .about__content .about__technologies .about__technologies__list .technologies__item {
-  cursor: pointer;
   font-weight: bold;
   position: relative;
+}
+
+#about .about__content .about__technologies .about__technologies__list .technologies__item:first-child {
+  list-style: square;
+  margin-bottom: 0.5rem;
 }
 
 .technologies__cubes {
@@ -867,12 +872,14 @@ main section p[class*="__text"] {
             flex-direction: column;
   }
   #about .about__content .about__technologies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: default;
-        -ms-flex-align: default;
-            align-items: default;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -881,15 +888,8 @@ main section p[class*="__text"] {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #about .about__content .about__technologies .about__technologies__list {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-  }
   #about .about__content .about__technologies .about__technologies__list:first-child {
     margin-right: 0;
-  }
-  #about .about__content .about__technologies .about__technologies__list .technologies__item:first-child {
     margin-bottom: 5px;
   }
   #about .about__text {
@@ -899,7 +899,7 @@ main section p[class*="__text"] {
 
 #header {
   top: 0;
-  z-index: 9;
+  z-index: 10;
   width: 100%;
   height: auto;
   position: fixed;
@@ -1816,6 +1816,9 @@ main section p[class*="__text"] {
 @media only screen and (min-width: 100px) and (max-width: 600px) {
   main section {
     padding: 30px 1.5rem 65px 1.5rem;
+  }
+  main section article {
+    width: 100%;
   }
   main section h1[class*="__title"] {
     font-size: 4rem;
