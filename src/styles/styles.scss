@@ -112,6 +112,11 @@ main {
 
     main {
         section {
+
+            article {
+                width: 100%;
+            }
+
             h1[class*="__title"] {
                 font-size: 4rem;
             }
