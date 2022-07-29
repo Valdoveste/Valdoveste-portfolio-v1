@@ -11,14 +11,17 @@
         }
 
         .about__technologies {
-            margin-top: 3.5rem;
+            margin-top: 3rem;
             @include flexCenter(default, space-between, row);
 
             .about__technologies__list {
                 height: 100%;
 
                 .technologies__item {
-                    cursor: pointer;
+                    &:first-child {
+                        list-style: square;
+                        margin-bottom: 0.5rem;
+                    }
                     font-weight: bold;
                     position: relative;
                 }
@@ -45,16 +48,12 @@
 
         .about__content {
             .about__technologies {
-                @include flexCenter(default, space-between, row);
+                flex-wrap: wrap;
+                @include flexCenter(unset, space-between, row);
 
                 .about__technologies__list {
-                    width: min-content;
-
                     &:first-child {
                         margin-right: 0;
-                    }
-
-                    & .technologies__item:first-child {
                         margin-bottom: 5px;
                     }
                 }
