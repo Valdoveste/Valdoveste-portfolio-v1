@@ -1,23 +1,23 @@
 // Cube border
 .cube__outter .cube__face {
     border: 1px solid #3c404331;
-    animation: outterStroke 15s linear infinite alternate;
+    animation: outterStroke 50s linear infinite alternate;
 }
 
 .cube__inner .cube__face {
     border: 1px solid #3c40439a;
-    animation: innerStroke 20s linear infinite alternate;
+    animation: innerStroke 45s linear infinite alternate;
 }
 
 .cube__inner__inner .cube__face {
     border: 1px solid #3c4043;
-    animation: innerInnerStroke 25s linear infinite alternate;
+    animation: innerInnerStroke 40s linear infinite alternate;
 }
 
 @keyframes outterStroke {
     0% {
-        border-radius: 5%;
-        border-color: #3c40433b;
+        border-radius: 2.5%;
+        border-color: #3c404331;
     }
 
     100% {
@@ -28,8 +28,8 @@
 
 @keyframes innerStroke {
     0% {
-        border-radius: 5%;
-        border-color: #3c4043ab;
+        border-radius: 2.5%;
+        border-color: #3c40439a;
     }
 
     100% {
@@ -40,31 +40,31 @@
 
 @keyframes innerInnerStroke {
     0% {
-        border-radius: 5%;
+        border-radius: 2.5%;
         border-color: #3c4043;
-        box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0);
+        box-shadow: 1px 1px 1px 1px #ffffff00;
     }
 
     100% {
         border-radius: 60%;
-        border-color: rgba(255, 255, 255, 0.508);
-        box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.508);
+        border-color: #ffffff49;
+        box-shadow: 1px 1px 4px 1px #ffffff73;
     }
 }
 
 // Cube rotation
 .cube__outter {
-    animation: outter 45s linear infinite alternate;
+    animation: outter 50s linear infinite;
     transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
 }
 
 .cube__inner {
-    animation: inner 45s linear infinite alternate;
+    animation: inner 45s linear infinite;
     transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(45deg);
 }
 
 .cube__inner__inner {
-    animation: innerInner 45s linear infinite alternate;
+    animation: innerInner 40s linear infinite;
     transform: translateZ(-50px) rotateY(-360deg) rotateX(-90deg) rotateZ(360deg);
 }
 
@@ -81,24 +81,22 @@
 
 @keyframes inner {
     0% {
-        transform: translateZ(-50px) rotateY(180deg) rotateX(180deg) rotateZ(-360deg)
+        transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
     }
 
     100% {
-        transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(45deg)
+        transform: translateZ(-50px) rotateY(180deg) rotateX(180deg) rotateZ(-360deg)
     }
-
 }
 
 @keyframes innerInner {
     0% {
-        transform: translateZ(-50px) rotateY(-360deg) rotateX(-90deg) rotateZ(360deg)
+        transform: translateZ(-50px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
     }
 
     100% {
-        transform: translateZ(-50px) rotateY(0deg) rotateX(90deg) rotateZ(-135deg)
+        transform: translateZ(-50px) rotateY(-360deg) rotateX(-360deg) rotateZ(360deg)
     }
-
 }
 
 // Cube fadein
