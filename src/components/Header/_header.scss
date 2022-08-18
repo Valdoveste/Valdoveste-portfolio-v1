@@ -26,15 +26,14 @@
 
         .header__navbar__list {
 
-            .header__navbar__brand {
-                font-size: 3rem;
-                font-weight: bold;
-                text-shadow: 2px 5px 2px #4527a0;
+            .header__navbar__item .header__navbar__brand{
+                height: 40px;
+                display: block;
             }
 
             .header__navbar__brand__image {
-                width: 45px;
-                height: auto;
+                width: 40px;
+                height: 40px;
             }
 
             &:first-child {
@@ -64,7 +63,7 @@
                         }
 
                         font-size: 1.3rem;
-                        color: #6a6b6cc4;
+                        color: #6a6b6c;
                         transition: color ease-out 250ms;
 
                         &:hover {
