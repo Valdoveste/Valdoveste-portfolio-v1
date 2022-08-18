@@ -1,5 +1,7 @@
 import React from "react";
-import scrollTo from "../../Effects/ScrollTo"
+import Cube from "../Cube/Cubes";
+import scrollTo from "../../Effects/ScrollTo";
+import { setLanguage } from "../../Effects/Langagues";
 
 const Home: React.FC = () => {
 
@@ -36,10 +38,10 @@ const Home: React.FC = () => {
                                 </span>
                             </label>
                         </li>
-                        <li className="lang">
+                        <li id="eng-usa" title="eng-usa" className="lang" onClick={(e) => setLanguage(e, false)}>
                             EN
                         </li>
-                        <li className="lang">
+                        <li id="pt-br" title="pt-br" className="lang active" onClick={(e) => setLanguage(e, true)}>
                             BR
                         </li>
                     </ul>
@@ -52,25 +54,27 @@ const Home: React.FC = () => {
                 </h1>
 
                 <h1 className="home__content__title --fadeinup" style={styles.secondTransiton}>
-                    {/* I'm Valdoveste */}
                     Sou Valdoveste
                 </h1>
                 <p className="home__content__text --fadeinup" style={styles.thirdTransiton}>
-                    {/* FrontEND Developer Jr*/}
                     Desenvolvedor FrontEND Jr
                 </p>
                 <p className="home__content__text --fadeinup" style={styles.fourthTransiton}>
-                    Sempre buscando desenvolver minhas habilidades na construção de projetos para a web.
-                    Atualmente, focado na reconstrução do <a href="">LinggoAPP - Task Manager</a>.
+                    Constantemente desenvolvendo minhas habilidades na construção de aplicações WEB.
+                    Atualmente, focado na reconstrução do <a href="https://github.com/Linggo-App/linggo" target="_blank" rel="noreferrer">LinggoAPP - Task Manager</a>.
                 </p>
 
                 <a href="/contact" onClick={scrollTo} className="btn-section --fadeinup" style={styles.fifthTransiton}>
-                    {/* Get In Touch */}
-                    Entre em contato
+                    <p className="btn-section__text">
+                        Entre em contato
+                    </p>
                     <span>
                     </span>
                 </a>
+            </article>
 
+            <article className="technologies__cubes">
+                <Cube></Cube>
             </article>
         </section>
     );
