@@ -64,7 +64,6 @@ const Portfolio: React.FC = () => {
         <section id="portfolio">
             <article>
                 <h1 className="portfolio__title">
-                    {/* My Portfolio */}
                     Meu Portfolio
                 </h1>
                 <p className="portfolio__text">
