@@ -10,8 +10,11 @@
                     color: #afafaf;
                 }
 
-                .footer__copyrights__link:hover {
-                    color: #e4e4e4;
+                .footer__copyrights__link{
+                    margin: 0 5px 0 0;
+                    &:hover {
+                        color: #e4e4e4;
+                    }
                 }
             }
         }
