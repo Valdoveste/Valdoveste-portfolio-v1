@@ -19,7 +19,7 @@ const Social: React.FC = () => {
                 <ul className="side__icone__list">
 
                     <li className="side__icone__item">
-                        <a href="mailto:caio.valdoveste@outlook.com.br" title="Email">
+                        <a href="mailto:oi@valdoveste.com>" title="E-mail">
                             <svg className="side__link__image" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z" /></svg>
 
                         </a>
