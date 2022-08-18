@@ -3,6 +3,7 @@
     .right__side__icones {
         right: 0px;
         display: none;
+        z-index: 4;
     }
 
     .left__side__icones {
@@ -69,7 +70,7 @@
             bottom: 0;
 
             .side__icone__list {
-
+                padding: 0;
                 .side__icone__item {
 
                     .side__link__image {
