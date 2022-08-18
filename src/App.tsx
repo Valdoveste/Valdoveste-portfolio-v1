@@ -7,18 +7,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/styles.css'
 
-window.addEventListener("load", (e) => {
-  const pandas = document.querySelectorAll(".lang");
-
-  
-  pandas.forEach(panda => {
-      panda.addEventListener("click", (e) => {
-          e.preventDefault();
-          console.log("a")
-      })
-  });
-})
-
 const App: React.FC = () => {
   window.addEventListener("DOMContentLoaded", (e) => {
 
@@ -73,9 +61,8 @@ const App: React.FC = () => {
       oberserSection.observe(section);
     });
 
-
     // Cube Observer
-    const aboutCube = document.getElementById('about')!;
+    const aboutCube = document.getElementById('home')!;
 
     const observerCube = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
