@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
+    const form: any = useRef();
+
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_h70y0wr', 'template_m1q1fdc', form.current, '0piez3rPuwFh_BSfk')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset();
+    };
+
     return (
         <section id="contact">
             <article className="contact__header">
@@ -8,17 +24,17 @@ const Contact: React.FC = () => {
                     Contato
                 </h1>
                 <p className="contact__header__text">
-                    Obrigado por chegar até aqui. Estou aberto para oportunidades, 
+                    Obrigado por chegar até aqui. Estou aberto para oportunidades,
                     então caso tenha alguma dúvida ou queria mandar um "Oi", sinta-se livre para me contatar.
                 </p>
             </article>
 
-            <form action="" className="contact__form">
+            <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <div className="contact__inputs">
                     <input
                         type="text"
                         className="form__text"
-                        name="Name"
+                        name="from_name"
                         placeholder="Nome"
                         required
                     />
@@ -26,23 +42,23 @@ const Contact: React.FC = () => {
                     <input
                         type="text"
                         className="form__text"
-                        name="Email"
-                        placeholder="Email"
+                        name="user_email"
+                        placeholder="E-mail"
                         required
                     />
                 </div>
                 <input
                     type="text"
                     className="form__text"
-                    name="Subject"
+                    name="subject"
                     placeholder="Assunto"
                     required
                 />
 
                 <textarea
                     className="form__message"
-                    name="Message"
-                    placeholder="Descrição"
+                    name="message"
+                    placeholder="Mensagem"
                     required
                 />
 
