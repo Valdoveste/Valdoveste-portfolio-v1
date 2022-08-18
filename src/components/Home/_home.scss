@@ -1,5 +1,6 @@
 #home {
     padding-top: 0;
+    overflow: hidden;
     margin-top: 55px;
     position: relative;
     @include flexCenter(center, flex-start, default);
@@ -45,6 +46,15 @@
                     position: absolute;
                 }
 
+                .lang {
+                    cursor: pointer;
+                    color: #636363;
+
+                    &.active {
+                        color: #fff;
+                    }
+                }
+
                 .lang:not(.lang:first-child) {
                     opacity: 1;
                     width: 0px;
@@ -60,6 +70,7 @@
     }
 
     .home__content {
+        z-index: 5;
         @include flexCenter(flex-start, default, column);
 
         .home__content__title,
@@ -71,8 +82,16 @@
             font-size: 6rem;
             height: min-content;
         }
+
+        .home__content__text {
+            a {
+                font-weight: 700;
+            }
+        }
     }
 }
+
+
 
 @keyframes dropDown {
     to {
