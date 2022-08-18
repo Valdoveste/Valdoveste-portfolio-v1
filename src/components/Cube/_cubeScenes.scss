@@ -26,7 +26,8 @@
     opacity: 0;
 
     &.--fadeincube {
-      transform: scale(2.3);
+      // transform: scale(2.3);
+      transform: scale(230%);
       opacity: 1;
     }
   }
@@ -38,7 +39,8 @@
     transition: transform ease-out 2.1s;
 
     &.--fadeincube {
-      transform: scale(1.45);
+      // transform: scale(1.45);
+      transform: scale(145%);
     }
   }
 
@@ -49,7 +51,8 @@
     transition: transform ease-out 2.3s;
 
     &.--fadeincube {
-      transform: scale(0.6);
+      // transform: scale(0.6);
+      transform: scale(60%);
     }
   }
 
@@ -60,85 +63,85 @@
 
 @import './_cubeAnimation';
 
-// Tablet Screen
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+// // Tablet Screen
+// @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
-  .technologies__cubes {
+//   .technologies__cubes {
 
-    // Outter
-    .scene2 {
-      transform: scale(1.9);
-      // &.--fadeincube {
-      //   opacity: 1;
-      // }
-    }
+//     // Outter
+//     .scene2 {
+//       transform: scale(1.9);
+//       // &.--fadeincube {
+//       //   opacity: 1;
+//       // }
+//     }
 
-    // Inner
-    .scene1 {
-      transform: scale(1.35);
-      // &.--fadeincube {
-      //   opacity: 1;
-      // }
-    }
-  }
+//     // Inner
+//     .scene1 {
+//       transform: scale(1.35);
+//       // &.--fadeincube {
+//       //   opacity: 1;
+//       // }
+//     }
+//   }
 
-}
+// }
 
-// SmartPhone Screen
-@media only screen and (min-width: 100px) and (max-width: 600px) {
+// // SmartPhone Screen
+// @media only screen and (min-width: 100px) and (max-width: 600px) {
 
-  .technologies__cubes {
-    width: 100%;
-    height: 300px;
-    margin-top: 2.5rem;
+//   .technologies__cubes {
+//     width: 100%;
+//     height: 300px;
+//     margin-top: 2.5rem;
 
-    // Outter
-    .scene2 {
-      &.--fadeincube {
-        transform: scale(1.2);
+//     // Outter
+//     .scene2 {
+//       &.--fadeincube {
+//         transform: scale(1.2);
 
-      }
-    }
+//       }
+//     }
 
-    // Inner
-    .scene1 {
-      &.--fadeincube {
-        transform: scale(0.7);
-      }
-    }
+//     // Inner
+//     .scene1 {
+//       &.--fadeincube {
+//         transform: scale(0.7);
+//       }
+//     }
 
-    // InnerInner
-    .scene3 {
-      &.--fadeincube {
-        transform: scale(0.4);
-      }
-    }
-  }
+//     // InnerInner
+//     .scene3 {
+//       &.--fadeincube {
+//         transform: scale(0.4);
+//       }
+//     }
+//   }
 
-}
+// }
 
-// SmartPhone Screen
-@media only screen and (min-width: 100px) and (max-width: 360px) {
+// // SmartPhone Screen
+// @media only screen and (min-width: 100px) and (max-width: 360px) {
 
-  .technologies__cubes {
-    width: 100%;
-    height: 300px;
-    margin-top: 2.5rem;
+//   .technologies__cubes {
+//     width: 100%;
+//     height: 300px;
+//     margin-top: 2.5rem;
 
-    // Outter
-    .scene2 {
-      transform: scale(1.2);
-    }
+//     // Outter
+//     .scene2 {
+//       transform: scale(1.2);
+//     }
 
-    // Inner
-    .scene1 {
-      transform: scale(0.7);
-    }
+//     // Inner
+//     .scene1 {
+//       transform: scale(0.7);
+//     }
 
-    // InnerInner
-    .scene3 {
-      transform: scale(0.4);
-    }
-  }
+//     // InnerInner
+//     .scene3 {
+//       transform: scale(0.4);
+//     }
+//   }
 
-}
+// }
