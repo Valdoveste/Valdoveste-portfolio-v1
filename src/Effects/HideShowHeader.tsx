@@ -1,10 +1,11 @@
 // Credits: Gary Simon - DesignCourse
 export default function hideAndShowHeader() {
-    const header = document.querySelector('.header__navbar')!;
-    const checkbox = document.getElementById('menuCheck') as HTMLInputElement | null;
     let lastScroll = 0;
-
+    
     window.addEventListener("scroll", () => {
+        const header = document.querySelector('.header__navbar')!;
+        const checkbox = document.getElementById('menuCheck') as HTMLInputElement | null;
+
         const currentScroll = window.pageYOffset;
         if (currentScroll <= 0) {
             if (checkbox != null)
