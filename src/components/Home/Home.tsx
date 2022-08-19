@@ -1,7 +1,7 @@
 import React from "react";
 import Cube from "../Cube/Cubes";
 import scrollTo from "../../Effects/ScrollTo";
-import { setLanguage } from "../../Effects/Langagues";
+import { setLanguage } from "../../language/setLanguage";
 
 const Home: React.FC = () => {
 
