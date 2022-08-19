@@ -65,11 +65,12 @@ const App: React.FC = () => {
     const aboutCube = document.getElementById('home')!;
 
     const observerCube = new IntersectionObserver((entries) => {
+      const sceneCube = document.querySelectorAll(".scene");
       entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
-          document.querySelectorAll('.scene1')[0].classList.add("--fadeincube");
-          document.querySelectorAll('.scene2')[0].classList.add("--fadeincube");
-          document.querySelectorAll('.scene3')[0].classList.add("--fadeincube");
+          sceneCube.forEach(scene => {
+            scene.classList.add("--fadeincube");
+          })
         }
       });
     }, options);

@@ -5,22 +5,22 @@
   position: relative;
   @include flexCenter(center, center, row);
 
-  .scene1,
-  .scene2,
-  .scene3 {
+  .scene:nth-child(1),
+  .scene:nth-child(2),
+  .scene:nth-child(3) {
     width: 200px;
     height: 200px;
     perspective: 400px;
   }
 
-  .scene1,
-  .scene3 {
+  .scene:nth-child(1),
+  .scene:nth-child(3) {
     position: absolute;
     transform: translate(50%, 50%);
   }
 
   // Outter
-  .scene2 {
+  .scene:nth-child(1) {
     transform: scale(0);
     transition: all ease-out 1.7s;
     opacity: 0;
@@ -33,7 +33,7 @@
   }
 
   // Inner
-  .scene1 {
+  .scene:nth-child(2) {
     transform: scale(0);
     animation: fadeCubeInner 4s linear;
     transition: transform ease-out 2.1s;
@@ -45,7 +45,7 @@
   }
 
   // InnerInner
-  .scene3 {
+  .scene:nth-child(3) {
     transform: scale(0);
     animation: fadeCubeInnerInner 9s linear;
     transition: transform ease-out 2.3s;
