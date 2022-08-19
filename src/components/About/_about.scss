@@ -29,7 +29,6 @@
                 width: 450px;
                 height: 450px;
                 position: relative;
-                // box-shadow: 2px 2px 2px 1px #171717;
                 box-shadow: 2px 2px 0px 2px #1c1c1c;
             }
 
@@ -73,16 +72,18 @@
             .about__technologies__list {
                 height: 100%;
 
+                .technologies__item__header{
+                    color: #ffffff;
+                    font-weight: bold;
+                    list-style: square;
+                    margin-bottom: 0.5rem;
+                }
+
                 .technologies__item {
                     font-weight: bold;
-                    color: #ffffffdd;
                     position: relative;
+                    color: #ffffffdd;
 
-                    &:first-child {
-                        color: #ffffff;
-                        list-style: square;
-                        margin-bottom: 0.5rem;
-                    }
                 }
             }
 
@@ -95,6 +96,12 @@
 @media only screen and (max-width: 1280px) {
     #about {
         height: auto;
+
+        .about__content {
+            .about__technologies {
+                width: auto;
+            }
+        }
     }
 }
 

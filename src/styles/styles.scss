@@ -47,7 +47,7 @@ svg {
     position: relative;
     padding: 1.25rem 1.75rem;
     border: 1px solid #fff;
-    transform: translate(20%, 50%);
+    // transform: translate(20%, 50%) translate3d(0, 0, 0);
     transition: all ease-in-out 500ms;
 
     &:hover {
