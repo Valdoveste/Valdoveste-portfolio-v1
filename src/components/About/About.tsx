@@ -29,7 +29,7 @@ const About: React.FC = () => {
 
                     <div className="about__technologies">
                         <ul className="about__technologies__list">
-                            <li className="technologies__item">Habilidades:</li>
+                            <li className="technologies__item__header">Habilidades:</li>
                             <li className="technologies__item">JavaScript</li>
                             <li className="technologies__item">HTML5</li>
                             <li className="technologies__item">CSS3</li>
@@ -39,12 +39,12 @@ const About: React.FC = () => {
                             <li className="technologies__item">MySQL(CRUD)</li>
                         </ul>
                         <ul className="about__technologies__list">
-                            <li className="technologies__item">Aprendendo:</li>
+                            <li className="technologies__item__header">Aprendendo:</li>
                             <li className="technologies__item">ReactTS</li>
                             <li className="technologies__item">NodeJS</li>
                         </ul>
                         <ul className="about__technologies__list">
-                            <li className="technologies__item">Pretendo aprender:</li>
+                            <li className="technologies__item__header">Pretendo aprender:</li>
                             <li className="technologies__item">Python</li>
                         </ul>
                     </div>
@@ -52,7 +52,7 @@ const About: React.FC = () => {
 
                 <picture className="image__profissional__image">
                     <div></div>
-                    <img src={ValdovesteImg} alt="Valdoveste-Image" />
+                    <img src={ValdovesteImg} alt="Valdoveste" />
                 </picture>
 
             </article>
