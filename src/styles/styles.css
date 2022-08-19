@@ -46,8 +46,6 @@ svg:hover {
   position: relative;
   padding: 1.25rem 1.75rem;
   border: 1px solid #fff;
-  -webkit-transform: translate(20%, 50%);
-          transform: translate(20%, 50%);
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
 }
@@ -309,6 +307,7 @@ main section p[class*="__text"] {
 
 @-webkit-keyframes fadeinup {
   from {
+    opacity: 0;
     -webkit-transform: translate3d(0, 80px, 0);
             transform: translate3d(0, 80px, 0);
   }
@@ -321,6 +320,7 @@ main section p[class*="__text"] {
 
 @keyframes fadeinup {
   from {
+    opacity: 0;
     -webkit-transform: translate3d(0, 80px, 0);
             transform: translate3d(0, 80px, 0);
   }
@@ -513,16 +513,17 @@ main section p[class*="__text"] {
   height: 100%;
 }
 
-#about .about__content .about__technologies .about__technologies__list .technologies__item {
-  font-weight: bold;
-  color: #ffffffdd;
-  position: relative;
-}
-
-#about .about__content .about__technologies .about__technologies__list .technologies__item:first-child {
+#about .about__content .about__technologies .about__technologies__list .technologies__item__header {
   color: #ffffff;
+  font-weight: bold;
   list-style: square;
   margin-bottom: 0.5rem;
+}
+
+#about .about__content .about__technologies .about__technologies__list .technologies__item {
+  font-weight: bold;
+  position: relative;
+  color: #ffffffdd;
 }
 
 .technologies__cubes {
@@ -545,23 +546,23 @@ main section p[class*="__text"] {
           flex-direction: row;
 }
 
-.technologies__cubes .scene1,
-.technologies__cubes .scene2,
-.technologies__cubes .scene3 {
+.technologies__cubes .scene:nth-child(1),
+.technologies__cubes .scene:nth-child(2),
+.technologies__cubes .scene:nth-child(3) {
   width: 200px;
   height: 200px;
   -webkit-perspective: 400px;
           perspective: 400px;
 }
 
-.technologies__cubes .scene1,
-.technologies__cubes .scene3 {
+.technologies__cubes .scene:nth-child(1),
+.technologies__cubes .scene:nth-child(3) {
   position: absolute;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
 }
 
-.technologies__cubes .scene2 {
+.technologies__cubes .scene:nth-child(1) {
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all ease-out 1.7s;
@@ -569,13 +570,13 @@ main section p[class*="__text"] {
   opacity: 0;
 }
 
-.technologies__cubes .scene2.--fadeincube {
+.technologies__cubes .scene:nth-child(1).--fadeincube {
   -webkit-transform: scale(230%);
           transform: scale(230%);
   opacity: 1;
 }
 
-.technologies__cubes .scene1 {
+.technologies__cubes .scene:nth-child(2) {
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-animation: fadeCubeInner 4s linear;
@@ -586,12 +587,12 @@ main section p[class*="__text"] {
   transition: transform ease-out 2.1s, -webkit-transform ease-out 2.1s;
 }
 
-.technologies__cubes .scene1.--fadeincube {
+.technologies__cubes .scene:nth-child(2).--fadeincube {
   -webkit-transform: scale(145%);
           transform: scale(145%);
 }
 
-.technologies__cubes .scene3 {
+.technologies__cubes .scene:nth-child(3) {
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-animation: fadeCubeInnerInner 9s linear;
@@ -602,7 +603,7 @@ main section p[class*="__text"] {
   transition: transform ease-out 2.3s, -webkit-transform ease-out 2.3s;
 }
 
-.technologies__cubes .scene3.--fadeincube {
+.technologies__cubes .scene:nth-child(3).--fadeincube {
   -webkit-transform: scale(60%);
           transform: scale(60%);
 }
@@ -886,6 +887,9 @@ main section p[class*="__text"] {
 @media only screen and (max-width: 1280px) {
   #about {
     height: auto;
+  }
+  #about .about__content .about__technologies {
+    width: auto;
   }
 }
 
