@@ -19,6 +19,7 @@
 
 @keyframes fadeinup {
     from {
+        opacity: 0;
         transform: translate3d(0, 80px, 0)
     }
 
