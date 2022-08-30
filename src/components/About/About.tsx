@@ -19,7 +19,7 @@ const About: React.FC = () => {
 
                     <p className="about__text">
                         Sempre fui atraído por projetos de longa duração, onde efetivamente posso produzir e acompanhar cada processo de seu desenvolvimento. 
-                        Tenho como objetivo inicial de carreira o foco como desenvolvedor FrontEND, e posteriormente com o ganho de mais estarei alternando para o desenvolvimento FullStack.
+                        Tenho como objetivo de carreira trabalhar no desenvolvimento FrontEND, assim podem colocar em prática as habilidades que adquiri.
                     </p>
 
                     <p className="about__text">
@@ -30,6 +30,7 @@ const About: React.FC = () => {
                     <div className="about__technologies">
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Habilidades:</li>
+                            <li className="technologies__item">React</li>
                             <li className="technologies__item">JavaScript</li>
                             <li className="technologies__item">HTML5</li>
                             <li className="technologies__item">CSS3</li>
@@ -40,7 +41,7 @@ const About: React.FC = () => {
                         </ul>
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Aprendendo:</li>
-                            <li className="technologies__item">ReactTS</li>
+                            <li className="technologies__item">TypeScript</li>
                             <li className="technologies__item">NodeJS</li>
                         </ul>
                         <ul className="about__technologies__list">
