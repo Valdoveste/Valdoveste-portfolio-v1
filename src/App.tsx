@@ -26,11 +26,13 @@ const App: React.FC = () => {
           if (mediaQuery.matches) {
             target.classList.add("--fadeinup");
           } else {
-            if (parseInt(target.id) % 2 === 0) {
-              target.classList.add("--fadetoleft");
-            }
-            else {
-              target.classList.add("--fadetoright");
+            switch (target.getAttribute("data-direction")) {
+              case "left":
+                target.classList.add("--fadetoleft");
+                break;
+              case "right":
+                target.classList.add("--fadetoright");
+                break;
             }
           }
         }
@@ -52,11 +54,7 @@ const App: React.FC = () => {
       entries.forEach(entry => {
         let target = entry.target;
         if (entry.intersectionRatio > 0) {
-          if (mediaQuery.matches) {
-            target.classList.add("--fadeinup");
-          } else {
-            target.classList.add("--fadeinup");
-          }
+          target.classList.add("--fadeinup");
         }
       });
     });
