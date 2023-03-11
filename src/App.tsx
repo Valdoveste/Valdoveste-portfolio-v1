@@ -18,8 +18,8 @@ const App: React.FC = () => {
       marginRoot: "0px"
     }
 
-    // Cards Observer
-    const observerCards = new IntersectionObserver((entries, observerCards) => {
+    // Large Cards Observer
+    const observerLgCards = new IntersectionObserver((entries, observerCards) => {
       entries.forEach(entry => {
         let target = entry.target;
         if (entry.intersectionRatio > 0) {
@@ -37,14 +37,39 @@ const App: React.FC = () => {
       });
     });
 
-    const cards = document.querySelectorAll(".card");
+    const lgCards = document.querySelectorAll(".card-lg");
 
-    cards.forEach(card => {
-      observerCards.observe(card);
+    lgCards.forEach(card => {
+      observerLgCards.observe(card);
       card.addEventListener("animationend", (e) => {
         card.classList.add("--opacity");
       });
     });
+
+
+    // Small Cards Observer
+    const observerSmCards = new IntersectionObserver((entries, observerCards) => {
+      entries.forEach(entry => {
+        let target = entry.target;
+        if (entry.intersectionRatio > 0) {
+          if (mediaQuery.matches) {
+            target.classList.add("--fadeinup");
+          } else {
+            target.classList.add("--fadeinup");
+          }
+        }
+      });
+    });
+
+    const sMCards = document.querySelectorAll(".card-sm");
+
+    sMCards.forEach(card => {
+      observerSmCards.observe(card);
+      card.addEventListener("animationend", (e) => {
+        card.classList.add("--opacity");
+      });
+    });
+
 
     // Section Observer
     const oberserSection = new IntersectionObserver((entries) => {
