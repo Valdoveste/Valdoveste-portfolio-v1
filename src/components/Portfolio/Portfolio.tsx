@@ -6,7 +6,7 @@ const Portfolio: React.FC = () => {
     const renderBigCards = (): JSX.Element[] => {
         return PortfolioBigCards.map((card) => {
             return (
-                <div className="card-lg" id={card.id.toString()} key={card.id}>
+                <div className="card-lg" id={card.id.toString()} key={card.id} data-direction={card.animation_direction}>
                     <div className="card-lg__content">
                         <div className="card-lg__logo">
                             <a className="card-lg__overlay" href={card.project_url} target={"_blank"} rel="noreferrer">
