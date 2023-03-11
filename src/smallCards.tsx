@@ -32,7 +32,7 @@ const PortfolioSmallCards = [
         project_url: "",
         project_git_url: "https://github.com/Valdoveste/NoSleptDebuff",
         project_img_alt: "NoSleptDebuff Project Image",
-        project_desc: "Esse projeto junto com os dois próximos fazem parte de um experimento que me propus com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão deste projeto foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com  Java File",
+        project_desc: "Esse projeto junto com os dois próximos fazem parte de um experimento que me propus com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão deste projeto foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com  Java File.",
         project_tech: ["JAVA", "SPIGOT", "MINECRAFT PLUGIN"],
         animation_delay: {
             animationDelay: "350ms"
@@ -45,7 +45,7 @@ const PortfolioSmallCards = [
         project_url: "",
         project_git_url: "https://github.com/Valdoveste/ItemFramesAppearance",
         project_img_alt: "ItemFramesAppearance Project Image",
-        project_desc: "Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com  Java File",
+        project_desc: "Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com  Java File.",
         project_tech: ["JAVA", "SPIGOT", "MINECRAFT PLUGIN"],
         animation_delay: {
             animationDelay: "250ms"
@@ -58,7 +58,7 @@ const PortfolioSmallCards = [
         project_url: "",
         project_git_url: "https://github.com/Valdoveste/DeleteUUIDOnDeath",
         project_img_alt: "DeleteUUIDOnDeath Project Image",
-        project_desc: "Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com  Java File",
+        project_desc: "Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com  Java File.",
         project_tech: ["JAVA", "SPIGOT", "MINECRAFT PLUGIN"],
         animation_delay: {
             animationDelay: "150ms"
