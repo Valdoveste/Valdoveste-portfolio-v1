@@ -2,6 +2,7 @@ const PortfolioBigCards = [
     {
         id: Math.random(),
         layout: "big",
+        animation_direction: "left",
         project_name: "Nebulum",
         project_url: "https://valdoveste.github.io/nebulum/",
         project_git_url: "https://github.com/Valdoveste/nebulum",
@@ -13,12 +14,13 @@ const PortfolioBigCards = [
     {
         id: Math.random(),
         layout: "big",
+        animation_direction: "right",
         project_name: "Five Senses Resorts",
         project_url: "https://valdoveste.github.io/fiveSensesResort/",
         project_git_url: "https://github.com/Valdoveste/fiveSensesResort",
         project_img_alt: "Fives Senses Resort Project Image",
         project_img: "https://user-images.githubusercontent.com/62577482/224366779-760839c3-bddf-4f6f-9cd3-f965b773d2c3.png",
-        project_desc: "Five Senses Resort é uma apliação web utilizando o framework bootstrap, onde o objetivo foi montar um página que apresente as principais informações do primeiro Resort de Tocantins, o Five Senses veio com a necessidade do lazer no cotidiano do tocantinese em aproveitar o tempo em família e no descanso. A beleza natural do lago de Palmas e os encantos naturais da região criaram esse desejo de proporcionar um novo destino de férias. ",
+        project_desc: "Five Senses Resort é uma apliação web utilizando o framework bootstrap, onde o objetivo foi montar um página que apresente as principais informações do primeiro Resort de Tocantins, o Five Senses veio com a necessidade do lazer no cotidiano do tocantinese em aproveitar o tempo em família e no descanso. A beleza natural do lago de Palmas e os encantos naturais da região criaram esse desejo de proporcionar um novo destino de férias.",
         project_tech: ["JAVASCRIPT", "HTML5", "CSS3", "SASS", "BOOTSTRAP"]
     }
 ];
