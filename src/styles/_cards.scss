@@ -6,7 +6,7 @@
     position: relative;
     grid-template-columns: repeat(1, 100%);
 
-    .card {
+    .card-lg {
         opacity: 0;
         height: 450px;
         overflow: hidden;
@@ -21,13 +21,13 @@
             position: absolute;
         }
 
-        .card__github__link svg {
+        .card-lg__github__link svg {
             width: 45px;
             height: 45px;
 
         }
 
-        .card__page__link {
+        .card-lg__page__link {
             display: none;
         }
 
@@ -40,27 +40,27 @@
                 transform: scaleX(-1);
             }
 
-            .card__content__info {
+            .card-lg__content__info {
                 direction: ltr;
             }
         }
 
-        .card__content {
+        .card-lg__content {
             height: 100%;
             position: relative;
             @include flexCenter(center, default, row);
 
-            .card__logo,
-            .card__content__info {
+            .card-lg__logo,
+            .card-lg__content__info {
                 @include flexCenter(flex-start, center, column);
             }
 
-            .card__logo {
+            .card-lg__logo {
                 width: 45%;
                 height: 100%;
                 position: relative;
 
-                .card__overlay {
+                .card-lg__overlay {
                     width: 100%;
                     height: 100%;
                     position: absolute;
@@ -72,33 +72,33 @@
                     }
                 }
 
-                .card__logo__image {
+                .card-lg__logo__image {
                     width: 100%;
                     height: 100%;
                     object-fit: fill;
                 }
             }
 
-            .card__content__info {
+            .card-lg__content__info {
                 width: 55%;
                 height: 100%;
                 padding: 0 2.25rem;
+                @include flexCenter(unset, space-evenly, column);
                 background-color: #171717;
-                // transition: all ease-in-out 700ms;
 
-                .card__content__title {
+                .card-lg__content__title {
                     margin-top: 0;
                     margin-bottom: 1.25rem;
                 }
 
-                .card__content__text {
+                .card-lg__content__text {
                     margin-left: 1.75rem;
                 }
 
-                .card__content__technologies {
+                .card-lg__content__technologies {
                     width: 100%;
 
-                    .card__content__technologies__list {
+                    .card-lg__content__technologies__list {
                         & li {
                             font-weight: 700;
 
@@ -117,22 +117,22 @@
 
 // Tablet Screnn
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    #card-container {
+    #card-lg-container {
         padding: 0;
 
-        .card {
+        .card-lg {
             opacity: 1;
             height: auto;
 
-            .card__content {
+            .card-lg__content {
                 @include flexCenter(center, center, column);
 
-                .card__logo,
-                .card__content__info {
+                .card-lg__logo,
+                .card-lg__content__info {
                     width: 100%;
                 }
 
-                .card__content__info {
+                .card-lg__content__info {
                     padding: 2.25rem;
                 }
             }
@@ -141,11 +141,11 @@
 }
 
 // Smartphone Screen
-@media only screen and (min-width: 100px) and (max-width: 600px) {
+@media only screen and (min-width: 100px) and (max-width: 1100px) {
     #card-container {
         padding: 0;
 
-        .card {
+        .card-lg {
             opacity: 0;
             height: auto;
             overflow: hidden;
@@ -160,20 +160,20 @@
                     transform: scaleX(1);
                 }
 
-                .card__content__info {
+                .card-lg__content__info {
                     direction: unset;
                 }
             }
 
-            .card__content {
+            .card-lg__content {
                 flex-direction: column;
                 justify-content: space-between;
 
-                .card__logo {
+                .card-lg__logo {
                     display: none;
                 }
 
-                .card__content__info {
+                .card-lg__content__info {
                     width: 100%;
                     padding: 1.75rem;
                     align-items: center;
@@ -187,12 +187,12 @@
 
                         @include flexCenter(center, center, row);
 
-                        .card__github__link svg {
-                                width: 50px;
-                                height: 50px;
+                        .card-lg__github__link svg {
+                            width: 50px;
+                            height: 50px;
                         }
 
-                        .card__page__link {
+                        .card-lg__page__link {
                             width: 45px;
                             height: 45px;
                             display: block;
@@ -206,12 +206,12 @@
                         }
                     }
 
-                    .card__content__title {
+                    .card-lg__content__title {
                         margin-top: 0;
                         width: 100%;
                     }
 
-                    .card__content__text {
+                    .card-lg__content__text {
                         margin: 0;
                     }
                 }
@@ -221,11 +221,11 @@
 }
 
 // Smartphone Screen
-@media only screen and (min-width: 100px) and (max-width: 360px) {
+@media only screen and (min-width: 100px) and (max-width: 500px) {
     #card-container {
         padding: 0;
 
-        .card {
+        .card-lg {
             opacity: 1;
             height: auto;
             overflow: hidden;
@@ -240,20 +240,20 @@
                     transform: scaleX(1);
                 }
 
-                .card__content__info {
+                .card-lg__content__info {
                     direction: unset;
                 }
             }
 
-            .card__content {
-                flex-direction: column;
+            .card-lg__content {
+                flex-direction: column !important;
                 justify-content: space-between;
 
-                .card__logo {
+                .card-lg__logo {
                     display: none;
                 }
 
-                .card__content__info {
+                .card-lg__content__info {
                     width: 100%;
                     padding: 1.75rem;
                     align-items: center;
@@ -267,12 +267,12 @@
 
                         @include flexCenter(center, center, row);
 
-                        .card__github__link svg {
-                                width: 50px;
-                                height: 50px;
+                        .card-lg__github__link svg {
+                            width: 50px;
+                            height: 50px;
                         }
 
-                        .card__page__link {
+                        .card-lg__page__link {
                             width: 45px;
                             height: 45px;
                             display: block;
@@ -286,12 +286,12 @@
                         }
                     }
 
-                    .card__content__title {
+                    .card-lg__content__title {
                         margin-top: 0;
                         width: 100%;
                     }
 
-                    .card__content__text {
+                    .card-lg__content__text {
                         margin: 0;
                     }
                 }

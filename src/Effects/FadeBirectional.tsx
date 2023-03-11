@@ -1,5 +1,5 @@
 export default function fadeBidirectional() {
-    const cards = document.querySelectorAll('.card')!;
+    const cards = document.querySelectorAll('.card-lg')!;
 
     const observer = new IntersectionObserver((entries) => {
 

@@ -1,5 +1,4 @@
 import React from "react";
-// import ValdovesteImg from "../../assets/zap.gif";
 import ValdovesteImg from "../../assets/Valdoveste.png";
 
 const About: React.FC = () => {
@@ -30,23 +29,25 @@ const About: React.FC = () => {
                     <div className="about__technologies">
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Habilidades:</li>
-                            <li className="technologies__item">React</li>
                             <li className="technologies__item">JavaScript</li>
+                            <li className="technologies__item">PHP</li>
+                            <li className="technologies__item">Java</li>
                             <li className="technologies__item">HTML5</li>
                             <li className="technologies__item">CSS3</li>
                             <li className="technologies__item">SASS</li>
                             <li className="technologies__item">Git & GitHub</li>
                             <li className="technologies__item">GitFlow</li>
-                            <li className="technologies__item">MySQL(CRUD)</li>
+                            <li className="technologies__item">SQL(CRUD)</li>
                         </ul>
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Aprendendo:</li>
-                            <li className="technologies__item">TypeScript</li>
-                            <li className="technologies__item">NodeJS</li>
+                            <li className="technologies__item">ReactJS</li>
+                            <li className="technologies__item">Redux</li>
                         </ul>
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Pretendo aprender:</li>
-                            <li className="technologies__item">Python</li>
+                            <li className="technologies__item">TypeScript</li>
+                            <li className="technologies__item">React Native</li>
                         </ul>
                     </div>
                 </div>

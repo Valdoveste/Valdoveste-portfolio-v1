@@ -1,15 +1,117 @@
 #portfolio {
     height: auto;
+
     .portfolio__text {
         margin-bottom: 4rem;
     }
 
-    article article{
+    article article {
         @include flexCenter(center, center, column);
     }
 
+
     @import '../../styles/_cards';
 
+    #card-container {
+        .smallerProjects {
+            @extend #card-container;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
+
+
+            .card-sm {
+                opacity: 0;
+                overflow: unset;
+                position: relative;
+                border-radius: 5px;
+                background-color: #171717;
+                border: 1px solid #17171778;
+                box-shadow: 5px 5px 10px 5px #171717;
+
+                // &:nth-child(even) {
+                //     direction: unset;
+
+                //     .icons {
+                //         left: unset;
+                //         right: 10px;
+                //         bottom: 10px;
+                //         width: min-content;
+                //         transform: scaleX(1);
+                //     }
+
+                //     .card-sm__content__info {
+                //         direction: unset;
+                //     }
+                // }
+
+                .card-sm__content {
+                    height: 100%;
+
+                    .card-sm__content__info {
+                        width: 100%;
+                        height: 100%;
+                        padding: 1.25rem;
+                        @include flexCenter(center, space-evenly, column);
+
+                        .card-sm__content__title {
+                            line-height: 1;
+                            font-size: 2.20rem;
+                            text-align: justify;
+                            word-break: break-all;
+                            // margin: 0;
+                        }
+
+                        .card-sm__content__text {
+                            text-align: left;
+                            min-height: 230px;
+                            letter-spacing: 0.095rem;
+                        }
+
+                        .icons {
+                            width: 100%;
+                            display: flex;
+                            position: relative;
+                            align-items: center;
+                            justify-content: right;
+
+                            .card-sm__page__link {
+                                display: flex;
+                                margin-right: 10px;
+                            }
+
+                            .card-sm__github__link svg {
+                                width: 45px;
+                                height: 45px;
+
+                            }
+                        }
+
+                        .card-sm__content__technologies {
+                            .card-sm__content__technologies__list {
+                                @include flexCenter(center, center, row);
+                                margin-top: 1.75rem;
+
+                                li {
+                                    font-weight: 700;
+
+                                    &:nth-child(even) {
+                                        padding: 1rem;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1025px) {
+    .card-sm {
+        max-width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 500px) {
