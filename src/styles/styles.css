@@ -1363,7 +1363,7 @@ main section p[class*="__text"] {
           flex-direction: column;
 }
 
-#portfolio #card-container {
+#portfolio #card-container, #portfolio #card-container .smallerProjects {
   gap: 5rem;
   padding: 1rem;
   display: -ms-grid;
@@ -1374,7 +1374,7 @@ main section p[class*="__text"] {
       grid-template-columns: repeat(1, 100%);
 }
 
-#portfolio #card-container .card {
+#portfolio #card-container .card-lg {
   opacity: 0;
   height: 450px;
   overflow: hidden;
@@ -1385,37 +1385,37 @@ main section p[class*="__text"] {
           box-shadow: 5px 5px 10px 5px #171717;
 }
 
-#portfolio #card-container .card .icons {
+#portfolio #card-container .card-lg .icons {
   right: 10px;
   bottom: 10px;
   position: absolute;
 }
 
-#portfolio #card-container .card .card__github__link svg {
+#portfolio #card-container .card-lg .card-lg__github__link svg {
   width: 45px;
   height: 45px;
 }
 
-#portfolio #card-container .card .card__page__link {
+#portfolio #card-container .card-lg .card-lg__page__link {
   display: none;
 }
 
-#portfolio #card-container .card:nth-child(even) {
+#portfolio #card-container .card-lg:nth-child(even) {
   direction: rtl;
 }
 
-#portfolio #card-container .card:nth-child(even) .icons {
+#portfolio #card-container .card-lg:nth-child(even) .icons {
   left: 10px;
   right: unset;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-#portfolio #card-container .card:nth-child(even) .card__content__info {
+#portfolio #card-container .card-lg:nth-child(even) .card-lg__content__info {
   direction: ltr;
 }
 
-#portfolio #card-container .card .card__content {
+#portfolio #card-container .card-lg .card-lg__content {
   height: 100%;
   position: relative;
   display: -webkit-box;
@@ -1433,8 +1433,8 @@ main section p[class*="__text"] {
           flex-direction: row;
 }
 
-#portfolio #card-container .card .card__content .card__logo,
-#portfolio #card-container .card .card__content .card__content__info {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__logo,
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1450,13 +1450,13 @@ main section p[class*="__text"] {
           flex-direction: column;
 }
 
-#portfolio #card-container .card .card__content .card__logo {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__logo {
   width: 45%;
   height: 100%;
   position: relative;
 }
 
-#portfolio #card-container .card .card__content .card__logo .card__overlay {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__logo .card-lg__overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1465,38 +1465,52 @@ main section p[class*="__text"] {
   background-color: rgba(28, 28, 28, 0.5);
 }
 
-#portfolio #card-container .card .card__content .card__logo .card__overlay:hover {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__logo .card-lg__overlay:hover {
   background-color: rgba(28, 28, 28, 0);
 }
 
-#portfolio #card-container .card .card__content .card__logo .card__logo__image {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__logo .card-lg__logo__image {
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
 
-#portfolio #card-container .card .card__content .card__content__info {
+
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info {
   width: 55%;
   height: 100%;
   padding: 0 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #171717;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__title {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__title {
   margin-top: 0;
   margin-bottom: 1.25rem;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__text {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__text {
   margin-left: 1.75rem;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__technologies {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__technologies {
   width: 100%;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__technologies .card__content__technologies__list {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__technologies .card-lg__content__technologies__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1512,23 +1526,23 @@ main section p[class*="__text"] {
           flex-direction: row;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__technologies .card__content__technologies__list li {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__technologies .card-lg__content__technologies__list li {
   font-weight: 700;
 }
 
-#portfolio #card-container .card .card__content .card__content__info .card__content__technologies .card__content__technologies__list li:nth-child(even) {
+#portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__technologies .card-lg__content__technologies__list li:nth-child(even) {
   padding: 1rem;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  #portfolio #card-container {
+  #portfolio #card-lg-container {
     padding: 0;
   }
-  #portfolio #card-container .card {
+  #portfolio #card-lg-container .card-lg {
     opacity: 1;
     height: auto;
   }
-  #portfolio #card-container .card .card__content {
+  #portfolio #card-lg-container .card-lg .card-lg__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1543,39 +1557,39 @@ main section p[class*="__text"] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #portfolio #card-container .card .card__content .card__logo,
-  #portfolio #card-container .card .card__content .card__content__info {
+  #portfolio #card-lg-container .card-lg .card-lg__content .card-lg__logo,
+  #portfolio #card-lg-container .card-lg .card-lg__content .card-lg__content__info {
     width: 100%;
   }
-  #portfolio #card-container .card .card__content .card__content__info {
+  #portfolio #card-lg-container .card-lg .card-lg__content .card-lg__content__info {
     padding: 2.25rem;
   }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 600px) {
-  #portfolio #card-container {
+@media only screen and (min-width: 100px) and (max-width: 1100px) {
+  #portfolio #card-container, #portfolio #card-container .smallerProjects {
     padding: 0;
   }
-  #portfolio #card-container .card {
+  #portfolio #card-container .card-lg {
     opacity: 0;
     height: auto;
     overflow: hidden;
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
-  #portfolio #card-container .card:nth-child(even) {
+  #portfolio #card-container .card-lg:nth-child(even) {
     direction: unset;
   }
-  #portfolio #card-container .card:nth-child(even) .icons {
+  #portfolio #card-container .card-lg:nth-child(even) .icons {
     left: unset;
     direction: unset;
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
-  #portfolio #card-container .card:nth-child(even) .card__content__info {
+  #portfolio #card-container .card-lg:nth-child(even) .card-lg__content__info {
     direction: unset;
   }
-  #portfolio #card-container .card .card__content {
+  #portfolio #card-container .card-lg .card-lg__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1584,17 +1598,18 @@ main section p[class*="__text"] {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #portfolio #card-container .card .card__content .card__logo {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__logo {
     display: none;
   }
-  #portfolio #card-container .card .card__content .card__content__info {
+  
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info {
     width: 100%;
     padding: 1.75rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons {
     width: 100%;
     right: unset;
     bottom: unset;
@@ -1614,73 +1629,74 @@ main section p[class*="__text"] {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link svg {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__github__link svg {
     width: 50px;
     height: 50px;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__page__link {
     width: 45px;
     height: 45px;
     display: block;
     margin-left: 1.25rem;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link svg {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__page__link svg {
     width: 45px;
     height: 45px;
     padding: 6px;
   }
-  #portfolio #card-container .card .card__content .card__content__info .card__content__title {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__title {
     margin-top: 0;
     width: 100%;
   }
-  #portfolio #card-container .card .card__content .card__content__info .card__content__text {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__text {
     margin: 0;
   }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 360px) {
-  #portfolio #card-container {
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+  #portfolio #card-container, #portfolio #card-container .smallerProjects {
     padding: 0;
   }
-  #portfolio #card-container .card {
+  #portfolio #card-container .card-lg {
     opacity: 1;
     height: auto;
     overflow: hidden;
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
-  #portfolio #card-container .card:nth-child(even) {
+  #portfolio #card-container .card-lg:nth-child(even) {
     direction: unset;
   }
-  #portfolio #card-container .card:nth-child(even) .icons {
+  #portfolio #card-container .card-lg:nth-child(even) .icons {
     left: unset;
     direction: unset;
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
-  #portfolio #card-container .card:nth-child(even) .card__content__info {
+  #portfolio #card-container .card-lg:nth-child(even) .card-lg__content__info {
     direction: unset;
   }
-  #portfolio #card-container .card .card__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #portfolio #card-container .card-lg .card-lg__content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #portfolio #card-container .card .card__content .card__logo {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__logo {
     display: none;
   }
-  #portfolio #card-container .card .card__content .card__content__info {
+  
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info {
     width: 100%;
     padding: 1.75rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons {
     width: 100%;
     right: unset;
     bottom: unset;
@@ -1700,27 +1716,136 @@ main section p[class*="__text"] {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__github__link svg {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__github__link svg {
     width: 50px;
     height: 50px;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__page__link {
     width: 45px;
     height: 45px;
     display: block;
     margin-left: 1.25rem;
   }
-  #portfolio #card-container .card .card__content .card__content__info .icons .card__page__link svg {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .icons .card-lg__page__link svg {
     width: 45px;
     height: 45px;
     padding: 6px;
   }
-  #portfolio #card-container .card .card__content .card__content__info .card__content__title {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__title {
     margin-top: 0;
     width: 100%;
   }
-  #portfolio #card-container .card .card__content .card__content__info .card__content__text {
+  #portfolio #card-container .card-lg .card-lg__content .card-lg__content__info .card-lg__content__text {
     margin: 0;
+  }
+}
+
+#portfolio #card-container .smallerProjects {
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill] !important;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
+}
+
+#portfolio #card-container .smallerProjects .card-sm {
+  opacity: 0;
+  overflow: unset;
+  position: relative;
+  border-radius: 5px;
+  background-color: #171717;
+  border: 1px solid #17171778;
+  -webkit-box-shadow: 5px 5px 10px 5px #171717;
+          box-shadow: 5px 5px 10px 5px #171717;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content {
+  height: 100%;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .card-sm__content__title {
+  line-height: 1;
+  font-size: 2.20rem;
+  text-align: justify;
+  word-break: break-all;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .card-sm__content__text {
+  text-align: left;
+  min-height: 230px;
+  letter-spacing: 0.095rem;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .icons .card-sm__page__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .icons .card-sm__github__link svg {
+  width: 45px;
+  height: 45px;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .card-sm__content__technologies .card-sm__content__technologies__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1.75rem;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .card-sm__content__technologies .card-sm__content__technologies__list li {
+  font-weight: 700;
+}
+
+#portfolio #card-container .smallerProjects .card-sm .card-sm__content .card-sm__content__info .card-sm__content__technologies .card-sm__content__technologies__list li:nth-child(even) {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1025px) {
+  .card-sm {
+    max-width: 100% !important;
   }
 }
 
