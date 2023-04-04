@@ -10,9 +10,7 @@ const translator = ({
             'Five Senses Resorts',
             'RotmgTargetCreator',
             'BatatinhasHardware',
-            'NoSlepetDebuff',
-            'ItemFramesAppearance',
-            'DeleteUUIDOnDeath',
+            'Minecraft Plugins',
             'Sobre Mim',
             'Contato'
         ],
@@ -33,11 +31,7 @@ const translator = ({
 
             'Batatinha Hardware, é uma loja virtual fictícia especializada no mercado eletrônico, vendemos aparelhos e acessórios de diversas marcas, sempre buscando entregar omelhor para nosso cliente.',
 
-            'Esse projeto junto com os dois próximos fazem parte de um experimento que me propus com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão deste projeto foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File.',
-
-            'Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com Java File.',
-
-            'Esse projeto foi desenvolvido com o intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização deste projeto deste projeto foi a interação com eventos e criação e manipulação de arquivos com Java File.',
+            'Três pequenos projetos utilizando java onde o foi intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão desses projetos foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File e Consumo de API.',
 
             'Olá, me chamo Caio Valdoveste e eu gosto de desafios, desde que tive meu primeiro contato com programação em 2019 fiquei fascinado com o quanto essa área é váriada, então após algum tempo realizando pequenos projetos em várias linguagens. Tive meu primeiro contato com o desenvolvimento WEB onde percebi que tinha um apreço não apenas pelo funcionamento das páginas, mas também na construção da apresentação do conteúdo para os usuários.',
 
@@ -66,9 +60,7 @@ const translator = ({
             'Five Senses Resorts',
             'RotmgTargetCreator',
             'BatatinhasHardware',
-            'NoSlepetDebuff',
-            'ItemFramesAppearance',
-            'DeleteUUIDOnDeath',
+            'Minecraft Plugins',
             'About Me',
             'Reach Out'
         ],
@@ -90,11 +82,7 @@ const translator = ({
 
             'Batatinha Hardware is a fictional virtual store specializing in the electronics market, we sell appliances and accessories from different brands, always seeking to deliver the best to our customers.',
 
-            'This project along with the next two is part of an experiment in that I set out to remember some Java concepts and understand the process of developing plugins for Minecraft game servers. One of the essential knowledge for the completion of the first version of this project was the interaction with events, creation of tasks/thread, Wrappers, creation and manipulation of files with Java File.',
-
-            'This project was developed to remember some Java concepts and understand the process of developing plugins for Minecraft game servers. One of the essential knowledge for the finalization of this project was the interaction with events and the creation and manipulation of files with Java File.',
-
-            'This project was developed to remember some Java concepts and understand the process of developing plugins for Minecraft game servers. One of the essential knowledge for the finalization of this project was the interaction with events and the creation and manipulation of files with Java File.',
+            'Three small projects using Java, where the main intention was to remember some Java concepts and understand the development process of Minecraft Plugin. One of the essential knowledge for the conclusion of the first version of these projects was the interaction with events, creation of tasks/thread, Wrappers, creation and manipulation of files with Java File and API Consumption.',
 
             'Hello, my name is Caio Valdoveste and I like challenges, since I had my first contact with programming in 2019 I was fascinated by how varied this area is, so after some time carrying out small projects in several languages. I had my first contact with WEB development where I realized that I had an appreciation not only for the functioning of the pages but also for the construction of the presentation of the content for the users.',
 
