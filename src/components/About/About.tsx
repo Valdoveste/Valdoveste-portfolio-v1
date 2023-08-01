@@ -45,6 +45,7 @@ const About: React.FC = () => {
                         </ul>
                         <ul className="about__technologies__list">
                             <li className="technologies__item__header">Pretendo aprender:</li>
+                            <li className="technologies__item">Python</li>
                             <li className="technologies__item">React Native</li>
                         </ul>
                     </div>
