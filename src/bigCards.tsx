@@ -1,6 +1,6 @@
 const PortfolioBigCards = [
     {
-        id: Math.random(),
+        id: 123,
         layout: "big",
         animation_direction: "left",
         project_name: "Nebulum",
@@ -12,7 +12,7 @@ const PortfolioBigCards = [
         project_tech: ["JAVASCRIPT", "HTML5", "CSS3", "SASS"]
     },
     {
-        id: Math.random(),
+        id: 456,
         layout: "big",
         animation_direction: "right",
         project_name: "Five Senses Resorts",

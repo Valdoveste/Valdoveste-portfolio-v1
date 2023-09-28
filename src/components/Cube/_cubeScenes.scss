@@ -21,22 +21,22 @@
 
   // Outter
   .scene:nth-child(1) {
-    transform: scale(0);
-    transition: all ease-out 1.7s;
-    opacity: 0;
+    // transform: scale(0);
+    animation: fadeCubeOutter 1.4s linear;
+    transition: transform ease-out 1.2s;
 
     &.--fadeincube {
       // transform: scale(2.3);
       transform: scale(230%);
-      opacity: 1;
+      // opacity: 1;
     }
   }
 
   // Inner
   .scene:nth-child(2) {
-    transform: scale(0);
-    animation: fadeCubeInner 4s linear;
-    transition: transform ease-out 2.1s;
+    // transform: scale(0);
+    animation: fadeCubeInner 1.8s linear;
+    transition: transform ease-out 1.8s;
 
     &.--fadeincube {
       // transform: scale(1.45);
@@ -46,9 +46,9 @@
 
   // InnerInner
   .scene:nth-child(3) {
-    transform: scale(0);
-    animation: fadeCubeInnerInner 9s linear;
-    transition: transform ease-out 2.3s;
+    // transform: scale(0);
+    animation: fadeCubeInnerInner 2s linear;
+    transition: transform ease-out 2s;
 
     &.--fadeincube {
       // transform: scale(0.6);
@@ -62,86 +62,3 @@
 @import './_cubeFaces';
 
 @import './_cubeAnimation';
-
-// // Tablet Screen
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-
-//   .technologies__cubes {
-
-//     // Outter
-//     .scene2 {
-//       transform: scale(1.9);
-//       // &.--fadeincube {
-//       //   opacity: 1;
-//       // }
-//     }
-
-//     // Inner
-//     .scene1 {
-//       transform: scale(1.35);
-//       // &.--fadeincube {
-//       //   opacity: 1;
-//       // }
-//     }
-//   }
-
-// }
-
-// // SmartPhone Screen
-// @media only screen and (min-width: 100px) and (max-width: 600px) {
-
-//   .technologies__cubes {
-//     width: 100%;
-//     height: 300px;
-//     margin-top: 2.5rem;
-
-//     // Outter
-//     .scene2 {
-//       &.--fadeincube {
-//         transform: scale(1.2);
-
-//       }
-//     }
-
-//     // Inner
-//     .scene1 {
-//       &.--fadeincube {
-//         transform: scale(0.7);
-//       }
-//     }
-
-//     // InnerInner
-//     .scene3 {
-//       &.--fadeincube {
-//         transform: scale(0.4);
-//       }
-//     }
-//   }
-
-// }
-
-// // SmartPhone Screen
-// @media only screen and (min-width: 100px) and (max-width: 360px) {
-
-//   .technologies__cubes {
-//     width: 100%;
-//     height: 300px;
-//     margin-top: 2.5rem;
-
-//     // Outter
-//     .scene2 {
-//       transform: scale(1.2);
-//     }
-
-//     // Inner
-//     .scene1 {
-//       transform: scale(0.7);
-//     }
-
-//     // InnerInner
-//     .scene3 {
-//       transform: scale(0.4);
-//     }
-//   }
-
-// }

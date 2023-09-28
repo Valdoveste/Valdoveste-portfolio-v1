@@ -101,21 +101,37 @@
 
 // Cube fadein
 @keyframes fadeCubeInner {
-    from {
-        opacity: 0%;
-    }
-
     to {
         opacity: 100%;
+        transform: scale(145%);
+    }
+
+    from {
+        opacity: 0%;
+        transform: scale(0);
     }
 }
 
 @keyframes fadeCubeInnerInner {
-    from {
-        opacity: 0%;
-    }
-
     to {
         opacity: 100%;
+        transform: scale(60%);
+    }
+
+    from {
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeCubeOutter {
+    to {
+        opacity: 100%;
+        transform: scale(230%);
+    }
+
+    from {
+        opacity: 0%;
+        transform: scale(0);
     }
 }

@@ -1,6 +1,6 @@
 const PortfolioSmallCards = [
     {
-        id: Math.random(),
+        id: 586,
         layout: "small",
         project_name: "RotmgTargetCreator",
         project_url: "https://valdoveste.github.io/rotmgex-target-creator/",
@@ -13,7 +13,7 @@ const PortfolioSmallCards = [
         }
     },
     {
-        id: Math.random(),
+        id: 471,
         layout: "small",
         project_name: "BatatinhasHardware",
         project_url: "https://batatinha-s-hardware.github.io/batatinhas-hardware/",
@@ -26,7 +26,7 @@ const PortfolioSmallCards = [
         }
     },
     {
-        id: Math.random(),
+        id: 289,
         layout: "small",
         project_name: "Minecraft Plugins",
         project_url: "",

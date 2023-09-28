@@ -3,7 +3,7 @@ import React from "react";
 const Cube: React.FC = () => {
     return (
         <>
-            <div className="scene">
+            <div className="scene --fadeincube">
                 <div className="cube__outter">
                     <div className="cube__face cube__face--front">
                         <div className="cube__face"></div>
@@ -32,7 +32,7 @@ const Cube: React.FC = () => {
                 </div>
             </div>
 
-            <div className="scene">
+            <div className="scene --fadeincube">
                 <div className="cube__inner">
                     <div className="cube__face cube__face--front">
                         <div className="cube__face"></div>
@@ -61,7 +61,7 @@ const Cube: React.FC = () => {
                 </div>
             </div>
 
-            <div className="scene">
+            <div className="scene --fadeincube">
                 <div className="cube__inner__inner">
                     <div className="cube__face cube__face--front">
                         <div className="cube__face"></div>

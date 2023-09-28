@@ -2,12 +2,30 @@
 
     .right__side__icones {
         right: 0px;
+        // display: block;
         display: none;
+        // opacity: 1;
         z-index: 4;
+
+        // .side__icone__list {
+        //     .side__icone__item {
+        //         &.--fadeinup {
+        //             transform: translate3d(0, 80px, 0)
+        //         }
+        //     }
+        // }
     }
 
     .left__side__icones {
         left: 0px;
+
+        // .side__icone__item{
+        //     animation: teste 2s;
+        // }
+
+        &.--fadeinup {
+            transform: translate3d(0, 80px, 0)
+        }
     }
 
     .left__side__icones,
@@ -71,6 +89,7 @@
 
             .side__icone__list {
                 padding: 0;
+
                 .side__icone__item {
 
                     .side__link__image {

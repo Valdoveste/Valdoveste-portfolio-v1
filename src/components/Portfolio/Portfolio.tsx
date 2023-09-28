@@ -6,7 +6,7 @@ const Portfolio: React.FC = () => {
     const renderBigCards = (): JSX.Element[] => {
         return PortfolioBigCards.map((card) => {
             return (
-                <div className="card-lg" id={card.id.toString()} key={card.id} data-direction={card.animation_direction}>
+                <div className="card-lg" key={card.id} data-direction={card.animation_direction}>
                     <div className="card-lg__content">
                         <div className="card-lg__logo">
                             <a className="card-lg__overlay" href={card.project_url} target={"_blank"} rel="noreferrer">
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
     const renderSmallCards = (): JSX.Element[] => {
         return PortfolioSmallCards.map((cardSm) => {
             return (
-                <div className="card-sm" style={cardSm.animation_delay} id={cardSm.id.toString()} key={cardSm.id}>
+                <div className="card-sm" style={cardSm.animation_delay} key={cardSm.id}>
                     <div className="card-sm__content">
 
                         <div className="card-sm__content__info">

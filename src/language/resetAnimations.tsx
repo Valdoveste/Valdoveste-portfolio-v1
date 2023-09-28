@@ -19,7 +19,7 @@ const resetAnimations = () => {
     const sceneCube = document.querySelectorAll(".scene") as NodeListOf<HTMLElement>;
     sceneCube.forEach(scene => {
         scene.style.transitionDuration = "1.7s"
-        scene.classList.remove("--fadeincube");
+        // scene.classList.remove("--fadeincube");
     })
 
     let clockVar = setTimeout(() => {
