@@ -27,10 +27,10 @@ export const setLanguage = (event: React.MouseEvent<HTMLLIElement>, value: boole
     let anchorHomeDesc = document.createElement("A")
     anchorHomeDesc.setAttribute("class", "footer__copyrights__link")
 
-    let anchorFooterCopyrights = document.createElement("A")
-    anchorFooterCopyrights.setAttribute("href", "https://github.com/Valdoveste/Sistema-Juridico")
-    anchorFooterCopyrights.setAttribute("target", "_blank")
-    anchorFooterCopyrights.setAttribute("rel", "noreferrer")
+    // let anchorFooterCopyrights = document.createElement("A")
+    // anchorFooterCopyrights.setAttribute("href", "https://github.com/Valdoveste/Sistema-Juridico")
+    // anchorFooterCopyrights.setAttribute("target", "_blank")
+    // anchorFooterCopyrights.setAttribute("rel", "noreferrer")
 
     resetAnimations();
 
@@ -57,8 +57,8 @@ export const setLanguage = (event: React.MouseEvent<HTMLLIElement>, value: boole
                 j++;
             })
 
-            textParagraph[1].appendChild(anchorFooterCopyrights)
-            textParagraph[1].insertAdjacentText('beforeend', '.')
+            // textParagraph[1].appendChild(anchorFooterCopyrights)
+            // textParagraph[1].insertAdjacentText('beforeend', '.')
 
             clearInterval(clock)
         }, 10)
@@ -104,8 +104,8 @@ export const setLanguage = (event: React.MouseEvent<HTMLLIElement>, value: boole
                 j++;
             })
 
-            textParagraph[1].appendChild(anchorFooterCopyrights)
-            textParagraph[1].insertAdjacentText('beforeend', '.')
+            // textParagraph[1].appendChild(anchorFooterCopyrights)
+            // textParagraph[1].insertAdjacentText('beforeend', '.')
 
             clearInterval(clock)
         }, 10)
@@ -127,8 +127,6 @@ export const setLanguage = (event: React.MouseEvent<HTMLLIElement>, value: boole
         technologiesHeader[2].textContent = "Next to learn:"
 
         textAreaPlaceHolder.placeholder = "Menssage";
-
-        anchorFooterCopyrights.textContent = "Juridical system"
 
         anchorHomeDesc.textContent = "hi@valdoveste.com"
         anchorHomeDesc.setAttribute("href", "mailto:hi@valdoveste.com")

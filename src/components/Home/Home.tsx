@@ -61,7 +61,6 @@ const Home: React.FC = () => {
                 </p>
                 <p className="home__content__text --fadeinup" style={styles.fourthTransiton}>
                     Constantemente desenvolvendo minhas habilidades na construção de aplicações WEB.
-                    Atualmente, focado no desenvolvimento da aplicação <a href="https://github.com/Valdoveste/Sistema-Juridico" target="_blank" rel="noreferrer">Sistema Jurídico</a>.
                 </p>
 
                 <a href="/contact" onClick={scrollTo} className="btn-section --fadeinup" style={styles.fifthTransiton}>

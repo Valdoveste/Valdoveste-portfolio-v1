@@ -21,7 +21,8 @@ const translator = ({
         paragraph: [
             'Desenvolvedor FrontEND',
 
-            'Constantemente desenvolvendo minhas habilidades na construção de aplicações WEB. Atualmente, focado no desenvolvimento da aplicação  ',
+            'Constantemente desenvolvendo minhas habilidades na construção de aplicações WEB.',
+            
             'Entre em contato',
 
             'Aqui é uma pequena coleção de projetos que trabalhei recentemente. Sempre que possível eu sinto vontade de retornar a estes projetos e retabalhar algumas partes tanto funcional quanto visual.',
@@ -80,7 +81,7 @@ const translator = ({
         paragraph: [
             'Developer FrontEND',
 
-            'Always looking to develop my skills in building projects for the WEB. Currently focused on the development of an ',
+            'Always looking to develop my skills in building projects for the WEB.',
 
             'Reach out',
 
