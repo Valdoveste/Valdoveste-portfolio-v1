@@ -1,5 +1,31 @@
 const PortfolioSmallCards = [
     {
+        id: 936,
+        layout: "small",
+        project_name: "Sistema-Juridico API",
+        project_url: "",
+        project_git_url: "https://github.com/Valdoveste/Sistema-JuridicoWebApi",
+        project_img_alt: "Sistema-Juridico Restful API - Project Image",
+        project_desc: "API da aplicação Sistema Jurídico.",
+        project_tech: [".NET", "C#"],
+        animation_delay: {
+            animationDelay: "350ms"
+        }
+    },
+    {
+        id: 289,
+        layout: "small",
+        project_name: "Minecraft Plugins",
+        project_url: "",
+        project_git_url: "https://github.com/orgs/PracaCraft-Plugins/repositories",
+        project_img_alt: "",
+        project_desc: "Três pequenos projetos utilizando java onde o foi intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão desses projetos foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File e Consumo de API.",
+        project_tech: ["JAVA", "SPIGOT", "MINECRAFT PLUGIN", "API", "JAVA  FILE"],
+        animation_delay: {
+            animationDelay: "450ms"
+        }
+    },
+    {
         id: 586,
         layout: "small",
         project_name: "RotmgTargetCreator",
@@ -22,20 +48,7 @@ const PortfolioSmallCards = [
         project_desc: "Batatinha Hardware, é uma loja virtual fictícia especializada no mercado eletrônico, vendemos aparelhos e acessórios de diversas marcas, sempre buscando entregar omelhor para nosso cliente.",
         project_tech: ["HTML5", "CSS3", "JS", "JQUERY"],
         animation_delay: {
-            animationDelay: "450ms"
-        }
-    },
-    {
-        id: 289,
-        layout: "small",
-        project_name: "Minecraft Plugins",
-        project_url: "",
-        project_git_url: "https://github.com/orgs/PracaCraft-Plugins/repositories",
-        project_img_alt: "",
-        project_desc: "Três pequenos projetos utilizando java onde o foi intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão desses projetos foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File e Consumo de API.",
-        project_tech: ["JAVA", "SPIGOT", "MINECRAFT PLUGIN", "API", "JAVA  FILE"],
-        animation_delay: {
-            animationDelay: "350ms"
+            animationDelay: "650ms"
         }
     }
 ];

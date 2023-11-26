@@ -6,11 +6,14 @@ const translator = ({
             'Olá,',
             'Sou Valdoveste',
             'Meu Portfolio',
+            'Sistema Jurídico',
+            'Val Imóveis - Especialista Imobiliária',
             'Nebulum',
             'Five Senses Resorts',
+            'Sistema-Juridico API',
+            'Minecraft Plugins',
             'RotmgTargetCreator',
             'BatatinhasHardware',
-            'Minecraft Plugins',
             'Sobre Mim',
             'Contato'
         ],
@@ -23,15 +26,21 @@ const translator = ({
 
             'Aqui é uma pequena coleção de projetos que trabalhei recentemente. Sempre que possível eu sinto vontade de retornar a estes projetos e retabalhar algumas partes tanto funcional quanto visual.',
 
-            "Um álbum de fotos online, onde uma dos principais objetivos durante seu desenvolvimento praticar minhas habilidades com clean design, javascript e com o consumo de API's. Um dos grande desafios durante o desenvolvimento foi tratar a imagens e dar uma preocupação extra para usuário mobile. Durante o tratamento das imagens foi utilizado loading lazy, placeholder baseado em sua cor média, e uma das funcionalidades para mobile é sua paginação que funciona com infinityScroll.",
+            "Sistema Jurídico é solução que busca otimizar o setor jurídico empresarial, aprimorando eficiência e reduzindo erros. A migração das planilhas Excel para uma plataforma integrada é enfatizada, proporcionando acesso individualizado a usuários e habilitando gestão abrangente. Isso inclui recursos de inclusão, edição, visualização e histórico de alterações,assim capacitando empresas a priorizarem tarefas estratégicas e impulsionando a eficácia operacional.",
 
-            'Five Senses Resort é uma apliação web utilizando o framework bootstrap, onde o objetivo foi montar um página que apresente as principais informações do primeiro Resort de Tocantins, o Five Senses veio com a necessidade do lazer no cotidiano do tocantinese em aproveitar o tempo em família e no descanso. A beleza natural do lago de Palmas e os encantos naturais da região criaram esse desejo de proporcionar um novo destino de férias. ',
+            "Página dedicada a uma corretora de imóveis atuante desde 2010, oferecendo uma solução especializada em documentação imobiliária e análise para aprovação de financiamento bancário. Onde seu trabalho abrange imóveis tanto na planta quanto prontos para morar, com especial enfoque no plano MINHA CASA MINHA VIDA.",
+
+            "Um de álbum de fotos online, Nebulum apresenta uma ampla variedade de imagens dos maisdiversos temas. Oferecendo um design moderno/limpo, rolagem infinita, paginação intuitivae acessibilidade aprimorada para dispositivos móveis.",
+
+            'O site do Five Senses foi cuidadosamente projetado para proporcionar uma visão completado primeiro Resort paradisíaco em Tocantins. Com ênfase no lazer e no bem-estar,convidamos você, cliente especial, a desfrutar de momentos únicos em família e a vivenciaruma experiência relaxante e inesquecível.',
+
+            'API da aplicação Sistema Jurídico.',
+
+            'Três pequenos projetos utilizando java onde o foi intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão desses projetos foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File e Consumo de API.',
 
             'Facilitador para quem tem mulas e não tem paciência para criar alvo de gravação em base64.',
 
             'Batatinha Hardware, é uma loja virtual fictícia especializada no mercado eletrônico, vendemos aparelhos e acessórios de diversas marcas, sempre buscando entregar omelhor para nosso cliente.',
-
-            'Três pequenos projetos utilizando java onde o foi intuito de relembrar alguns conceitos de Java e entender o processo de desenvolvimento de plugins para servidores do jogo Minecraft. Um dos conhecimentos essências para a finalização da primeira versão desses projetos foi a interação com eventos, criação de tasks/thread, Wrappers, criação e manipulação de arquivos com Java File e Consumo de API.',
 
             'Olá, me chamo Caio Valdoveste e eu gosto de desafios, desde que tive meu primeiro contato com programação em 2019 fiquei fascinado com o quanto essa área é váriada, então após algum tempo realizando pequenos projetos em várias linguagens. Tive meu primeiro contato com o desenvolvimento WEB onde percebi que tinha um apreço não apenas pelo funcionamento das páginas, mas também na construção da apresentação do conteúdo para os usuários.',
 
@@ -54,15 +63,18 @@ const translator = ({
 
         headings: [
             'Hello,',
-            "I'm Valdoveste",
-            'My Porfolio',
+            "I am Valdoveste",
+            'My Portfolio',
+            'Legal System',
+            'Val Real Estate - Real Estate Specialist',
             'Nebulum',
             'Five Senses Resorts',
-            'RotmgTargetCreator',
-            'BatatinhasHardware',
+            'Legal System API',
             'Minecraft Plugins',
+            'RotmgTargetCreator',
+            'PotatoHardware',
             'About Me',
-            'Reach Out'
+            'Contact'
         ],
 
         paragraph: [
@@ -74,15 +86,21 @@ const translator = ({
 
             `Here is a small collection of projects I've worked on recently. Whenever possible I feel like returning to these projects and reworking some parts both functionally and visually.`,
 
+            "Legal System is a solution that aims to optimize the business legal sector, enhancing efficiency and reducing errors. The migration from Excel spreadsheets to an integrated platform is emphasized, providing individualized access to users and enabling comprehensive management. This includes features for inclusion, editing, viewing, and change history, empowering companies to prioritize strategic tasks and boost operational effectiveness.",
+
+            "Page dedicated to a real estate broker active since 2010, offering a specialized solution in real estate documentation and analysis for bank financing approval. Their work covers properties both in the planning stage and ready for occupancy, with a particular focus on the MY HOUSE MY LIFE plan.",
+
             'An online photo album, development of this project aimed at my skills with clean design, javascript, and API consumption. One of the biggest challenges during development was handling the images and giving extra concern to the mobile user. During the treatment of the images, lazy loading was used, a placeholder based on its average color, and one of the features for mobile is its pagination that works with infinity scroll.',
 
             'Five Senses Resort is a web application using the bootstrap framework, where the objective was to assemble a page that presents the main information of the first Resort of Tocantins, Five Senses came with the need for leisure in the daily life of the Tocantinese to enjoy family time and at rest. The natural beauty of Lago de Palmas and the natural charms of the region created this desire to provide a new vacation destination.',
 
+            'Legal System application API.',
+
+            'Three small projects using Java, where the main intention was to remember some Java concepts and understand the development process of Minecraft Plugin. One of the essential knowledge for the conclusion of the first version of these projects was the interaction with events, creation of tasks/thread, Wrappers, creation and manipulation of files with Java File and API Consumption.',
+
             `Facilitator for those who have mules and don't have the patience to create a recording target in base64.`,
 
             'Batatinha Hardware is a fictional virtual store specializing in the electronics market, we sell appliances and accessories from different brands, always seeking to deliver the best to our customers.',
-
-            'Three small projects using Java, where the main intention was to remember some Java concepts and understand the development process of Minecraft Plugin. One of the essential knowledge for the conclusion of the first version of these projects was the interaction with events, creation of tasks/thread, Wrappers, creation and manipulation of files with Java File and API Consumption.',
 
             'Hello, my name is Caio Valdoveste and I like challenges, since I had my first contact with programming in 2019 I was fascinated by how varied this area is, so after some time carrying out small projects in several languages. I had my first contact with WEB development where I realized that I had an appreciation not only for the functioning of the pages but also for the construction of the presentation of the content for the users.',
 

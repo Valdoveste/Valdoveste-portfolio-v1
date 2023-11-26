@@ -3,6 +3,30 @@ const PortfolioBigCards = [
         id: 123,
         layout: "big",
         animation_direction: "left",
+        project_name: "Sistema Jurídico",
+        project_url: "https://sistema-juridico.vercel.app/",
+        project_git_url: "https://github.com/Valdoveste/Sistema-Juridico",
+        project_img_alt: "Sistema Júridico Project Image",
+        project_img: "https://i.imgur.com/f7iQ73o.png",
+        project_desc: "Sistema Jurídico é solução que busca otimizar o setor jurídico empresarial, aprimorando eficiência e reduzindo erros. A migração das planilhas Excel para uma plataforma integrada é enfatizada, proporcionando acesso individualizado a usuários e habilitando gestão abrangente. Isso inclui recursos de inclusão, edição, visualização e histórico de alterações,assim capacitando empresas a priorizarem tarefas estratégicas e impulsionando a eficácia operacional.",
+        project_tech: ["ANGULAR 15", ".NET RESTFUL API", "AZURE", "VERCEL", "BOOTSTRAP", "SASS", "MATERIAL-UI"]
+    },
+    {
+        id: 456,
+        layout: "big",
+        animation_direction: "right",
+        project_name: "Val Imóveis - Especialista Imobiliária",
+        project_url: "https://www.val-imoveis7.com.br/",
+        project_git_url: "https://github.com/Valdoveste/val-imoveis",
+        project_img_alt: "Val Imóveis Project Image",
+        project_img: "https://i.imgur.com/8PasGvG.png",
+        project_desc: "Página dedicada a uma corretora de imóveis atuante desde 2010, oferecendo uma solução especializada em documentação imobiliária e análise para aprovação de financiamento bancário. Onde seu trabalho abrange imóveis tanto na planta quanto prontos para morar, com especial enfoque no plano MINHA CASA MINHA VIDA.",
+        project_tech: ["ANGULAR 17", "POCKETBASE", "BOOTSTRAP", "VERCEL", "SASS"]
+    },
+    {
+        id: 789,
+        layout: "big",
+        animation_direction: "left",
         project_name: "Nebulum",
         project_url: "https://valdoveste.github.io/nebulum/",
         project_git_url: "https://github.com/Valdoveste/nebulum",
@@ -12,7 +36,7 @@ const PortfolioBigCards = [
         project_tech: ["JAVASCRIPT", "HTML5", "CSS3", "SASS"]
     },
     {
-        id: 456,
+        id: 910,
         layout: "big",
         animation_direction: "right",
         project_name: "Five Senses Resorts",
